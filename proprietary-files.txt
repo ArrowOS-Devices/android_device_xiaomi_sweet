@@ -173,7 +173,6 @@ vendor/bin/cdsprpcd
 vendor/bin/charge_logger
 vendor/bin/cnd
 vendor/bin/cnss-daemon
-vendor/bin/cnss_diag
 vendor/bin/diag_callback_sample
 vendor/bin/diag_dci_sample
 vendor/bin/diag_klog
