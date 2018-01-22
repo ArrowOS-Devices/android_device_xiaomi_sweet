@@ -727,7 +727,6 @@ on property:vendor.hardware.wlan.runsniffer=start
      start sniffer
 
 on property:sys.user.0.ce_available=true
-    start cnss_diag
     start tcpdump
 
 service startpktlog /system/bin/iwpriv wlan0 pktlog 2
