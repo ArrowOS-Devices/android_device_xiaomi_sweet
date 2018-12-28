@@ -37,6 +37,15 @@
                 android:resource="@string/device_settings_summary" />
         </activity>
 
+        <activity
+            android:name=".dirac.DiracActivity"
+            android:label="@string/dirac_title"
+            android:theme="@style/Theme.Main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+         </activity>
     </application>
 </manifest>
 
