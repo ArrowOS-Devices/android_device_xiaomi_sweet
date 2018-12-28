@@ -30,6 +30,7 @@ import android.os.Handler;
 import androidx.preference.PreferenceManager;
 
 import org.lineageos.settings.device.Constants;
+import org.lineageos.settings.device.dirac.DiracUtils;
 import org.lineageos.settings.device.utils.DisplayUtils;
 import org.lineageos.settings.device.utils.FileUtils;
 import org.lineageos.settings.device.utils.KcalUtils;
@@ -60,6 +61,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
         updateTapToWakeStatus(context);
         DisplayUtils.setDcDimmingStatus(sharedPreferences.getBoolean(Constants.KEY_DC_DIMMING, false));
+        DiracUtils.initialize(context);
 
         if (KcalUtils.isKcalSupported()) {
             KcalUtils.writeCurrentSettings(sharedPreferences);
