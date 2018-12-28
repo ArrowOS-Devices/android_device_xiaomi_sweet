@@ -24,4 +24,18 @@
     <string name="display_title">Display</string>
     <string name="dc_dimming_title">DC Dimming</string>
     <string name="dc_dimming_summary">Enable DC Dimming to avoid screen flickering on low brightness levels</string>
+
+    <string name="dirac_title">Dirac sound enhancer</string>
+    <string name="dirac_headset_title">Headset type</string>
+    <string name="dirac_preset_title">Sound preset</string>
+
+    <string name="dirac_headset_0">Headset 0</string>
+    <string name="dirac_headset_1">Headset 1</string>
+    <string name="dirac_headset_2">Headset 2</string>
+    <string name="dirac_headset_3">Headset 3</string>
+
+    <string name="dirac_preset_0">Preset 0</string>
+    <string name="dirac_preset_1">Preset 1</string>
+    <string name="dirac_preset_2">Preset 2</string>
+    <string name="dirac_preset_3">Preset 3</string>
 </resources>
