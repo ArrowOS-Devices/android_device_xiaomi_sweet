@@ -43,4 +43,4 @@ odm                                                     /odm                    
 /dev/block/bootdevice/by-name/bluetooth                 /vendor/bt_firmware      vfat    ro,shortname=lower,uid=1002,gid=3002,dmask=227,fmask=337,context=u:object_r:bt_firmware_file:s0 wait
 /devices/platform/soc/a600000.ssusb/a600000.dwc3/xhci-hcd.0.auto*     /storage/usbotg    vfat    nosuid,nodev         wait,voldmanaged=usbotg:auto
 /dev/block/bootdevice/by-name/misc                      /misc              emmc    defaults                                             defaults
-/dev/block/zram0                                        none               swap    defaults                                             zramsize=2147483648,max_comp_streams=8,zram_loopback_path=/data/unencrypted/zram_swap,zram_loopback_size=512M
+/dev/block/zram0                                        none               swap    defaults                                             zramsize=2147483648,max_comp_streams=8,zram_backingdev_size=512M
