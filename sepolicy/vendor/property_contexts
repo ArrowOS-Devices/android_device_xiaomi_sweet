@@ -10,3 +10,6 @@ vendor.powerhal.rendering  u:object_r:power_prop:s0
 
 # Touchfeature
 ro.vendor.touchfeature.type        u:object_r:vendor_touchfeature_prop:s0
+
+# Xiaomi thermal daemon
+sys.thermal.                       u:object_r:thermal_normal_prop:s0
