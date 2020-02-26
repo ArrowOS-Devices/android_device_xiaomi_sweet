@@ -63,6 +63,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
+# Recovery
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
