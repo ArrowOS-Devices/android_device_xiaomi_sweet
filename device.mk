@@ -46,4 +46,8 @@ PRODUCT_PACKAGES += \
     SecureElement \
     com.android.nfc_extras
 
+# Device Settings
+PRODUCT_PACKAGES += \
+    DeviceSettings
+
 include vendor/xiaomi/sweet/sweet-vendor.mk
