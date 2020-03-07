@@ -87,5 +87,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.sweet-libperfmgr
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/power-libperfmgr/powerhint.json:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/powerhint.json
+
 include vendor/xiaomi/sweet/sweet-vendor.mk
 
