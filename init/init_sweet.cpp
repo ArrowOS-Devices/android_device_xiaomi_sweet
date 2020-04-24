@@ -85,25 +85,39 @@ void vendor_load_properties() {
     region = GetProperty("ro.boot.hwc", "GLOBAL");
     sku = GetProperty("ro.boot.product.hardware.sku","pro");
 
+    std::string model;
+    std::string device;
+    std::string fingerprint;
+    std::string description;
+    std::string mod_device;
+
     if (region == "GLOBAL") {
-        set_ro_product_prop("model", "M2101K6G");
-        set_ro_product_prop("device", "sweet");
-        set_ro_build_prop("fingerprint", "Redmi/sweet_eea/sweet:11/RKQ1.200826.002/V12.0.10.0.RKFEUXM:user/release-keys");
-        property_override("ro.build.description", "sweet_eea-user 11 RKQ1.200826.002 V12.0.10.0.RKFEUXM release-keys");
-        property_override("ro.product.mod_device", "sweet_eea_global");
+        model = "M2101K6G";
+        device = "sweet";
+        fingerprint = "Redmi/sweet_eea/sweet:11/RKQ1.200826.002/V12.0.10.0.RKFEUXM:user/release-keys";
+        description = "sweet_eea-user 11 RKQ1.200826.002 V12.0.10.0.RKFEUXM release-keys";
+        mod_device = "sweet_eea_global";
     } else if (region == "INDIA") {
         if (sku == "std") {
-            set_ro_product_prop("model", "M2101K6P");
-            set_ro_product_prop("device",  "sweetin");
-            set_ro_build_prop("fingerprint", "Redmi/sweetin/sweetin:11/RKQ1.200826.002/V12.0.6.0.RKFINXM:user/release-keys");
-            property_override("ro.build.description", "sweetin-user 11 RKQ1.200826.002 V12.0.6.0.RKFINXM release-keys");
-            property_override("ro.product.mod_device", "sweetin_in_global");
-            } else {
-                set_ro_product_prop("model", "M2101K6I");
-                set_ro_product_prop("device",  "sweetin");
-                set_ro_build_prop("fingerprint", "Redmi/sweetin/sweetin:11/RKQ1.200826.002/V12.0.6.0.RKFINXM:user/release-keys");
-                property_override("ro.build.description", "sweetin-user 11 RKQ1.200826.002 V12.0.6.0.RKFINXM release-keys");
-                property_override("ro.product.mod_device", "sweetin_in_global");
+            model = "M2101K6P";
+            device = "sweetin";
+            fingerprint = "Redmi/sweetin/sweetin:11/RKQ1.200826.002/V12.0.6.0.RKFINXM:user/release-keys";
+            description = "sweetin-user 11 RKQ1.200826.002 V12.0.6.0.RKFINXM release-keys";
+            mod_device = "sweetin_in_global";
+        } else {
+                model = "M2101K6I";
+                device = "sweetin";
+                fingerprint = "Redmi/sweetinpro/sweetin:11/RKQ1.200826.002/V12.0.6.0.RKFINXM:user/release-keys";
+                description = "sweetinpro-user 11 RKQ1.200826.002 V12.0.6.0.RKFINXM release-keys";
+                mod_device = "sweetin_in_global";
             }
+        }
+
+    set_ro_build_prop("fingerprint", fingerprint);
+    set_ro_product_prop("device", device);
+    set_ro_product_prop("model", model);
+    property_override("ro.build.description", description.c_str());
+    if (mod_device != "") {
+        property_override("ro.product.mod_device", mod_device.c_str());
     }
 }
