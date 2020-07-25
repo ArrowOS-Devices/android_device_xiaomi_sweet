@@ -91,6 +91,7 @@ void vendor_load_properties() {
         fingerprint = "Redmi/sweet_eea/sweet:11/RKQ1.200826.002/V12.0.10.0.RKFEUXM:user/release-keys";
         description = "sweet_eea-user 11 RKQ1.200826.002 V12.0.10.0.RKFEUXM release-keys";
         mod_device = "sweet_eea_global";
+        property_override("ro.boot.product.hardware.sku", "sweet");
     } else if (region == "INDIA") {
         if (sku == "std") {
             model = "M2101K6P";
