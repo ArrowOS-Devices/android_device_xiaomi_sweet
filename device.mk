@@ -351,6 +351,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-V1-ndk_platform.vendor
 
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.vibrator.service
+
 # VINTF
 PRODUCT_PACKAGES += \
     manifest_nfc \

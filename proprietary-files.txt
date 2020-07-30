@@ -1922,10 +1922,3 @@ vendor/lib64/camera/com.qti.tuned.sweet_sunny_s5kgw3_wide.bin|db7480734847ad2c1e
 
 # From NX627J 20201029.204053
 vendor/lib64/libsdedrm.so|582910d21139781ad9e414c35207584f51e035e2
-
-# From MIUI v12.5.8.0 RKFMIXM
-vendor/bin/hw/vendor.qti.hardware.vibrator.service|b61af6d3525f6ca7a855201c8ac536ea8d72c579
-vendor/etc/init/vendor.qti.hardware.vibrator.service.rc|fe74171caedb9743fa3737c72c832cfe99e2171c
--vendor/etc/vintf/manifest/vendor.qti.hardware.vibrator.service.xml|08a0ebee8a556b352fff4bf9981c4beff71bb26f
-vendor/lib64/libqtivibratoreffect.so|d926ae1147acdcabdd99f2d8e7c7b79981ac12b5
-vendor/lib64/vendor.qti.hardware.vibrator.impl.so|c9a893a1a245100de7bdd02b0b98c095b0225c1a
