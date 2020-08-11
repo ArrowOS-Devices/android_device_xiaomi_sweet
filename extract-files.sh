@@ -65,6 +65,11 @@ function blob_fixup() {
         sed -i "s/dcip3/srgb/" "${2}"
         sed -i "s/DefaultMode=\"00\"/DefaultMode=\"51\"/g" "${2}"
         ;;
+    vendor/lib64/hw/camera.qcom.so)
+        patchelf --remove-needed "libMegviiFacepp-0.5.2.so" "${2}"
+        patchelf --remove-needed "libmegface.so" "${2}"
+        patchelf --add-needed "libshim_megvii.so" "${2}"
+        ;;
     esac
 }
 
