@@ -64,6 +64,11 @@ function blob_fixup() {
     vendor/etc/qdcm_calib_data_xiaomi_k6_38_0c_0a_fhd_dsc_video_dsi_panel.xml)
         sed -i "s/dcip3/srgb/" "${2}"
         ;;
+    vendor/lib64/hw/camera.qcom.so)
+        patchelf --remove-needed "libMegviiFacepp-0.5.2.so" "${2}"
+        patchelf --remove-needed "libmegface.so" "${2}"
+        patchelf --add-needed "libshim_megvii.so" "${2}"
+        ;;
     esac
 }
 
