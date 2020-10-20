@@ -235,7 +235,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 </hal>
 <hal format="hidl">
     <name>vendor.qti.hardware.radio.ims</name>
-    <version>1.0-6</version>
+    <version>1.0-7</version>
     <interface>
         <name>IImsRadio</name>
         <instance>imsradio0</instance>
