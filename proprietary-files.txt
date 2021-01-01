@@ -218,7 +218,6 @@ vendor/bin/hw/android.hardware.cas@1.2-service
 vendor/bin/hw/android.hardware.contexthub@1.0-service
 vendor/bin/hw/android.hardware.drm@1.3-service.clearkey
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
-vendor/bin/hw/android.hardware.dumpstate@1.1-service.xiaomi
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti
 vendor/bin/hw/android.hardware.graphics.composer@2.4-service
@@ -547,7 +546,6 @@ vendor/etc/init/android.hardware.cas@1.2-service.rc
 vendor/etc/init/android.hardware.contexthub@1.0-service.rc
 vendor/etc/init/android.hardware.drm@1.3-service.clearkey.rc
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
-vendor/etc/init/android.hardware.dumpstate@1.1-service.xiaomi.rc
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc
 vendor/etc/init/android.hardware.graphics.composer@2.4-service.rc
@@ -888,7 +886,6 @@ vendor/etc/usb_audio_policy_configuration.xml
 -vendor/etc/vintf/manifest/android.hardware.usb@1.0-service.xml
 -vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml
 -vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mtdservice.xml
--vendor/etc/vintf/manifest/android.hardware.dumpstate@1.1-service.xiaomi.xml
 -vendor/etc/vintf/manifest/android.hardware.cas@1.2-service.xml
 -vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml
 -vendor/etc/vintf/manifest/android.hardware.graphics.mapper-impl-qti-display.xml
