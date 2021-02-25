@@ -151,9 +151,11 @@ std::vector<std::unique_ptr<Node>> HintManager::ParseNodes(
     std::set<std::string> nodes_name_parsed;
     std::set<std::string> nodes_path_parsed;
     Json::Value root;
-    Json::Reader reader;
+    Json::CharReaderBuilder builder;
+    std::unique_ptr<Json::CharReader> reader(builder.newCharReader());
+    std::string errorMessage;
 
-    if (!reader.parse(json_doc, root)) {
+    if (!reader->parse(&*json_doc.begin(), &*json_doc.end(), &root, &errorMessage)) {
         LOG(ERROR) << "Failed to parse JSON config";
         return nodes_parsed;
     }
@@ -296,9 +298,11 @@ std::map<std::string, std::vector<NodeAction>> HintManager::ParseActions(
     // function starts
     std::map<std::string, std::vector<NodeAction>> actions_parsed;
     Json::Value root;
-    Json::Reader reader;
+    Json::CharReaderBuilder builder;
+    std::unique_ptr<Json::CharReader> reader(builder.newCharReader());
+    std::string errorMessage;
 
-    if (!reader.parse(json_doc, root)) {
+    if (!reader->parse(&*json_doc.begin(), &*json_doc.end(), &root, &errorMessage)) {
         LOG(ERROR) << "Failed to parse JSON config";
         return actions_parsed;
     }
