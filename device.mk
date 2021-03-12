@@ -35,4 +35,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.sweet
 
+# VINTF
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/vintf/android.hardware.lights-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/android.hardware.lights-qti.xml
+
 include vendor/xiaomi/sweet/sweet-vendor.mk
