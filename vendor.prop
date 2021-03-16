@@ -1,0 +1,4 @@
+# Audio
+ro.vendor.audio.us.type=mius
+vendor.audio.feature.compr_voip.enable=false
+vendor.voice.path.for.pcm.voip=false
