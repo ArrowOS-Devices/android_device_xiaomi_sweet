@@ -1,5 +1,14 @@
 <manifest version="2.0" type="device" target-level="5" >
     <hal format="hidl">
+        <name>android.hardware.ir</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IConsumerIr</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.sensors</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -9,3 +18,4 @@
         </interface>
     </hal>
 </manifest>
+
