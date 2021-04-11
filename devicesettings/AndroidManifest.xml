@@ -22,18 +22,18 @@
         </receiver>
 
         <activity
-            android:name=".DevicePreferenceActivity"
-            android:label="@string/device_specific_settings_title"
+            android:name=".refreshrate.RefreshRateActivity"
+            android:label="@string/refresh_rate_title"
             android:theme="@style/DeviceSettings">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
             <meta-data
                 android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.system" />
+                android:value="com.android.settings.category.ia.display" />
             <meta-data
                 android:name="com.android.settings.summary"
-                android:resource="@string/device_specific_settings_summary" />
+                android:resource="@string/refresh_rate_summary" />
         </activity>
 
     </application>
