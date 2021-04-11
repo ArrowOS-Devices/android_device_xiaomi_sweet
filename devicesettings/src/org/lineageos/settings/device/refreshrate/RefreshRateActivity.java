@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.device;
+package org.lineageos.settings.device.refreshrate;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 
-public class DevicePreferenceActivity extends PreferenceActivity {
+public class RefreshRateActivity extends PreferenceActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getFragmentManager().beginTransaction()
-                .replace(android.R.id.content, new DevicePreferenceFragment())
+                .replace(android.R.id.content, new RefreshRateFragment())
                 .commit();
     }
 }
