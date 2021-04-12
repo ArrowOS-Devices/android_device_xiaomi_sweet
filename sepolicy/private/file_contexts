@@ -2,6 +2,7 @@
 /system/lib64/soundfx/libvolumelistener\.so   u:object_r:vendor_file:s0
 /system/lib/soundfx/libvolumelistener\.so     u:object_r:vendor_file:s0
 /system/etc/android\.hardware\.lights-qti\.xml u:object_r:vendor_configs_file:s0
+/system/etc/audio_policy_configuration\.xml    u:object_r:vendor_configs_file:s0
 
 # HALs
 /system/bin/hw/android\.hardware\.light@2\.0-service\.sweet        u:object_r:hal_light_default_exec:s0
