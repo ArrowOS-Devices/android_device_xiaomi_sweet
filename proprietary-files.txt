@@ -33,6 +33,22 @@ system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/telephonyservice.xml
 system_ext/framework/embmslibrary.jar
 system_ext/framework/qcrilhook.jar
+system_ext/lib/vendor.qti.hardware.radio.am@1.0.so
+system_ext/lib/vendor.qti.hardware.radio.ims@1.0.so
+system_ext/lib/vendor.qti.hardware.radio.ims@1.1.so
+system_ext/lib/vendor.qti.hardware.radio.ims@1.2.so
+system_ext/lib/vendor.qti.hardware.radio.ims@1.3.so
+system_ext/lib/vendor.qti.hardware.radio.ims@1.4.so
+system_ext/lib/vendor.qti.hardware.radio.ims@1.5.so
+system_ext/lib/vendor.qti.hardware.radio.ims@1.6.so
+system_ext/lib64/vendor.qti.hardware.radio.am@1.0.so
+system_ext/lib64/vendor.qti.hardware.radio.ims@1.0.so
+system_ext/lib64/vendor.qti.hardware.radio.ims@1.1.so
+system_ext/lib64/vendor.qti.hardware.radio.ims@1.2.so
+system_ext/lib64/vendor.qti.hardware.radio.ims@1.3.so
+system_ext/lib64/vendor.qti.hardware.radio.ims@1.4.so
+system_ext/lib64/vendor.qti.hardware.radio.ims@1.5.so
+system_ext/lib64/vendor.qti.hardware.radio.ims@1.6.so
 
 # Radio
 system_ext/framework/qti-telephony-common.jar
