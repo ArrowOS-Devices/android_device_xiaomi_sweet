@@ -112,3 +112,6 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_sweet
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
+# FM
+BOARD_HAVE_QCOM_FM := true
