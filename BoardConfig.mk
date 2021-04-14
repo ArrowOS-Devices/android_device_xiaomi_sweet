@@ -98,3 +98,5 @@ BOARD_USES_METADATA_PARTITION := true
 # Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
+
+include device/qcom/sepolicy/SEPolicy.mk
