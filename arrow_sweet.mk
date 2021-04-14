@@ -15,3 +15,5 @@ PRODUCT_MODEL := Redmi Note 10 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+DEVICE_MAINTAINER := daniml3
