@@ -31,6 +31,8 @@ import androidx.preference.PreferenceManager;
 
 import org.lineageos.settings.device.Constants;
 import org.lineageos.settings.device.utils.DisplayUtils;
+import org.lineageos.settings.device.utils.FileUtils;
+import org.lineageos.settings.device.utils.KcalUtils;
 
 import vendor.xiaomi.hardware.touchfeature.V1_0.ITouchFeature;
 
@@ -58,6 +60,10 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
         updateTapToWakeStatus(context);
         DisplayUtils.setDcDimmingStatus(sharedPreferences.getBoolean(Constants.KEY_DC_DIMMING, false));
+
+        if (KcalUtils.isKcalSupported()) {
+            KcalUtils.writeCurrentSettings(sharedPreferences);
+        }
     }
 
     private void updateTapToWakeStatus(Context context) {
