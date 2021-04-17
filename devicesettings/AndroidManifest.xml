@@ -38,6 +38,16 @@
                 android:resource="@string/device_settings_summary" />
         </activity>
 
+        <activity
+            android:name=".color.KcalSettingsActivity"
+            android:theme="@style/DeviceSettings"
+            android:label="@string/kcal_settings_title">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 </manifest>
 
