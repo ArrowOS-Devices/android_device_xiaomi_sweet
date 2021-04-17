@@ -27,6 +27,8 @@
 #define BRIGHTNESS      "brightness"
 #define MAX_BRIGHTNESS  "max_brightness"
 
+#define LCD_OFFSET      72
+
 namespace {
 /*
  * Write value to path and close file.
@@ -63,32 +65,25 @@ static int getMaxBrightness(std::string path) {
 }
 
 static uint32_t getBrightness(const LightState& state) {
-    uint32_t alpha, red, green, blue;
+    uint32_t color = state.color;
 
-    /*
-     * Extract brightness from AARRGGBB.
-     */
-    alpha = (state.color >> 24) & 0xFF;
-    red = (state.color >> 16) & 0xFF;
-    green = (state.color >> 8) & 0xFF;
-    blue = state.color & 0xFF;
-
-    /*
-     * Scale RGB brightness using Alpha brightness.
-     */
-    red = red * alpha / 0xFF;
-    green = green * alpha / 0xFF;
-    blue = blue * alpha / 0xFF;
-
-    return (77 * red + 150 * green + 29 * blue) >> 8;
+    return ((77 *  ((color>>16) & 0x00ff)) +
+           (150 * ((color>>8) & 0x00ff)) +
+           (29 * (color & 0x00ff))) >> 8;
 }
 
 static inline uint32_t scaleBrightness(uint32_t brightness, uint32_t maxBrightness) {
+    uint32_t scaledBrightness;
     if (brightness == 0) {
         return 0;
     }
 
-    return (brightness - 1) * (maxBrightness - 1) / (0xFF - 1) + 1;
+    scaledBrightness = (brightness - 1) * (maxBrightness - 1) / (0xFF - 1) + 1;
+    if (scaledBrightness >= LCD_OFFSET) {
+        scaledBrightness = scaledBrightness - ((LCD_OFFSET * LCD_OFFSET) / scaledBrightness);
+    }
+
+    return scaledBrightness;
 }
 
 static inline uint32_t getScaledBrightness(const LightState& state, uint32_t maxBrightness) {
