@@ -24,3 +24,10 @@
 
 # Dc Dimming
 /sys/devices/platform/soc/ae00000\.qcom,mdss_mdp/drm/card0/card0-DSI-1/disp_param u:object_r:sysfs_dm:s0
+
+# Kcal
+/sys/devices/platform/kcal_ctrl.0/kcal_enable                        u:object_r:sysfs_dm:s0
+/sys/devices/platform/kcal_ctrl.0/kcal                               u:object_r:sysfs_dm:s0
+/sys/devices/platform/kcal_ctrl.0/kcal_sat                           u:object_r:sysfs_dm:s0
+/sys/devices/platform/kcal_ctrl.0/kcal_val                           u:object_r:sysfs_dm:s0
+/sys/devices/platform/kcal_ctrl.0/kcal_cont                          u:object_r:sysfs_dm:s0
