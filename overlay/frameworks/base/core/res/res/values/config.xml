@@ -247,6 +247,10 @@
     <integer name="config_autoBrightnessBrighteningLightDebounce">1000</integer>
     <integer name="config_autoBrightnessDarkeningLightDebounce">1000</integer>
 
+    <!-- Minimum screen brightness setting allowed by the power manager.
+        The user is forbidden from setting the brightness below this level. -->
+    <integer name="config_screenBrightnessSettingMinimum">2</integer>
+
     <!--The bounding path of the cutout region of the main built-in display.
         Must either be empty if there is no cutout region, or a string that is parsable by
         {@link android.util.PathParser}.
