@@ -1,6 +1,9 @@
 # Shipping level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# VNDK
+PRODUCT_TARGET_VNDK_VERSION := 30
+
 # Dynamic partitions setup
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
@@ -9,7 +12,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Audio
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration.xml
+    $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/audio_policy_configuration.xml
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
@@ -41,7 +44,7 @@ PRODUCT_PACKAGES += \
 
 # VINTF
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/vintf/android.hardware.lights-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/android.hardware.lights-qti.xml
+    $(LOCAL_PATH)/configs/vintf/android.hardware.lights-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/vintf/manifest/android.hardware.lights-qti.xml
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -81,3 +84,4 @@ PRODUCT_PACKAGES += \
     qcom.fmradio
 
 include vendor/xiaomi/sweet/sweet-vendor.mk
+
