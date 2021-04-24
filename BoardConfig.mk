@@ -115,3 +115,6 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # FM
 BOARD_HAVE_QCOM_FM := true
+
+# Filesystem
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
