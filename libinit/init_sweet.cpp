@@ -38,6 +38,8 @@
 #include "property_service.h"
 #include "vendor_init.h"
 
+#include <fs_mgr_dm_linear.h>
+
 using android::base::GetProperty;
 
 void property_override(char const prop[], char const value[], bool add = true) {
@@ -69,4 +71,14 @@ void vendor_load_properties() {
     full_property_override("build.fingerprint", fingerprint);
     full_property_override("build.description", description);
     property_override("ro.boot.verifiedbootstate", "green");
+
+#ifdef __ANDROID_RECOVERY__
+    std::string buildtype = GetProperty("ro.build.type", "userdebug");
+    if (buildtype != "user") {
+        property_override("ro.debuggable", "1");
+        property_override("ro.adb.secure.recovery", "0");
+    }
+
+    android::fs_mgr::CreateLogicalPartitions("/dev/block/by-name/super");
+#endif
 }
