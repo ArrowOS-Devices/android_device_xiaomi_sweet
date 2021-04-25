@@ -5,3 +5,6 @@ service vendor.light-qti /vendor/bin/hw/android.hardware.lights-service.qti
     shutdown critical
     disabled
     override
+
+on post-fs-data
+    setprop vendor.powerhal.init 1
