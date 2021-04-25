@@ -13,3 +13,5 @@ type pps_socket, file_type;
 #sysfs
 type sysfs_graphics, sysfs_type, fs_type;
 type sysfs_kgsl, sysfs_type, fs_type;
+type vendor_sysfs_devfreq, fs_type, sysfs_type;
+type vendor_sysfs_kgsl, sysfs_type, fs_type;
