@@ -1,3 +1,10 @@
+# bq2597x charge pump
+genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-0051/power_supply/bq2597x-standalone u:object_r:vendor_sysfs_usb_supply:s0
+genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-0066/power_supply/bq2597x-standalone u:object_r:vendor_sysfs_usb_supply:s0
+
+# ds28e16 battery verify
+genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify u:object_r:vendor_sysfs_battery_supply:s0
+
 # Fingerprint
 genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/device_prepare         u:object_r:vendor_sysfs_fingerprint:s0
 genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/fingerdown_wait        u:object_r:vendor_sysfs_fingerprint:s0
