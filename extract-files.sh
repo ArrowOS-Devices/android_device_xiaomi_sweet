@@ -62,6 +62,7 @@ fi
 function blob_fixup() {
     case "${1}" in
     vendor/etc/qdcm_calib_data_xiaomi_k6_38_0c_0a_fhd_dsc_video_dsi_panel.xml)
+        sed -i "s/dcip3/srgb/" "${2}"
         sed -i "s/DefaultMode=\"00\"/DefaultMode=\"51\"/g" "${2}"
         ;;
     esac
