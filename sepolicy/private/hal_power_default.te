@@ -1,0 +1,12 @@
+allow hal_power sysfs:file { read open write getattr };
+allow hal_power input_device:dir { search read open };
+allow hal_power input_device:chr_file { read write open ioctl };
+allow hal_power sysfs_devices_system_cpu:file { write };
+allow hal_power vendor_sysfs_devfreq:dir { search };
+allow hal_power vendor_sysfs_devfreq:file { read write open };
+allow hal_power vendor_sysfs_kgsl:file { read write open };
+allow hal_power vendor_sysfs_kgsl:lnk_file { read };
+allow hal_power sysfs_devices_system_cpu:file { write };
+allow hal_power vendor_latency_device:chr_file { write open };
+allow hal_power property_socket:sock_file { write };
+set_prop(hal_power, power_prop)
