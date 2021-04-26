@@ -30,8 +30,6 @@
 #include <utils/Log.h>
 #include <utils/Trace.h>
 
-#include "disp-power/display-helper.h"
-
 namespace aidl {
 namespace android {
 namespace hardware {
@@ -47,7 +45,6 @@ constexpr char kPowerHalConfigPath[] = "/vendor/etc/powerhint.json";
 
 Power::Power()
     : mHintManager(nullptr),
-      mInteractionHandler(nullptr),
       mVRModeOn(false),
       mSustainedPerfModeOn(false),
       mReady(false) {
@@ -60,8 +57,6 @@ Power::Power()
     std::thread initThread([this]() {
         ::android::base::WaitForProperty(kPowerHalInitProp, "1");
         mHintManager->Start();
-        mInteractionHandler = std::make_unique<InteractionHandler>(mHintManager);
-        mInteractionHandler->Init();
 
         std::string state = ::android::base::GetProperty(kPowerHalStateProp, "");
         if (state == "SUSTAINED_PERFORMANCE") {
@@ -108,13 +103,6 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
     ATRACE_INT(toString(type).c_str(), enabled);
     switch (type) {
         case Mode::LOW_POWER:
-            if (enabled) {
-                // Device in battery saver mode, enable display low power mode
-                set_display_lpm(true);
-            } else {
-                // Device exiting battery saver mode, disable display low power mode
-                set_display_lpm(false);
-            }
             break;
         case Mode::SUSTAINED_PERFORMANCE:
             if (enabled && !mSustainedPerfModeOn) {
