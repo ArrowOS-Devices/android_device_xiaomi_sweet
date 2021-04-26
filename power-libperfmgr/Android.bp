@@ -24,7 +24,6 @@ cc_binary {
         "liblog",
         "libutils",
         "libbinder_ndk",
-        "libdisppower-pixel",
         "libperfmgr",
     ],
     srcs: [
