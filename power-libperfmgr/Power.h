@@ -23,8 +23,6 @@
 #include <aidl/android/hardware/power/BnPower.h>
 #include <perfmgr/HintManager.h>
 
-#include "disp-power/InteractionHandler.h"
-
 namespace aidl {
 namespace android {
 namespace hardware {
@@ -32,7 +30,6 @@ namespace power {
 namespace impl {
 namespace pixel {
 
-using ::InteractionHandler;
 using ::android::perfmgr::HintManager;
 
 class Power : public BnPower {
@@ -46,7 +43,6 @@ class Power : public BnPower {
 
   private:
     std::shared_ptr<HintManager> mHintManager;
-    std::unique_ptr<InteractionHandler> mInteractionHandler;
     std::atomic<bool> mVRModeOn;
     std::atomic<bool> mSustainedPerfModeOn;
     std::atomic<bool> mReady;
