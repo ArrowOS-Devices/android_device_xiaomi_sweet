@@ -1,5 +1,5 @@
 # HALs
-/system/bin/hw/android\.hardware\.light@2\.0-service\.sweet        u:object_r:hal_light_default_exec:s0
+/system/bin/hw/android\.hardware\.lights-service\.sweet        u:object_r:hal_light_default_exec:s0
 /system/bin/hw/android\.hardware\.power-service\.sweet-libperfmgr u:object_r:hal_power_default_exec:s0
 
 # Data files
