@@ -14,37 +14,21 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.light@2.0-service.sweet"
+#include <android/binder_manager.h>
+#include <android/binder_process.h>
 
-#include <hidl/HidlTransportSupport.h>
+#include "Lights.h"
 
-#include "Light.h"
-
-using android::hardware::configureRpcThreadpool;
-using android::hardware::joinRpcThreadpool;
-
-using android::hardware::light::V2_0::ILight;
-using android::hardware::light::V2_0::implementation::Light;
-
-using android::OK;
-using android::sp;
-using android::status_t;
+using ::aidl::android::hardware::light::Lights;
 
 int main() {
-    sp<ILight> service = new Light();
+    ABinderProcess_setThreadPoolMaxThreadCount(0);
+    std::shared_ptr<Lights> lights = ndk::SharedRefBase::make<Lights>();
 
-    configureRpcThreadpool(1, true);
+    const std::string instance = std::string() + Lights::descriptor + "/default";
+    binder_status_t status = AServiceManager_addService(lights->asBinder().get(), instance.c_str());
+    CHECK(status == STATUS_OK);
 
-    status_t status = service->registerAsService();
-    if (status != OK) {
-        ALOGE("Cannot register Light HAL service.");
-        return 1;
-    }
-
-    ALOGI("Light HAL service ready.");
-
-    joinRpcThreadpool();
-
-    ALOGI("Light HAL service failed to join thread pool.");
-    return 1;
+    ABinderProcess_joinThreadPool();
+    return EXIT_FAILURE;  // should not reached
 }
