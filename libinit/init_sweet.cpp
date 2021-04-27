@@ -51,13 +51,14 @@ void property_override(char const prop[], char const value[], bool add = true) {
     }
 }
 
-void full_property_override(const std::string &prop, const char value[]) {
+void full_property_override(const std::string &prop, const char value[], bool product = false) {
     const int prop_count = 6;
+    const std::string prop_prefix = product ? "ro." : "ro.product.";
     const std::vector<std::string> prop_types
         {"", "odm.", "product.", "system.", "system_ext.", "vendor."};
 
     for (int i = 0; i < prop_count; i++) {
-        std::string prop_name = "ro." + prop_types[i] + prop;
+        std::string prop_name = prop_prefix + prop_types[i] + prop;
         property_override(prop_name.c_str(), value);
     }
 }
