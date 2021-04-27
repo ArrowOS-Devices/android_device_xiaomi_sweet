@@ -67,9 +67,28 @@ void vendor_load_properties() {
     const char *fingerprint = "Xiaomi/dipper/dipper:8.1.0/OPM1.171019.011/V9.5.5.0.OEAMIFA:user/release-keys";
     const char *description = "dipper-user 8.1.0 OPM1.171019.011 V9.5.5.0.OEAMIFA release-keys";
 
+    std::string region = GetProperty("ro.boot.hwc", "GLOBAL");
+    std::string sku = GetProperty("ro.boot.product.hardware.sku","pro");
+
     full_property_override("build.fingerprint", fingerprint);
     full_property_override("build.description", description);
     property_override("ro.boot.verifiedbootstate", "green");
+
+
+    if (region == "GLOBAL") {
+        full_property_override("model", "M2101K6G", true);
+        full_property_override("device", "sweet", true);
+        property_override("ro.product.mod_device", "sweet_eea_global");
+    } else if (region == "INDIA") {
+        if (sku == "std") {
+            full_property_override("model", "M2101K6P", true);
+            property_override("ro.product.mod_device", "sweetin_in_global");
+        } else {
+            full_property_override("model", "M2101K6I", true);
+            property_override("ro.product.mod_device", "sweetin_in_global");
+        }
+        full_property_override("device",  "sweetin", true);
+    }
 
 #ifdef __ANDROID_RECOVERY__
     std::string buildtype = GetProperty("ro.build.type", "userdebug");
