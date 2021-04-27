@@ -11,7 +11,7 @@
 
     <application
         android:allowBackup="true"
-        android:label="@string/device_settings_app_name"
+        android:label="@string/device_settings_title"
         android:persistent="true">
 
         <receiver android:name="org.lineageos.settings.device.BootCompletedReceiver">
@@ -22,18 +22,19 @@
         </receiver>
 
         <activity
-            android:name=".refreshrate.RefreshRateActivity"
-            android:label="@string/refresh_rate_title"
+            android:name=".MainSettingsActivity"
+            android:label="@string/device_settings_title"
+            android:icon="@drawable/ic_main_settings"
             android:theme="@style/DeviceSettings">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
             <meta-data
                 android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.display" />
+                android:value="com.android.settings.category.ia.homepage" />
             <meta-data
                 android:name="com.android.settings.summary"
-                android:resource="@string/refresh_rate_summary" />
+                android:resource="@string/device_settings_summary" />
         </activity>
 
     </application>
