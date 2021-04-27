@@ -14,10 +14,11 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.device.refreshrate;
+package org.lineageos.settings.device;
 
 import android.os.Bundle;
 import android.provider.Settings;
+import android.widget.TextView;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.Preference;
 import androidx.preference.SwitchPreference;
@@ -25,8 +26,9 @@ import androidx.preference.SwitchPreference;
 import org.lineageos.settings.device.Constants;
 import org.lineageos.settings.device.R;
 
-public class RefreshRateFragment extends PreferenceFragment {
+public class MainSettingsFragment extends PreferenceFragment {
 
+    private Preference mPrefRefreshRateInfo;
     private SwitchPreference mPrefMinRefreshRate;
 
     @Override
@@ -37,9 +39,10 @@ public class RefreshRateFragment extends PreferenceFragment {
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
-        addPreferencesFromResource(R.xml.refresh_rate);
+        addPreferencesFromResource(R.xml.main_settings);
         mPrefMinRefreshRate = (SwitchPreference) findPreference(Constants.KEY_MIN_REFRESH_RATE);
         mPrefMinRefreshRate.setOnPreferenceChangeListener(PrefListener);
+        mPrefRefreshRateInfo = (Preference) findPreference(Constants.KEY_REFRESH_RATE_INFO);
         setupPreferences();
         updateSummary();
     }
@@ -60,6 +63,7 @@ public class RefreshRateFragment extends PreferenceFragment {
 
     private void setupPreferences() {
         float hz = getCurrentHz();
+
         if (hz == Constants.REFRESH_RATES[0]) {
             mPrefMinRefreshRate.setChecked(false);
         } else if (hz == Constants.REFRESH_RATES[1]) {
@@ -79,6 +83,8 @@ public class RefreshRateFragment extends PreferenceFragment {
     }
 
     private void updateSummary() {
-        mPrefMinRefreshRate.setSummary(String.format(getContext().getString(R.string.enable_high_refresh_rate_summary), String.valueOf(getCurrentHz())));
+        mPrefRefreshRateInfo.setSummary(
+            String.format(getString(R.string.current_refresh_rate_info),
+                String.valueOf(Math.round(getCurrentHz()))));
     }
 }
