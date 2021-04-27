@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2018 The LineageOS Project
-     Licensed under the Apache License, Version 2.0 (the "License"
+     Copyright (C) 2021 ArrowOS
+     Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
           http://www.apache.org/licenses/LICENSE-2.0
@@ -11,12 +11,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <SwitchPreference
-        android:key="pref_min_refresh_rate"
-        android:title="@string/enable_high_refresh_rate_title"/>
-
-</PreferenceScreen>
+<resources>
+        <color name="material_primary">@*android:color/primary_material_dark</color>
+</resources>
