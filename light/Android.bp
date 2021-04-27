@@ -13,20 +13,17 @@
 // limitations under the License.
 
 cc_binary {
+    name: "android.hardware.lights-service.sweet",
+    init_rc: ["android.hardware.lights-service.sweet.rc"],
     relative_install_path: "hw",
-    defaults: ["hidl_defaults"],
-    name: "android.hardware.light@2.0-service.sweet",
-    init_rc: ["android.hardware.light@2.0-service.sweet.rc"],
-    srcs: [
-        "service.cpp",
-         "Light.cpp",
-    ],
     shared_libs: [
-        "android.hardware.light@2.0",
         "libbase",
         "libhardware",
-        "libhidlbase",
-        "liblog",
-        "libutils",
+        "libbinder_ndk",
+        "android.hardware.light-ndk_platform",
+    ],
+    srcs: [
+        "Light.cpp",
+        "service.cpp",
     ],
 }
