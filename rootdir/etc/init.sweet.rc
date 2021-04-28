@@ -8,3 +8,10 @@ service vendor.light-qti /vendor/bin/hw/android.hardware.lights-service.qti
 
 on post-fs-data
     setprop vendor.powerhal.init 1
+
+on late-fs
+    # Start services for bootanimation
+    start surfaceflinger
+    start bootanim
+    start vendor.hwcomposer-2-4
+    start vendor.qti.hardware.display.allocator
