@@ -5,3 +5,9 @@ service vendor.light-qti /vendor/bin/hw/android.hardware.lights-service.qti
     shutdown critical
     disabled
     override
+
+on late-fs
+    start surfaceflinger
+    start bootanim
+    start vendor.hwcomposer-2-4
+    start vendor.qti.hardware.display.allocator
