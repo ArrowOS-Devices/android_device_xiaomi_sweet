@@ -10,7 +10,3 @@
 /dsp(/.*)?               u:object_r:adsprpcd_file:s0
 /firmware(/.*)?          u:object_r:firmware_file:s0
 /persist(/.*)?           u:object_r:persist_file:s0
-
-# Vendor overlay
-/(product|system/product)/vendor_overlay/[0-9]+/etc(/.*)?      u:object_r:vendor_configs_file:s0
-/(product|system/product)/vendor_overlay/[0-9]+/lib(64)?/soundfx(/.*)?     u:object_r:vendor_file:s0
