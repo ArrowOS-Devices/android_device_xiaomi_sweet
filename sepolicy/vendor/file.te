@@ -1,0 +1,11 @@
+# data
+type display_data_file, data_file_type, core_data_file_type, file_type;
+
+# firmware
+type persist_file, file_type;
+
+# socket
+type pps_socket, file_type;
+
+# sysfs
+type sysfs_kgsl, sysfs_type, fs_type;
