@@ -1,0 +1,11 @@
+allow hal_fingerprint_default init:unix_stream_socket connectto;
+allow hal_fingerprint_default property_socket:sock_file write;
+allow hal_fingerprint_default sysfs:file write;
+allow hal_fingerprint_default tee_device:chr_file { ioctl open read write };
+allow hal_fingerprint_default vendor_system_prop:file { getattr map open read };
+allow hal_fingerprint_default vendor_system_prop:property_service set;
+allow hal_fingerprint_default vendor_hal_perf_hwservice:hwservice_manager find;
+allow hal_fingerprint_default hal_fingerprint_hwservice_xiaomi:hwservice_manager { find add };
+allow hal_fingerprint_default vendor_data_file:dir rw_dir_perms;
+allow hal_fingerprint_default vendor_data_file:file { rw_file_perms create rename unlink };
+allow hal_fingerprint_default vendor_hal_perf_default:binder call;
