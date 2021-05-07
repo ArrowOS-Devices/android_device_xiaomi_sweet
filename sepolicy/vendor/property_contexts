@@ -7,3 +7,6 @@ vendor.powerhal.audio      u:object_r:power_prop:s0
 vendor.powerhal.lpm        u:object_r:power_prop:s0
 vendor.powerhal.init       u:object_r:power_prop:s0
 vendor.powerhal.rendering  u:object_r:power_prop:s0
+
+# Touchfeature
+ro.vendor.touchfeature.type        u:object_r:vendor_touchfeature_prop:s0
