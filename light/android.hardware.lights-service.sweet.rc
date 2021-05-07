@@ -5,7 +5,7 @@ on boot
     chmod 0644 /sys/class/backlight/panel0-backlight/brightness
     chmod 0644 /sys/class/backlight/panel0-backlight/max_brightness
 
-service vendor.lights /system/bin/hw/android.hardware.lights-service.sweet
+service vendor.lights /vendor/bin/hw/android.hardware.lights-service.sweet
     class hal
     user system
     group system
