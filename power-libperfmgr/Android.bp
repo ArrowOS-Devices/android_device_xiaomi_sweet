@@ -30,4 +30,5 @@ cc_binary {
         "service.cpp",
         "Power.cpp",
     ],
+    proprietary: true,
 }
