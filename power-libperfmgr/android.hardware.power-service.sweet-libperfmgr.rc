@@ -1,4 +1,4 @@
-service vendor.power /system/bin/hw/android.hardware.power-service.sweet-libperfmgr
+service vendor.power /vendor/bin/hw/android.hardware.power-service.sweet-libperfmgr
     class hal
     user root
     group system
