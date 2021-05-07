@@ -1,19 +1,7 @@
 # HALs
 /vendor/bin/hw/android\.hardware\.lights-service\.sweet        u:object_r:hal_light_default_exec:s0
 /vendor/bin/hw/android\.hardware\.power-service\.sweet-libperfmgr u:object_r:hal_power_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android.hardware.dumpstate@1.1-service.xiaomi u:object_r:hal_dumpstate_impl_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor.xiaomi.hardware.misys@1.0-service u:object_r:hal_misys_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor.xiaomi.hardware.misys@2.0-service u:object_r:hal_misys_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor.xiaomi.hardware.misys@3.0-service u:object_r:hal_misys_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor.xiaomi.hardware.micharge@1.0-service u:object_r:hal_micharge_default_exec:s0
-/(vendor|system/vendor)/bin/vendor.xiaomi.hardware.otrpagent@1.0-service u:object_r:hal_otrpagent_default_exec:s0
-/(vendor|system/vendor)/bin/vendor.xiaomi.hardware.otrpagent@2.0-service u:object_r:hal_otrpagent_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor.xiaomi.cit.wifi@1.0-service u:object_r:hal_cit_wifi_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor.xiaomi.hardware.vibratorfeature@1.0-service u:object_r:hal_vibratorfeature_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor.xiaomi.hardware.citsensorservice@1.1-service u:object_r:vendor_hal_citsensorservice_xiaomi_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor.xiaomi.hardware.touchfeature@1.0-service u:object_r:hal_touchfeature_xiaomi_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service u:object_r:hal_displayfeature_xiaomi_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor.xiaomi.cit.bluetooth@1.0-service u:object_r:hal_cit_bluetooth_default_exec:s0
+/vendor/bin/hw/vendor\.xiaomi\.hardware\.touchfeature@1\.0-service   u:object_r:hal_touchfeature_default_exec:s0
 
 # Data files
 /data/display(/.*)?      u:object_r:display_data_file:s0
@@ -23,3 +11,6 @@
 /dsp(/.*)?               u:object_r:adsprpcd_file:s0
 /firmware(/.*)?          u:object_r:firmware_file:s0
 /persist(/.*)?           u:object_r:persist_file:s0
+
+# Touchfeature
+/dev/xiaomi-touch                                                    u:object_r:touchfeature_device:s0
