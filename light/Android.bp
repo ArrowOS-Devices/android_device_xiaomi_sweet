@@ -26,4 +26,5 @@ cc_binary {
         "Light.cpp",
         "service.cpp",
     ],
+    proprietary: true,
 }
