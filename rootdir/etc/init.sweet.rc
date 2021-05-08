@@ -20,7 +20,6 @@ on post-fs-data
     setprop vendor.powerhal.init 1
 
 on init && property:ro.boot.hwc=GLOBAL
-    setprop ro.boot.product.hardware.sku sweet
     start nqnfc_2_0_hal_service
 
 service nqnfc_2_0_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
