@@ -21,3 +21,10 @@ on post-fs-data
 
 on init && property:ro.boot.hwc=GLOBAL
     setprop ro.boot.product.hardware.sku sweet
+    start nqnfc_2_0_hal_service
+
+service nqnfc_2_0_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
+    class hal
+    user nfc
+    group nfc
+    disabled
