@@ -614,7 +614,6 @@ vendor/etc/init/ssgtzd.rc
 vendor/etc/init/vendor.display.color@1.0-service.rc
 vendor/etc/init/vendor_flash_recovery.rc
 vendor/etc/init/vendor.fortsense.hardware.fingerprintext@1.0-service.rc
-vendor/etc/init/vendor.nxp.hardware.nfc@2.0-service.rc
 vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc
 vendor/etc/init/vendor.qti.cdsprpc-service.rc
 vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc
