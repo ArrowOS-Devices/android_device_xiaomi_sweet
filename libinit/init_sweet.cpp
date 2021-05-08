@@ -67,10 +67,15 @@ void full_property_override(const std::string &prop, const char value[]) {
 void vendor_load_properties() {
     const char *fingerprint = "Xiaomi/dipper/dipper:8.1.0/OPM1.171019.011/V9.5.5.0.OEAMIFA:user/release-keys";
     const char *description = "dipper-user 8.1.0 OPM1.171019.011 V9.5.5.0.OEAMIFA release-keys";
+    const std::string region = GetProperty("ro.boot.hwc", "UNKNOWN");
 
     full_property_override("build.fingerprint", fingerprint);
     full_property_override("build.description", description);
     property_override("ro.boot.verifiedbootstate", "green");
+
+    if (region == "GLOBAL") {
+        property_override("ro.boot.product.hardware.sku", "sweet");
+    }
 
 #ifdef __ANDROID_RECOVERY__
     std::string buildtype = GetProperty("ro.build.type", "userdebug");
