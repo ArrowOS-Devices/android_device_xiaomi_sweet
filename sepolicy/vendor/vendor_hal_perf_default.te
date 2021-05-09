@@ -1,0 +1,2 @@
+allow vendor_hal_perf_default hal_fingerprint_default:dir rw_dir_perms;
+allow vendor_hal_perf_default hal_fingerprint_default:file rw_file_perms;
