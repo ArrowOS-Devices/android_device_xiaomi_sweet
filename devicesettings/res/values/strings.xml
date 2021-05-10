@@ -20,4 +20,8 @@
     <string name="enable_high_refresh_rate_title">High refresh rate</string>
     <string name="enable_high_refresh_rate_summary">Enable high refresh rate for a smoother experience</string>
     <string name="current_refresh_rate_info">The display is currently running at <xliff:g id="version">%1$s</xliff:g>Hz</string>
+
+    <string name="display_title">Display</string>
+    <string name="dc_dimming_title">DC Dimming</string>
+    <string name="dc_dimming_summary">Enable DC Dimming to avoid screen flickering on low brightness levels</string>
 </resources>
