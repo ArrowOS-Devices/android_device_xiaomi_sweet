@@ -25,11 +25,13 @@ import androidx.preference.SwitchPreference;
 
 import org.lineageos.settings.device.Constants;
 import org.lineageos.settings.device.R;
+import org.lineageos.settings.device.utils.DisplayUtils;
 
 public class MainSettingsFragment extends PreferenceFragment {
 
     private Preference mPrefRefreshRateInfo;
     private SwitchPreference mPrefMinRefreshRate;
+    private SwitchPreference mPrefDcDimming;
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -43,6 +45,8 @@ public class MainSettingsFragment extends PreferenceFragment {
         mPrefMinRefreshRate = (SwitchPreference) findPreference(Constants.KEY_MIN_REFRESH_RATE);
         mPrefMinRefreshRate.setOnPreferenceChangeListener(PrefListener);
         mPrefRefreshRateInfo = (Preference) findPreference(Constants.KEY_REFRESH_RATE_INFO);
+        mPrefDcDimming = (SwitchPreference) findPreference(Constants.KEY_DC_DIMMING);
+        mPrefDcDimming.setOnPreferenceChangeListener(PrefListener);
         setupPreferences();
         updateSummary();
     }
@@ -55,6 +59,8 @@ public class MainSettingsFragment extends PreferenceFragment {
 
                 if (Constants.KEY_MIN_REFRESH_RATE.equals(key)) {
                     setHz(Constants.REFRESH_RATES[(boolean) value ? 1 : 0]);
+                } else if (Constants.KEY_DC_DIMMING.equals(key)) {
+                    DisplayUtils.setDcDimmingStatus((boolean) value);
                 }
 
                 return true;
