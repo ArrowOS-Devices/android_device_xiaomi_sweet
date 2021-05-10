@@ -111,5 +111,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
+# Camera
+PRODUCT_PACKAGES += \
+    libshim_megvii
+
 include vendor/xiaomi/sweet/sweet-vendor.mk
 
