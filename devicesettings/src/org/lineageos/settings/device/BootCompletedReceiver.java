@@ -23,10 +23,14 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.ContentResolver;
 import android.content.pm.PackageManager;
+import android.content.SharedPreferences;
 import android.database.ContentObserver;
 import android.os.Handler;
 
+import androidx.preference.PreferenceManager;
+
 import org.lineageos.settings.device.Constants;
+import org.lineageos.settings.device.utils.DisplayUtils;
 
 import vendor.xiaomi.hardware.touchfeature.V1_0.ITouchFeature;
 
@@ -34,6 +38,8 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(final Context context, Intent intent) {
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
+
         // We need to reset this setting to trigger an update in display service
         final float refreshRate = Settings.System.getFloat(context.getContentResolver(),
             Settings.System.MIN_REFRESH_RATE, 120.0f);
@@ -51,6 +57,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
             Settings.Secure.getUriFor(Settings.Secure.DOUBLE_TAP_TO_WAKE), true, observer);
 
         updateTapToWakeStatus(context);
+        DisplayUtils.setDcDimmingStatus(sharedPreferences.getBoolean(Constants.KEY_DC_DIMMING, false));
     }
 
     private void updateTapToWakeStatus(Context context) {
