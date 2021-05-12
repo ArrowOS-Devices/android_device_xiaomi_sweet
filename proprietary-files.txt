@@ -1154,6 +1154,7 @@ vendor/lib64/camera/com.qti.tuned.sweet_sunny_imx355_ultra.bin
 vendor/lib64/camera/com.qti.tuned.sweet_sunny_imx471_front.bin
 vendor/lib64/camera/com.qti.tuned.sweet_sunny_ov5675_macro.bin
 vendor/lib64/camera/com.qti.tuned.sweet_sunny_s5khm2_wide.bin
+vendor/lib64/camera/com.qti.tuned.sweet_sunny_s5kgw3_wide.bin|7aa84734cc9b341e0951c69914b1d2de48670e0e
 vendor/lib64/camera.device@1.0-impl.so
 vendor/lib64/camera.device@3.2-impl.so
 vendor/lib64/camera.device@3.3-impl.so
