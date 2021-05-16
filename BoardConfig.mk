@@ -138,3 +138,6 @@ BOARD_HAVE_QCOM_FM := true
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
+
+# Camera
+TARGET_USES_QTI_CAMERA_DEVICE := true
