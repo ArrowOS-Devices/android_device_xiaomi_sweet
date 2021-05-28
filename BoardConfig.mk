@@ -140,3 +140,7 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
+
+# Display
+TARGET_USES_ION := true
+
