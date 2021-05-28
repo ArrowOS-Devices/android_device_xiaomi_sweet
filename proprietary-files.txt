@@ -1568,7 +1568,7 @@ vendor/lib64/libscveObjectSegmentation.so
 vendor/lib64/libscveObjectSegmentation_stub.so
 vendor/lib64/libscveObjectTracker.so
 vendor/lib64/libscveObjectTracker_stub.so
-vendor/lib64/libsdedrm.so
+vendor/lib64/libsdedrm.so|582910d21139781ad9e414c35207584f51e035e2
 vendor/lib64/libsdk_sr.so
 vendor/lib64/libsdm-colormgr-algo.so
 vendor/lib64/libsdm-color.so
