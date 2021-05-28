@@ -2,7 +2,6 @@ DEVICE_PATH := device/xiaomi/sweet
 BOARD_VENDOR := xiaomi
 
 BUILD_BROKEN_DUP_RULES := true
-QCOM_SOONG_NAMESPACE := $(empty)
 
 # Architecture
 TARGET_ARCH := arm64
