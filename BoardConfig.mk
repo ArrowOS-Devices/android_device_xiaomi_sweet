@@ -143,4 +143,4 @@ TARGET_USES_QTI_CAMERA_DEVICE := true
 
 # Display
 TARGET_USES_ION := true
-
+TARGET_USES_HWC2 := true
