@@ -1286,7 +1286,6 @@ vendor/lib64/libbt-hidlclient.so
 vendor/lib64/libbtnv.so
 vendor/lib64/libC2D2.so
 vendor/lib64/libc2d30_bltlib.so
-vendor/lib64/libc2dcolorconvert.so
 vendor/lib64/libcacertclient.so
 vendor/lib64/libcalculator_domains.so
 vendor/lib64/libcalculator.so
@@ -1318,8 +1317,6 @@ vendor/lib64/libcneapiclient.so
 vendor/lib64/libcneoplookup.so
 vendor/lib64/libcneqmiutils.so
 vendor/lib64/libcne.so
-vendor/lib64/libcodec2_hidl@1.0.so
-vendor/lib64/libcodec2_vndk.so
 vendor/lib64/libcomprcapture.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libconfigdb.so
@@ -1459,7 +1456,6 @@ vendor/lib64/libmlipay@1.1.so
 vendor/lib64/libmlipay.so
 vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libmm-hdcpmgr.so
-vendor/lib64/libmm-omxcore.so
 vendor/lib64/libmmosal.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libMpeg4SwEncoder.so
@@ -1492,17 +1488,12 @@ vendor/lib64/libOmxAmrEnc.so
 vendor/lib64/libOmxAmrwbplusDec.so
 vendor/lib64/libOmxApeDec.so
 vendor/lib64/libOmxApeDecSw.so
-vendor/lib64/libOmxCore.so
 vendor/lib64/libOmxEvrcDec.so
 vendor/lib64/libOmxEvrcEnc.so
 vendor/lib64/libOmxG711Dec.so
 vendor/lib64/libOmxG711Enc.so
 vendor/lib64/libOmxQcelp13Dec.so
 vendor/lib64/libOmxQcelp13Enc.so
-vendor/lib64/libOmxSwVdec.so
-vendor/lib64/libOmxSwVencMpeg4.so
-vendor/lib64/libOmxVdec.so
-vendor/lib64/libOmxVenc.so
 vendor/lib64/libOmxVpp.so
 vendor/lib64/libOmxWmaDec.so
 vendor/lib64/libOpenCL.so
@@ -1633,7 +1624,6 @@ vendor/lib64/libssc.so
 vendor/lib64/libssd.so
 vendor/lib64/libssrec.so
 vendor/lib64/libstagefright_bufferpool@2.0.1.so
-vendor/lib64/libstagefrighthw.so
 vendor/lib64/libstagefright_softomx.so
 vendor/lib64/libstagefright_soft_qtiflacdec.so
 vendor/lib64/libStDrvInt.so
@@ -2066,7 +2056,6 @@ vendor/lib/libbt-hidlclient.so
 vendor/lib/libbtnv.so
 vendor/lib/libC2D2.so
 vendor/lib/libc2d30_bltlib.so
-vendor/lib/libc2dcolorconvert.so
 vendor/lib/libcacertclient.so
 vendor/lib/libcamera2ndk_vendor.so
 vendor/lib/libcamera_nn_stub.so
@@ -2092,8 +2081,6 @@ vendor/lib/libcneapiclient.so
 vendor/lib/libcneoplookup.so
 vendor/lib/libcneqmiutils.so
 vendor/lib/libcne.so
-vendor/lib/libcodec2_hidl@1.0.so
-vendor/lib/libcodec2_vndk.so
 vendor/lib/libcomprcapture.so
 vendor/lib/libcom.qti.chinodeutils.so
 vendor/lib/libconfigdb.so
@@ -2216,7 +2203,6 @@ vendor/lib/libmlipay@1.1.so
 vendor/lib/libmlipay.so
 vendor/lib/libmm-color-convertor.so
 vendor/lib/libmm-hdcpmgr.so
-vendor/lib/libmm-omxcore.so
 vendor/lib/libmmosal.so
 vendor/lib/libmmrtpdecoder_proprietary.so
 vendor/lib/libmmrtpencoder_proprietary.so
@@ -2243,7 +2229,6 @@ vendor/lib/libOmxAmrEnc.so
 vendor/lib/libOmxAmrwbplusDec.so
 vendor/lib/libOmxApeDec.so
 vendor/lib/libOmxApeDecSw.so
-vendor/lib/libOmxCore.so
 vendor/lib/libOmxDsdDec.so
 vendor/lib/libOmxEvrcDec.so
 vendor/lib/libOmxEvrcEnc.so
@@ -2251,10 +2236,6 @@ vendor/lib/libOmxG711Dec.so
 vendor/lib/libOmxG711Enc.so
 vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxQcelp13Enc.so
-vendor/lib/libOmxSwVdec.so
-vendor/lib/libOmxSwVencMpeg4.so
-vendor/lib/libOmxVdec.so
-vendor/lib/libOmxVenc.so
 vendor/lib/libOmxVideoDSMode.so
 vendor/lib/libOmxVpp.so
 vendor/lib/libOmxWmaDec.so
@@ -2378,7 +2359,6 @@ vendor/lib/libstagefright_amrnb_common.so
 vendor/lib/libstagefright_bufferpool@2.0.1.so
 vendor/lib/libstagefright_enc_common.so
 vendor/lib/libstagefright_flacdec.so
-vendor/lib/libstagefrighthw.so
 vendor/lib/libstagefright_soft_aacdec.so
 vendor/lib/libstagefright_soft_aacenc.so
 vendor/lib/libstagefright_soft_amrdec.so
