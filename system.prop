@@ -20,3 +20,5 @@ qemu.hw.mainkeys=0
 # Media profiles
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
+# Camera
+persist.vendor.camera.facepp.fdenable=0
