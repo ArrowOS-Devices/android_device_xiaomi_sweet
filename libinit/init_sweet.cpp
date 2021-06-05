@@ -53,13 +53,13 @@ void property_override(char const prop[], char const value[], bool add = true) {
     }
 }
 
-void full_property_override(const std::string &prop, const char value[]) {
+void full_property_override(const std::string &prop, const char value[], const bool product) {
     const int prop_count = 6;
     const std::vector<std::string> prop_types
         {"", "odm.", "product.", "system.", "system_ext.", "vendor."};
 
     for (int i = 0; i < prop_count; i++) {
-        std::string prop_name = "ro." + prop_types[i] + prop;
+        std::string prop_name = (product ? "ro.product." : "ro.") + prop_types[i] + prop;
         property_override(prop_name.c_str(), value);
     }
 }
@@ -67,15 +67,30 @@ void full_property_override(const std::string &prop, const char value[]) {
 void vendor_load_properties() {
     const char *fingerprint = "Xiaomi/dipper/dipper:8.1.0/OPM1.171019.011/V9.5.5.0.OEAMIFA:user/release-keys";
     const char *description = "dipper-user 8.1.0 OPM1.171019.011 V9.5.5.0.OEAMIFA release-keys";
-    const std::string region = GetProperty("ro.boot.hwc", "UNKNOWN");
+    const bool is_global = (GetProperty("ro.boot.hwc", "UNKNOWN") == "GLOBAL");
+    const bool is_pro = (GetProperty("ro.boot.product.hardware.sku", "UNKNOWN") != "std");
 
-    full_property_override("build.fingerprint", fingerprint);
-    full_property_override("build.description", description);
+    std::string marketname =
+       !(!is_global && is_pro) ? "Redmi Note 10 Pro" : "Redmi Note 10 Pro Max";
+    const std::string mod_device = is_global ? "sweet_eea_global" : "sweetin_in_global";
+
+    full_property_override("build.fingerprint", fingerprint, false);
+    full_property_override("build.description", description, false);
     property_override("ro.boot.verifiedbootstate", "green");
 
-    if (region == "GLOBAL") {
+    if (is_global) {
         property_override("ro.boot.product.hardware.sku", "sweet");
     }
+
+    for (int i = 0; i <= 1; i++) {
+        full_property_override("model", is_global ? "M2101K6G" :
+            (is_pro ? "M2101K6I" : "M2101K6P"), i);
+        full_property_override("device", is_global ? "sweet" : "sweetin", i);
+        full_property_override("name", is_global ? "sweet" : "sweetin", i);
+    }
+
+    property_override("ro.product.marketname", marketname.c_str());
+    property_override("ro.product.mod_device", mod_device.c_str());
 
 #ifdef __ANDROID_RECOVERY__
     std::string buildtype = GetProperty("ro.build.type", "userdebug");
