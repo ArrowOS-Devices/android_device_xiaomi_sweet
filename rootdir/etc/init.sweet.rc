@@ -42,3 +42,6 @@ on boot
     chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_val
     chown system system /sys/devices/platform/kcal_ctrl.0/kcal_cont
     chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_cont
+
+on property:vendor.usb.mimode=*
+    setprop persist.vendor.usb.config ${vendor.usb.mimode}
