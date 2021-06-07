@@ -45,3 +45,7 @@ on boot
 
 on property:vendor.usb.mimode=*
     setprop persist.vendor.usb.config ${vendor.usb.mimode}
+
+on property:ro.persistent_properties.ready=true
+    setprop persist.sys.sf.native_mode 0
+    setprop persist.sys.sf.color_saturation 1.1
