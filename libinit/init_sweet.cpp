@@ -92,9 +92,6 @@ void vendor_load_properties() {
     property_override("ro.product.marketname", marketname.c_str());
     property_override("ro.product.mod_device", mod_device.c_str());
 
-    property_override("persist.sys.sf.native_mode", "0");
-    property_override("persist.sys.sf.color_saturation", "1.1");
-
 #ifdef __ANDROID_RECOVERY__
     std::string buildtype = GetProperty("ro.build.type", "userdebug");
     if (buildtype != "user") {
