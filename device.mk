@@ -14,6 +14,9 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml
 
+PRODUCT_PACKAGES += \
+    libvolumelistener
+
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 

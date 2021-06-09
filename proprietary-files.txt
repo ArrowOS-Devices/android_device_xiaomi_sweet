@@ -1686,7 +1686,6 @@ vendor/lib64/soundfx/libqcvirt.so
 vendor/lib64/soundfx/libreverbwrapper.so
 vendor/lib64/soundfx/libshoebox.so
 vendor/lib64/soundfx/libvisualizer.so
-vendor/lib64/soundfx/libvolumelistener.so|c25cc5e8c3622eb97d3bb4814aeb301c01d8b046
 vendor/lib64/unnhal-acc-adreno.so
 vendor/lib64/unnhal-acc-common.so
 vendor/lib64/unnhal-acc-hta.so
@@ -2434,7 +2433,6 @@ vendor/lib/soundfx/libqcvirt.so
 vendor/lib/soundfx/libreverbwrapper.so
 vendor/lib/soundfx/libshoebox.so
 vendor/lib/soundfx/libvisualizer.so
-vendor/lib/soundfx/libvolumelistener.so|672ad577dab5221bdd7f840d87313e3483aebde0
 vendor/lib/unnhal-acc-hta.so
 vendor/lib/vendor.display.color@1.0.so
 vendor/lib/vendor.display.color@1.1.so
