@@ -264,7 +264,6 @@ vendor/bin/hw/vendor.xiaomi.hardware.micharge@1.0-service
 vendor/bin/hw/vendor.xiaomi.hardware.misys@1.0-service
 vendor/bin/hw/vendor.xiaomi.hardware.misys@2.0-service
 vendor/bin/hw/vendor.xiaomi.hardware.misys@3.0-service
-vendor/bin/hw/vendor.xiaomi.hardware.motor@1.0-service
 vendor/bin/hw/vendor.xiaomi.hardware.touchfeature@1.0-service
 vendor/bin/hw/vendor.xiaomi.hardware.vibratorfeature@1.0-service
 vendor/bin/hw/wpa_supplicant
@@ -313,7 +312,6 @@ vendor/bin/mi_ultrasound_test
 vendor/bin/mlid
 vendor/bin/mlipayd@1.1
 vendor/bin/mm-vidc-omx-test
-vendor/bin/motor_test
 vendor/bin/msm_irqbalance
 vendor/bin/mtb
 vendor/bin/mtd@1.2
@@ -834,7 +832,6 @@ vendor/etc/sound_trigger_mixer_paths.xml
 vendor/etc/sound_trigger_platform_info.xml
 vendor/etc/ssg/ta_config.json
 vendor/etc/ssg/tz_whitelist.json
-vendor/etc/step_motor/mi_camera_config.xml
 vendor/etc/system_properties.xml
 vendor/etc/thermal-camera.conf
 vendor/etc/thermal-chg-only.conf
@@ -1232,7 +1229,6 @@ vendor/lib64/hw/vendor.xiaomi.hardware.micharge@1.0-impl.so
 vendor/lib64/hw/vendor.xiaomi.hardware.misys@1.0-impl.so
 vendor/lib64/hw/vendor.xiaomi.hardware.misys@2.0-impl.so
 vendor/lib64/hw/vendor.xiaomi.hardware.misys@3.0-impl.so
-vendor/lib64/hw/vendor.xiaomi.hardware.motor@1.0-impl.so
 vendor/lib64/hw/vendor.xiaomi.hardware.touchfeature@1.0-impl.so
 vendor/lib64/hw/vibrator.default.so
 vendor/lib64/hw/vulkan.adreno.so
@@ -1449,7 +1445,6 @@ vendor/lib64/libminksocket.so
 vendor/lib64/libmiracast.so
 vendor/lib64/libmivendor_module_calibration.so
 vendor/lib64/libmivendor_module_hall.so
-vendor/lib64/libmivendor_module_motor.so
 vendor/lib64/libmlipay@1.1.so
 vendor/lib64/libmlipay.so
 vendor/lib64/libmm-color-convertor.so
@@ -1681,7 +1676,6 @@ vendor/lib64/mediacas/libclearkeycasplugin.so
 vendor/lib64/mediadrm/libdrmclearkeyplugin.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/mibokeh_712_opencl.bin
-vendor/lib64/mi.motor.daemon.so
 vendor/lib64/nfc_nci.nqx.default.hw.so
 vendor/lib64/qcrild_librilutils.so
 vendor/lib64/qtibus.so
@@ -1870,7 +1864,6 @@ vendor/lib64/vendor.xiaomi.hardware.misys@2.0.so
 vendor/lib64/vendor.xiaomi.hardware.misys@3.0.so
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so
-vendor/lib64/vendor.xiaomi.hardware.motor@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.1.so
 vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.2.so
@@ -2015,7 +2008,6 @@ vendor/lib/hw/vendor.xiaomi.hardware.micharge@1.0-impl.so
 vendor/lib/hw/vendor.xiaomi.hardware.misys@1.0-impl.so
 vendor/lib/hw/vendor.xiaomi.hardware.misys@2.0-impl.so
 vendor/lib/hw/vendor.xiaomi.hardware.misys@3.0-impl.so
-vendor/lib/hw/vendor.xiaomi.hardware.motor@1.0-impl.so
 vendor/lib/hw/vendor.xiaomi.hardware.touchfeature@1.0-impl.so
 vendor/lib/hw/vibrator.default.so
 vendor/lib/hw/vulkan.adreno.so
@@ -2193,7 +2185,6 @@ vendor/lib/libminksocket.so
 vendor/lib/libmiracast.so
 vendor/lib/libmivendor_module_calibration.so
 vendor/lib/libmivendor_module_hall.so
-vendor/lib/libmivendor_module_motor.so
 vendor/lib/libmlipay@1.1.so
 vendor/lib/libmlipay.so
 vendor/lib/libmm-color-convertor.so
@@ -2450,7 +2441,6 @@ vendor/lib/libxtadapter.so
 vendor/lib/mediacas/libclearkeycasplugin.so
 vendor/lib/mediadrm/libdrmclearkeyplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
-vendor/lib/mi.motor.daemon.so
 vendor/lib/nfc_nci.nqx.default.hw.so
 vendor/lib/qcrild_librilutils.so
 vendor/lib/qtimutex.so
@@ -2650,7 +2640,6 @@ vendor/lib/vendor.xiaomi.hardware.misys@2.0.so
 vendor/lib/vendor.xiaomi.hardware.misys@3.0.so
 vendor/lib/vendor.xiaomi.hardware.mlipay@1.0.so
 vendor/lib/vendor.xiaomi.hardware.mlipay@1.1.so
-vendor/lib/vendor.xiaomi.hardware.motor@1.0.so
 vendor/lib/vendor.xiaomi.hardware.mtdservice@1.0.so
 vendor/lib/vendor.xiaomi.hardware.tidaservice@1.0.so
 vendor/lib/vendor.xiaomi.hardware.tidaservice@1.1.so
