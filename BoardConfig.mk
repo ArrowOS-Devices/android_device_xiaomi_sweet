@@ -117,7 +117,6 @@ include device/qcom/sepolicy_vndr/SEPolicy.mk
 
 # VINTF
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest.xml
-DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/framework_manifest.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 ODM_MANIFEST_SKUS += \
     sweet
