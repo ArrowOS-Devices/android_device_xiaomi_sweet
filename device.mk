@@ -59,7 +59,7 @@ PRODUCT_PACKAGES += \
     DeviceSettings
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/devicesettings/privapp-permissions-devicesettings.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-devicesettings.xml
+    $(LOCAL_PATH)/devicesettings/privapp-permissions-devicesettings.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-devicesettings.xml
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
