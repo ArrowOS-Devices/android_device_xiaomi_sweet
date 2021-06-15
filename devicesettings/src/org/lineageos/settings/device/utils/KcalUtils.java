@@ -86,4 +86,14 @@ public final class KcalUtils {
     public static boolean isKcalSupported() {
         return FileUtils.fileExists(KCAL_ENABLE_NODE);
     }
+
+    public static int getMin(String key) {
+        switch (key) {
+             case "saturation_slider":
+             case "contrast_slider":
+                 return 224;
+             default:
+                 return 1;
+        }
+    }
 }
