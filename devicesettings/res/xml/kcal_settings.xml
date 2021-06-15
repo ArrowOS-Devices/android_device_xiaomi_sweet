@@ -30,21 +30,21 @@
         android:key="kcal_rgb_preference_category"
         android:title="@string/kcal_rgb_preference_category_title">
 
-        <SeekBarPreference
+        <org.lineageos.settings.device.color.model.KcalSeekBarPreference
             android:key="red_slider"
             android:defaultValue="256"
             android:dependency="kcal_enable"
             android:max="256"
             android:title="@string/red_slider_title" />
 
-        <SeekBarPreference
+        <org.lineageos.settings.device.color.model.KcalSeekBarPreference
             android:key="green_slider"
             android:defaultValue="256"
             android:dependency="kcal_enable"
             android:max="256"
             android:title="@string/green_slider_title" />
 
-        <SeekBarPreference
+        <org.lineageos.settings.device.color.model.KcalSeekBarPreference
             android:key="blue_slider"
             android:defaultValue="256"
             android:dependency="kcal_enable"
@@ -57,14 +57,14 @@
         android:key="kcal_calibration_preference_category"
         android:title="@string/kcal_calibration_preference_category_title">
 
-        <SeekBarPreference
+        <org.lineageos.settings.device.color.model.KcalSeekBarPreference
             android:key="saturation_slider"
             android:defaultValue="255"
             android:dependency="kcal_enable"
             android:max="383"
             android:title="@string/saturation_slider_title" />
 
-        <SeekBarPreference
+        <org.lineageos.settings.device.color.model.KcalSeekBarPreference
             android:key="contrast_slider"
             android:defaultValue="255"
             android:dependency="kcal_enable"
