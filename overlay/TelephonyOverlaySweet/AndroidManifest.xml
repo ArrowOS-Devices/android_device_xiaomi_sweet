@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.arrow.telephonyoverlay.sweet">
+
+    <application android:hasCode="false" />
+    <overlay android:targetPackage="com.android.phone"
+                   android:isStatic="true"
+                   android:priority="1"/>
+</manifest>
