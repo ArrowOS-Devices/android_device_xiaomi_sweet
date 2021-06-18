@@ -39,4 +39,10 @@
     <string name="reset_default_button_title">Reset to default configuration</string>
     <string name="reset_default_button_summary">Reset all the configurations of this screen</string>
     <string name="contrast_slider_title">Contrast</string>
+
+    <string name="color_profiles">Color profiles</string>
+    <string name="color_profile_default">Default</string>
+    <string name="color_profile_cold">Cold</string>
+    <string name="color_profile_warm">Warm</string>
+    <string name="color_profile_saturated">Saturated</string>
 </resources>

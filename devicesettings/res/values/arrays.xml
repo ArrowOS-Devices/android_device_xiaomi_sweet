@@ -20,4 +20,11 @@
         <item>60</item>
         <item>120</item>
     </string-array>
+
+    <string-array name="color_profiles_names">
+        <item>@string/color_profile_default</item>
+        <item>@string/color_profile_cold</item>
+        <item>@string/color_profile_warm</item>
+        <item>@string/color_profile_saturated</item>
+    </string-array>
 </resources>
