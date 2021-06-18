@@ -17,8 +17,11 @@
 package org.lineageos.settings.device.color;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
+import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -42,6 +45,7 @@ public class KcalSettingsFragment extends PreferenceFragment implements
 
     private SwitchPreference mKcalSwitchPreference;
     private Preference mResetButton;
+    private Preference mColorProfilesButton;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -87,6 +91,7 @@ public class KcalSettingsFragment extends PreferenceFragment implements
         mKcalSwitchPreference.setOnPreferenceChangeListener(this);
         mKcalSwitchPreference = (SwitchPreference) findPreference("kcal_enable");
         mResetButton = (Preference) findPreference("reset_default_button");
+        mColorProfilesButton = (Preference) findPreference("color_profiles");
 
         // Set the preference so it resets all the other preference's values, and applies the configuration on click
         mResetButton.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
@@ -103,5 +108,30 @@ public class KcalSettingsFragment extends PreferenceFragment implements
                 return true;
             }
         });
+
+        mColorProfilesButton.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+            @Override
+            public boolean onPreferenceClick(Preference preference) {
+                getColorProfilesDialog().create().show();
+                return true;
+            }
+        });
+    }
+
+    private AlertDialog.Builder getColorProfilesDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+        builder.setTitle(R.string.color_profiles);
+
+        builder.setItems(R.array.color_profiles_names, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                KcalUtils.setColorProfile(which, mSharedPrefs);
+                getPreferenceScreen().removeAll();
+                addPreferencesFromResource(R.xml.kcal_settings);
+                configurePreferences();
+            }
+        });
+
+        return builder;
     }
 }
