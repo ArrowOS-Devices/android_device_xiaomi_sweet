@@ -86,6 +86,7 @@ function blob_fixup() {
     case "${1}" in
     vendor/etc/qdcm_calib_data_xiaomi_k6_38_0c_0a_fhd_dsc_video_dsi_panel.xml)
         sed -i "s/dcip3/srgb/" "${2}"
+        sed -i "s/DefaultMode=\"00\"/DefaultMode=\"51\"/g" "${2}"
         ;;
     vendor/lib64/hw/camera.qcom.so)
         $PATCHELF_TOOL --remove-needed "libMegviiFacepp-0.5.2.so" "${2}"
