@@ -161,16 +161,12 @@ vendor/app/TimeService/oat/arm64/TimeService.vdex
 -vendor/app/TimeService/TimeService.apk
 vendor/bin/adpl
 vendor/bin/adsprpcd
-vendor/bin/applypatch
 vendor/bin/ATFWD-daemon
 vendor/bin/athdiag
 vendor/bin/audioflacapp
 vendor/bin/audioshell_service
-vendor/bin/awk
 vendor/bin/batteryd
 vendor/bin/batterysecret
-vendor/bin/boringssl_self_test32
-vendor/bin/boringssl_self_test64
 vendor/bin/btconfig
 vendor/bin/cameratest
 vendor/bin/capture_headset.sh
@@ -192,7 +188,6 @@ vendor/bin/diag_socket_log
 vendor/bin/diag_uart_log
 vendor/bin/dpmQmiMgr
 vendor/bin/dspservice
-vendor/bin/dumpsys
 vendor/bin/e_loop
 vendor/bin/embmsslServer
 vendor/bin/ffu
@@ -348,7 +343,6 @@ vendor/bin/sensors.qti
 vendor/bin/setup_headsetmic2headphone.sh
 vendor/bin/setup_mainmic2headphone.sh
 vendor/bin/setup_topmic2headphone.sh
-vendor/bin/sh
 vendor/bin/shsusrd
 vendor/bin/sigma_dut
 vendor/bin/slim_daemon
@@ -369,7 +363,6 @@ vendor/bin/tidad@1.2
 vendor/bin/time_daemon
 vendor/bin/tloc_daemon
 vendor/bin/toolbox
-vendor/bin/toybox_vendor
 vendor/bin/tp_data_collect.sh
 vendor/bin/tp_selftest.sh
 vendor/bin/TrustedUISampleTest
