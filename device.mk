@@ -15,7 +15,28 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml
 
 PRODUCT_PACKAGES += \
-    libvolumelistener
+    libvolumelistener \
+    android.hardware.audio.service \
+    android.hardware.audio.common-util \
+    android.hardware.audio.common@2.0-util \
+    android.hardware.audio.common@4.0-util \
+    android.hardware.audio.common@5.0-util \
+    android.hardware.audio.common@6.0-util \
+    android.hardware.audio.effect@2.0-impl \
+    android.hardware.audio.effect@4.0-impl \
+    android.hardware.audio.effect@5.0-impl \
+    android.hardware.audio.effect@6.0-impl \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio@4.0-impl \
+    android.hardware.audio@5.0-impl \
+    android.hardware.audio@6.0-impl
+
+PRODUCT_PACKAGES += \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libOmxEvrcEnc \
+    libOmxG711Enc \
+    libOmxQcelp13Enc
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
