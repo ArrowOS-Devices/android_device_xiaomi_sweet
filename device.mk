@@ -216,4 +216,10 @@ PRODUCT_PACKAGES += \
     libcodec2_vndk.vendor \
     libcodec2_hidl@1.0.vendor
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.3-service.clearkey \
+    libclearkeycasplugin \
+    libdrmclearkeyplugin
+
 include vendor/xiaomi/sweet/sweet-vendor.mk
