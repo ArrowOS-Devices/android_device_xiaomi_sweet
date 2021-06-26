@@ -210,4 +210,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-service
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.3-service.clearkey \
+    libclearkeycasplugin \
+    libdrmclearkeyplugin
+
 include vendor/xiaomi/sweet/sweet-vendor.mk
