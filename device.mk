@@ -218,4 +218,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey
 
+# TouchFeature
+PRODUCT_PACKAGES += \
+    vendor.xiaomi.hardware.touchfeature@1.0.vendor
+
 include vendor/xiaomi/sweet/sweet-vendor.mk
