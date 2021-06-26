@@ -219,4 +219,8 @@ PRODUCT_PACKAGES += \
     libclearkeycasplugin \
     libdrmclearkeyplugin
 
+# TouchFeature
+PRODUCT_PACKAGES += \
+    vendor.xiaomi.hardware.touchfeature@1.0.vendor
+
 include vendor/xiaomi/sweet/sweet-vendor.mk
