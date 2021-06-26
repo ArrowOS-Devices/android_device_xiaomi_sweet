@@ -169,4 +169,11 @@ PRODUCT_PACKAGES += \
     libcodec2_vndk.vendor \
     libcodec2_hidl@1.0.vendor
 
+# WLAN
+PRODUCT_PACKAGES += \
+    libwifi-hal-qcom \
+    libwifi-hal-ctrl \
+    libcld80211 \
+    android.hardware.wifi@1.0-service
+
 include vendor/xiaomi/sweet/sweet-vendor.mk
