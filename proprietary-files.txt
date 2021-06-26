@@ -211,7 +211,6 @@ vendor/bin/hdcp2p2prov
 vendor/bin/headsetstate.sh
 vendor/bin/hostapd_cli
 vendor/bin/hvdcp_opti
-vendor/bin/hw/android.hardware.atrace@1.0-service
 vendor/bin/hw/android.hardware.audio.service
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
@@ -528,7 +527,6 @@ vendor/etc/hdr_config.cfg
 vendor/etc/hostapd/hostapd.accept
 vendor/etc/hostapd/hostapd_default.conf
 vendor/etc/hostapd/hostapd.deny
-vendor/etc/init/android.hardware.atrace@1.0-service.rc
 vendor/etc/init/android.hardware.audio.service.rc
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
@@ -810,7 +808,6 @@ vendor/etc/usb_audio_policy_configuration.xml
 -vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@3.0.xml
 -vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@1.0.xml
 -vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
--vendor/etc/vintf/manifest/android.hardware.atrace@1.0-service.xml
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 -vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
 -vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.tidaservice.xml
