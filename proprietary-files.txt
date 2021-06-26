@@ -211,7 +211,6 @@ vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/bin/hw/android.hardware.cas@1.2-service
 vendor/bin/hw/android.hardware.contexthub@1.0-service
-vendor/bin/hw/android.hardware.drm@1.3-service.clearkey
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti
@@ -525,7 +524,6 @@ vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/etc/init/android.hardware.cas@1.2-service.rc
 vendor/etc/init/android.hardware.contexthub@1.0-service.rc
-vendor/etc/init/android.hardware.drm@1.3-service.clearkey.rc
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc
@@ -814,7 +812,6 @@ vendor/etc/usb_audio_policy_configuration.xml
 -vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mfidoca.xml
 -vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
 -vendor/etc/vintf/manifest/vendor.qti.hardware.vibrator.service.xml
--vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.clearkey.xml
 -vendor/etc/vintf/manifest/android.hardware.thermal@2.0-service.qti.xml
 -vendor/etc/vintf/manifest/android.hardware.lights-qti.xml
 -vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml
@@ -1601,8 +1598,6 @@ vendor/lib64/libxmi_high_dynamic_range.so
 vendor/lib64/libxml2_vendor.so
 vendor/lib64/libxml.so
 vendor/lib64/libxtadapter.so
-vendor/lib64/mediacas/libclearkeycasplugin.so
-vendor/lib64/mediadrm/libdrmclearkeyplugin.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/mibokeh_712_opencl.bin
 vendor/lib64/nfc_nci.nqx.default.hw.so
@@ -2318,8 +2313,6 @@ vendor/lib/libwvkeybox.so
 vendor/lib/libXMFD_AgeGender.so
 vendor/lib/libxml.so
 vendor/lib/libxtadapter.so
-vendor/lib/mediacas/libclearkeycasplugin.so
-vendor/lib/mediadrm/libdrmclearkeyplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/nfc_nci.nqx.default.hw.so
 vendor/lib/qcrild_librilutils.so
