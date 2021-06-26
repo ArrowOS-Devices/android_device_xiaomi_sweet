@@ -226,9 +226,7 @@ vendor/bin/hw/android.hardware.sensors@1.0-service
 vendor/bin/hw/android.hardware.thermal@1.0-service
 vendor/bin/hw/android.hardware.thermal@2.0-service.qti
 vendor/bin/hw/android.hardware.usb@1.0-service
-vendor/bin/hw/android.hardware.wifi@1.0-service
 vendor/bin/hw/capabilityconfigstoretest
-vendor/bin/hw/hostapd
 vendor/bin/hw/qcrild
 vendor/bin/hw/vendor.display.color@1.0-service
 vendor/bin/hw/vendor.fortsense.hardware.fingerprintext@1.0-service
@@ -258,7 +256,6 @@ vendor/bin/hw/vendor.xiaomi.hardware.misys@2.0-service
 vendor/bin/hw/vendor.xiaomi.hardware.misys@3.0-service
 vendor/bin/hw/vendor.xiaomi.hardware.touchfeature@1.0-service
 vendor/bin/hw/vendor.xiaomi.hardware.vibratorfeature@1.0-service
-vendor/bin/hw/wpa_supplicant
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
 vendor/bin/imsrcsd
@@ -536,7 +533,6 @@ vendor/etc/init/android.hardware.power-service.rc
 vendor/etc/init/android.hardware.sensors@1.0-service.rc
 vendor/etc/init/android.hardware.thermal@2.0-service.qti.rc
 vendor/etc/init/android.hardware.usb@1.0-service.rc
-vendor/etc/init/android.hardware.wifi@1.0-service.rc
 vendor/etc/init/boringssl_self_test.rc
 vendor/etc/init/cnd.rc
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
@@ -798,7 +794,6 @@ vendor/etc/usb_audio_policy_configuration.xml
 -vendor/etc/vintf/manifest/vendor.xiaomi.cit.wifi@1.0_manifest.xml
 -vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@3.0.xml
 -vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@1.0.xml
--vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 -vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
 -vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.tidaservice.xml
@@ -829,7 +824,6 @@ vendor/etc/wifi/fstman.ini
 vendor/etc/wifi/icm.conf
 vendor/etc/wifi/p2p_supplicant_overlay.conf
 vendor/etc/wifi/WCNSS_qcom_cfg.ini
-vendor/etc/wifi/wpa_supplicant.conf
 vendor/etc/wifi/wpa_supplicant_overlay.conf
 vendor/etc/xtra_root_cert.pem
 vendor/etc/xtwifi.conf
@@ -1245,7 +1239,6 @@ vendor/lib64/libcert_parse.wpa_s.so
 vendor/lib64/libcheckpid.so
 vendor/lib64/libchrome.so
 vendor/lib64/libcirrusspkrprot.so
-vendor/lib64/libcld80211.so
 vendor/lib64/libclient2slpi.notifier.so
 vendor/lib64/libcneapiclient.so
 vendor/lib64/libcneoplookup.so
@@ -1584,11 +1577,7 @@ vendor/lib64/libwapi_cert.so
 vendor/lib64/libwebrtc_audio_preprocessing.so
 vendor/lib64/libwfddisplayconfig_proprietary.so
 vendor/lib64/libwfdhdcpcp.so
-vendor/lib64/libwifi-hal-ctrl.so
-vendor/lib64/libwifi-hal-qcom.so
-vendor/lib64/libwifi-hal.so
 vendor/lib64/libwms.so
-vendor/lib64/libwpa_client.so
 vendor/lib64/libwqe.so
 vendor/lib64/libwvhidl.so
 vendor/lib64/libwvkeybox.so
@@ -1969,7 +1958,6 @@ vendor/lib/libcert_parse.wpa_s.so
 vendor/lib/libcheckpid.so
 vendor/lib/libchrome.so
 vendor/lib/libcirrusspkrprot.so
-vendor/lib/libcld80211.so
 vendor/lib/libclient2slpi.notifier.so
 vendor/lib/libcneapiclient.so
 vendor/lib/libcneoplookup.so
@@ -2300,10 +2288,7 @@ vendor/lib/libwfduibcsink_proprietary.so
 vendor/lib/libwfduibcsrcinterface_proprietary.so
 vendor/lib/libwfduibcsrc_proprietary.so
 vendor/lib/libwfdutils_proprietary.so
-vendor/lib/libwifi-hal-ctrl.so
-vendor/lib/libwifi-hal-qcom.so
 vendor/lib/libwms.so
-vendor/lib/libwpa_client.so
 vendor/lib/libwqe.so
 vendor/lib/libwvkeybox.so
 vendor/lib/libXMFD_AgeGender.so
