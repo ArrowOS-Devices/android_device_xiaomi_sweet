@@ -1448,7 +1448,6 @@ vendor/lib64/libril-qcril-hook-oem.so
 vendor/lib64/librilqmiservices.so
 vendor/lib64/libril.so
 vendor/lib64/librilutils.so
-vendor/lib64/librmnetctl.so
 vendor/lib64/librmp.so
 vendor/lib64/librpmb.so
 vendor/lib64/librs_adreno.so
@@ -2118,7 +2117,6 @@ vendor/lib/libril-qcril-hook-oem.so
 vendor/lib/librilqmiservices.so
 vendor/lib/libril.so
 vendor/lib/librilutils.so
-vendor/lib/librmnetctl.so
 vendor/lib/librmp.so
 vendor/lib/librpmb.so
 vendor/lib/librs_adreno.so
