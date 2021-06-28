@@ -296,4 +296,9 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service \
     android.hardware.health@2.1-impl
 
+# ContextHub
+PRODUCT_PACKAGES += \
+    android.hardware.contexthub@1.0-service \
+    android.hardware.contexthub@1.0-impl
+
 include vendor/xiaomi/sweet/sweet-vendor.mk
