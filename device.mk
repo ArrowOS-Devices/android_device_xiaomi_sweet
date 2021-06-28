@@ -209,6 +209,7 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     gralloc.sm6150 \
+    gralloc.default \
     hwcomposer.sm6150 \
     memtrack.sm6150 \
     vendor.display.config@1.0.vendor \
