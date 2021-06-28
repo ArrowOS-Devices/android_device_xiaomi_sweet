@@ -1595,8 +1595,6 @@ vendor/lib64/vendor.qti.hardware.automotive.vehicle@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
-vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so
-vendor/lib64/vendor.qti.hardware.btconfigstore@2.0.so
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib64/vendor.qti.hardware.camera.device@2.0.so
@@ -1785,7 +1783,6 @@ vendor/lib/hw/audio.usb.default.so
 vendor/lib/hw/camera.qcom.so
 vendor/lib/hw/com.dsi.ant@1.0-impl.so
 vendor/lib/hw/com.qti.chi.override.so
-vendor/lib/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so
 vendor/lib/hw/consumerir.default.so
 vendor/lib/hw/fingerprint.fortsense.so
 vendor/lib/hw/fingerprint.fpc.so
@@ -1796,10 +1793,7 @@ vendor/lib/hw/sound_trigger.primary.sm6150.so
 vendor/lib/hw/vendor.qti.esepowermanager@1.1-impl.so
 vendor/lib/hw/vendor.qti.gnss@4.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
-vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so
@@ -2285,11 +2279,8 @@ vendor/lib/vendor.qti.gnss@4.0-service.so
 vendor/lib/vendor.qti.gnss@4.0.so
 vendor/lib/vendor.qti.hardware.alarm@1.0.so
 vendor/lib/vendor.qti.hardware.automotive.vehicle@1.0.so
-vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
-vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so
-vendor/lib/vendor.qti.hardware.btconfigstore@2.0.so
 vendor/lib/vendor.qti.hardware.cacert@1.0.so
 vendor/lib/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib/vendor.qti.hardware.camera.device@2.0.so
