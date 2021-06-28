@@ -88,6 +88,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_sweet/android.hardware.nfc.uicc.xml \
     frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_sweet/android.hardware.nfc.xml
 
+PRODUCT_PACKAGES += \
+    libnqnfc-nci
+
 # Device Settings
 PRODUCT_PACKAGES += \
     DeviceSettings
