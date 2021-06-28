@@ -235,7 +235,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.composer@2.0.vendor \
     vendor.qti.hardware.display.allocator@1.0.vendor \
     vendor.qti.hardware.display.allocator@3.0.vendor \
-    vendor.qti.hardware.display.allocator@4.0.vendor
+    vendor.qti.hardware.display.allocator@4.0.vendor \
+    vendor.qti.hardware.display.mapperextensions@1.1.vendor
 
 # Media
 PRODUCT_PACKAGES += \
