@@ -31,6 +31,13 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@5.0-impl \
     android.hardware.audio@6.0-impl
 
+PRODUCT_PACKAGES += \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libOmxEvrcEnc \
+    libOmxG711Enc \
+    libOmxQcelp13Enc
+
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
