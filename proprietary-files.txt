@@ -209,7 +209,6 @@ vendor/bin/hvdcp_opti
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/bin/hw/android.hardware.cas@1.2-service
-vendor/bin/hw/android.hardware.contexthub@1.0-service
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti
@@ -512,7 +511,6 @@ vendor/etc/hostapd/hostapd.deny
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/etc/init/android.hardware.cas@1.2-service.rc
-vendor/etc/init/android.hardware.contexthub@1.0-service.rc
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc
@@ -1078,7 +1076,6 @@ vendor/lib64/hal_libnfc.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so
 vendor/lib64/hw/android.hardware.broadcastradio@1.0-impl.so
-vendor/lib64/hw/android.hardware.contexthub@1.0-impl.generic.so
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so
 vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
@@ -1780,7 +1777,6 @@ vendor/lib/hal_libnfc.so
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so
 vendor/lib/hw/android.hardware.broadcastradio@1.0-impl.so
-vendor/lib/hw/android.hardware.contexthub@1.0-impl.generic.so
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib/hw/android.hardware.gnss@2.1-impl-qti.so
 vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
