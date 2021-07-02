@@ -331,4 +331,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.impl \
     vibrator.default
 
+# ServiceTracker
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.servicetracker@1.2.vendor
+
 include vendor/xiaomi/sweet/sweet-vendor.mk
