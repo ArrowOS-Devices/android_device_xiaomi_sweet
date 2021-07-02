@@ -1657,9 +1657,6 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
 vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
 vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
-vendor/lib64/vendor.qti.hardware.servicetracker@1.0.so
-vendor/lib64/vendor.qti.hardware.servicetracker@1.1.so
-vendor/lib64/vendor.qti.hardware.servicetracker@1.2.so
 vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so
 vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
@@ -2347,9 +2344,6 @@ vendor/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so
 vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0.so
 vendor/lib/vendor.qti.hardware.scve.panorama@1.0.so
 vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so
-vendor/lib/vendor.qti.hardware.servicetracker@1.0.so
-vendor/lib/vendor.qti.hardware.servicetracker@1.1.so
-vendor/lib/vendor.qti.hardware.servicetracker@1.2.so
 vendor/lib/vendor.qti.hardware.sigma_miracast@1.0.so
 vendor/lib/vendor.qti.hardware.slmadapter@1.0.so
 vendor/lib/vendor.qti.hardware.soter@1.0.so
