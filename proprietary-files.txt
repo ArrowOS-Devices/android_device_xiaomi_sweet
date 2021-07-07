@@ -41,7 +41,7 @@ system_ext/framework/com.qualcomm.qti.uceservice-V2.2-java.jar
 system_ext/framework/dpmapi.jar
 system_ext/framework/embmslibrary.jar
 system_ext/framework/qcrilhook.jar
-system_ext/framework/qti-telephony-common.jar|e6f7c4df7b925073525d9b678f27087e1f45017f
+system_ext/framework/qti-telephony-common.jar
 system_ext/framework/vendor.qti.ims.callcapability-V1.0-java.jar
 system_ext/framework/vendor.qti.ims.callinfo-V1.0-java.jar
 system_ext/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar
@@ -134,7 +134,7 @@ system_ext/lib/vendor.qti.hardware.radio.ims@1.5.so
 system_ext/lib/vendor.qti.hardware.radio.ims@1.6.so
 system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
 -system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
--system_ext/priv-app/ims/ims.apk|cccc15a4fbaff0f412e09e63744fc95c3c339da8
+-system_ext/priv-app/ims/ims.apk
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 -system_ext/priv-app/WfdService/WfdService.apk
 
