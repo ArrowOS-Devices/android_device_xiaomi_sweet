@@ -357,8 +357,6 @@ vendor/bin/us_cal.sh
 vendor/bin/vendor_cmd_tool
 vendor/bin/vendor.qti.hardware.soter@1.0-provision
 vendor/bin/vib_cal
-vendor/bin/vndservice
-vendor/bin/vndservicemanager
 vendor/bin/vppservice
 vendor/bin/vsimd
 vendor/bin/wdsdaemon
@@ -603,7 +601,6 @@ vendor/etc/init/vendor.xiaomi.hardware.tidaservice@1.2-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.touchfeature@1.0-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.vibratorfeature@1.0-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.vsimapp@1.0-service.rc
-vendor/etc/init/vndservicemanager.rc
 vendor/etc/init/vppservice.rc
 vendor/etc/init/wfdvndservice.rc
 vendor/etc/IPACM_cfg.xml
