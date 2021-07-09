@@ -309,4 +309,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.2.vendor
 
+# Vendor service manager
+PRODUCT_PACKAGES += \
+    vndservicemanager
+
 include vendor/xiaomi/sweet/sweet-vendor.mk
