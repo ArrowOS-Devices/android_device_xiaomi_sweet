@@ -1059,14 +1059,6 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <sepolicy>
-        <kernel-sepolicy-version>30</kernel-sepolicy-version>
-        <sepolicy-version>26.0</sepolicy-version>
-        <sepolicy-version>27.0</sepolicy-version>
-        <sepolicy-version>28.0</sepolicy-version>
-        <sepolicy-version>29.0</sepolicy-version>
-        <sepolicy-version>30.0</sepolicy-version>
-    </sepolicy>
     <avb>
         <vbmeta-version>1.0</vbmeta-version>
     </avb>
