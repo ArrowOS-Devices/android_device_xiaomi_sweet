@@ -121,8 +121,23 @@ vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sns_reg_config
 
 # Thermal
+vendor/bin/mi_thermald
 vendor/bin/thermal-engine
+vendor/etc/init/init.mi_thermald.rc
+vendor/etc/thermal-camera.conf
+vendor/etc/thermal-chg-only.conf
+vendor/etc/thermal-class0.conf
 vendor/etc/thermal-engine.conf
+vendor/etc/thermal-map.conf
+vendor/etc/thermal-mgame.conf
+vendor/etc/thermal-navigation.conf
+vendor/etc/thermal-nolimits.conf
+vendor/etc/thermal-normal.conf
+vendor/etc/thermal-phone.conf
+vendor/etc/thermal-tgame.conf
+vendor/etc/thermal-video.conf
+vendor/etc/thermal-youtube.conf
+vendor/etc/thermald-devices.conf
 vendor/lib64/libthermalclient.so
 
 # WLAN
