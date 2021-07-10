@@ -340,6 +340,13 @@ vendor/etc/sensors/judge_calibrated.json
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sns_reg_config
 
+# Sensors Ultrasound
+vendor/etc/elliptic_sensor.xml
+vendor/lib64/libultrasound.so
+vendor/lib64/libnotifyaudiohal.so
+vendor/lib64/sensors.elliptic.so
+vendor/lib64/sensors.mius.proximity.so
+
 # Thermal
 vendor/bin/mi_thermald
 vendor/bin/thermal-engine
