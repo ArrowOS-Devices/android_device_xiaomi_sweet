@@ -9,6 +9,9 @@ include device/xiaomi/sm6150-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/sweet
 
+# Audio
+TARGET_PROVIDES_AUDIO_EXTNS := true
+
 # Kernel
 TARGET_KERNEL_CONFIG := sweet_user_defconfig
 
