@@ -120,5 +120,10 @@ vendor/etc/sensors/judge_calibrated.json
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sns_reg_config
 
+# Thermal
+vendor/bin/thermal-engine
+vendor/etc/thermal-engine.conf
+vendor/lib64/libthermalclient.so
+
 # WLAN
 vendor/bin/cnss-daemon
