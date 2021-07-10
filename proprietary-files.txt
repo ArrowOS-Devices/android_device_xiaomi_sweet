@@ -42,6 +42,15 @@ vendor/lib/libhfp.so
 vendor/lib/libsndmonitor.so
 vendor/lib/libspkrprot.so
 
+# IPA
+vendor/firmware/ipa_fws.b00
+vendor/firmware/ipa_fws.b01
+vendor/firmware/ipa_fws.b02
+vendor/firmware/ipa_fws.b03
+vendor/firmware/ipa_fws.b04
+vendor/firmware/ipa_fws.elf
+vendor/firmware/ipa_fws.mdt
+
 # Sensors
 vendor/bin/sensors.qti
 vendor/etc/init/init.vendor.sensors.rc
@@ -101,3 +110,6 @@ vendor/etc/sensors/config/tsl2540.json
 vendor/etc/sensors/judge_calibrated.json
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sns_reg_config
+
+# WLAN
+vendor/bin/cnss-daemon
