@@ -12,6 +12,9 @@ DEVICE_PATH := device/xiaomi/sweet
 # Audio
 TARGET_PROVIDES_AUDIO_EXTNS := true
 
+# HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
+
 # Kernel
 TARGET_KERNEL_CONFIG := sweet_user_defconfig
 
