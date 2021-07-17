@@ -8,8 +8,6 @@ public class Constants {
     public static final float[] REFRESH_RATES = {60.0f, 120.0f};
     public static final float DEFAULT_REFRESH_RATE = REFRESH_RATES[1];
 
-    public static final int DT2W_TOUCH_FEATURE = 14;
-
     public static final String DISPPARAM_NODE = "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/disp_param";
     public static final String BRIGHTNESS_NODE = "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/backlight/panel0-backlight/brightness";
 

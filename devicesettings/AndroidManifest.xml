@@ -8,12 +8,10 @@
     <uses-permission android:name="android.permission.DEVICE_POWER" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
-    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
 
     <application
         android:allowBackup="true"
-        android:label="@string/device_settings_title"
-        android:persistent="true">
+        android:label="@string/device_settings_title">
 
         <receiver android:name="org.lineageos.settings.device.BootCompletedReceiver">
             <intent-filter android:priority="1000">
