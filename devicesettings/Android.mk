@@ -16,9 +16,6 @@ LOCAL_STATIC_ANDROID_LIBRARIES := \
     androidx.core_core \
     androidx.preference_preference
 
-LOCAL_STATIC_JAVA_LIBRARIES := \
-    vendor.xiaomi.hardware.touchfeature-V1.0-java
-
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
 LOCAL_RESOURCE_DIR := \
