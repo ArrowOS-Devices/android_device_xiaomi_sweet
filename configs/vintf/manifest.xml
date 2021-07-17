@@ -693,16 +693,6 @@
         <fqname>@1.0::IMiFxTunnel/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.xiaomi.hardware.touchfeature</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ITouchFeature</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ITouchFeature/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.qti.hardware.wifidisplaysession</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
