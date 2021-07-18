@@ -12,7 +12,7 @@
 /persist(/.*)?           u:object_r:persist_file:s0
 
 # Touchfeature
-/dev/xiaomi-touch                                                    u:object_r:touchfeature_device:s0
+/dev/xiaomi-touch                                                    u:object_r:input_device:s0
 
 # Infrared
 /dev/ir_spi u:object_r:ir_device:s0
