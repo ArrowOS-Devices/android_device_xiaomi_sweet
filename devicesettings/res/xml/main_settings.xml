@@ -43,4 +43,20 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="sound_category"
+        android:title="@string/sound_title">
+
+        <Preference
+            android:icon="@drawable/ic_sound"
+            android:title="@string/dirac_title"
+            android:summary="@string/dirac_summary">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="org.lineageos.settings.device.dirac.DiracActivity"
+                android:targetPackage="org.lineageos.settings.device" />
+        </Preference>
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
