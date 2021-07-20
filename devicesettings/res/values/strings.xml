@@ -46,7 +46,10 @@
     <string name="color_profile_warm">Warm</string>
     <string name="color_profile_saturated">Saturated</string>
 
+    <string name="sound_title">Sound</string>
+
     <string name="dirac_title">Dirac sound enhancer</string>
+    <string name="dirac_summary">Configure sound presets, headset types and more</string>
     <string name="dirac_headset_title">Headset type</string>
     <string name="dirac_preset_title">Sound preset</string>
 
