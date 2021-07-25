@@ -308,12 +308,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.cas@1.2-service
 
-# Vibrator
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service \
-    vendor.qti.hardware.vibrator.impl \
-    vibrator.default
-
 # ServiceTracker
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.2.vendor
