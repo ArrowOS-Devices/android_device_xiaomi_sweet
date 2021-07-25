@@ -1,0 +1,12 @@
+android_app {
+    name: "CutoutRingServiceSweet",
+
+    srcs: ["src/**/*.java"],
+
+    platform_apis: true,
+    certificate: "platform",
+    privileged: true,
+
+    resource_dirs: ["res"],
+
+}
