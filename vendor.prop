@@ -8,7 +8,7 @@ vendor.voice.path.for.pcm.voip=false
 
 # Chipset
 ro.soc.manufacturer=Qualcomm
-ro.soc.model=SDM7150
+ro.soc.model=SM7150
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
