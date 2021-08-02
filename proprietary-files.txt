@@ -522,10 +522,6 @@ vendor/etc/init/dpmQmiMgr.rc
 vendor/etc/init/exfat.rc
 vendor/etc/init/ffu.rc
 vendor/etc/init/hostapd.android.rc
-vendor/etc/init/hw/init.qcom.factory.rc
-vendor/etc/init/hw/init.qcom.rc
-vendor/etc/init/hw/init.qcom.usb.rc
-vendor/etc/init/hw/init.target.rc
 vendor/etc/init/imsdatadaemon.rc
 vendor/etc/init/imsqmidaemon.rc
 vendor/etc/init/imsrcsd.rc
@@ -541,7 +537,6 @@ vendor/etc/init/init-qcril-data.rc
 vendor/etc/init/init.qdmastats.rc
 vendor/etc/init/init.qti.fm.rc
 vendor/etc/init/init.qti.qcv.rc
-vendor/etc/init/init.sweet.rc
 vendor/etc/init/init_thermal-engine.rc
 vendor/etc/init/init.time_daemon.rc
 vendor/etc/init/init.vendor.sensors.rc
