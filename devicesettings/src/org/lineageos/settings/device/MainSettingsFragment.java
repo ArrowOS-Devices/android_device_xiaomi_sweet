@@ -29,8 +29,6 @@ import org.lineageos.settings.device.utils.DisplayUtils;
 
 public class MainSettingsFragment extends PreferenceFragment {
 
-    private Preference mPrefRefreshRateInfo;
-    private SwitchPreference mPrefMinRefreshRate;
     private SwitchPreference mPrefDcDimming;
 
     @Override
@@ -42,13 +40,8 @@ public class MainSettingsFragment extends PreferenceFragment {
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.xml.main_settings);
-        mPrefMinRefreshRate = (SwitchPreference) findPreference(Constants.KEY_MIN_REFRESH_RATE);
-        mPrefMinRefreshRate.setOnPreferenceChangeListener(PrefListener);
-        mPrefRefreshRateInfo = (Preference) findPreference(Constants.KEY_REFRESH_RATE_INFO);
         mPrefDcDimming = (SwitchPreference) findPreference(Constants.KEY_DC_DIMMING);
         mPrefDcDimming.setOnPreferenceChangeListener(PrefListener);
-        setupPreferences();
-        updateSummary();
     }
 
     private Preference.OnPreferenceChangeListener PrefListener =
@@ -57,40 +50,11 @@ public class MainSettingsFragment extends PreferenceFragment {
             public boolean onPreferenceChange(Preference preference, Object value) {
                 final String key = preference.getKey();
 
-                if (Constants.KEY_MIN_REFRESH_RATE.equals(key)) {
-                    setHz(Constants.REFRESH_RATES[(boolean) value ? 1 : 0]);
-                } else if (Constants.KEY_DC_DIMMING.equals(key)) {
+                if (Constants.KEY_DC_DIMMING.equals(key)) {
                     DisplayUtils.setDcDimmingStatus((boolean) value);
                 }
 
                 return true;
             }
         };
-
-    private void setupPreferences() {
-        float hz = getCurrentHz();
-
-        if (hz == Constants.REFRESH_RATES[0]) {
-            mPrefMinRefreshRate.setChecked(false);
-        } else if (hz == Constants.REFRESH_RATES[1]) {
-            mPrefMinRefreshRate.setChecked(true);
-        }
-    }
-
-    private float getCurrentHz() {
-        return Settings.System.getFloat(getContext().getContentResolver(),
-            Settings.System.MIN_REFRESH_RATE, Constants.DEFAULT_REFRESH_RATE);
-    }
-
-    private void setHz(float hz) {
-        Settings.System.putFloat(getContext().getContentResolver(),
-            Settings.System.MIN_REFRESH_RATE, hz);
-        updateSummary();
-    }
-
-    private void updateSummary() {
-        mPrefRefreshRateInfo.setSummary(
-            String.format(getString(R.string.current_refresh_rate_info),
-                String.valueOf(Math.round(getCurrentHz()))));
-    }
 }
