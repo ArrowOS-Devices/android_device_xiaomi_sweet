@@ -12,15 +12,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string-array name="device_refresh_rates">
-        <item>60 Hz</item>
-        <item>120 Hz</item>
-    </string-array>
-    <string-array name="device_refresh_rates_val">
-        <item>60</item>
-        <item>120</item>
-    </string-array>
-
     <string-array name="color_profiles_names">
         <item>@string/color_profile_default</item>
         <item>@string/color_profile_cold</item>
