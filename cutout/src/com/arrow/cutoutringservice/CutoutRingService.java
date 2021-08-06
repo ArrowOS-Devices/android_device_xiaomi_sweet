@@ -53,6 +53,8 @@ public class CutoutRingService extends BroadcastReceiver {
     private static final int Y_OFFSET_HORIZONTAL = 0;
     private static final int ANIMATION_MS = 1000;
 
+    private static final float SCALE_CAMERA_INACTIVE = 0.8f;
+
     private final WindowManager.LayoutParams mRingParams = new WindowManager.LayoutParams(
             WindowManager.LayoutParams.TYPE_SECURE_SYSTEM_OVERLAY,
             WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN,
@@ -164,7 +166,7 @@ public class CutoutRingService extends BroadcastReceiver {
     private void setVisibility(boolean shown) {
         mRingView.setVisibility(mVisibility);
 
-        float scale = shown ? 1.0f : 0.0f;
+        float scale = shown ? 1.0f : SCALE_CAMERA_INACTIVE;
         AnimatorSet sizeAnimation = new AnimatorSet();
         ObjectAnimator scaleX = ObjectAnimator.ofFloat(mRingView, "scaleX", scale);
         ObjectAnimator scaleY = ObjectAnimator.ofFloat(mRingView, "scaleY", scale);
