@@ -21,14 +21,19 @@ import android.animation.ObjectAnimator;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Handler;
+import android.os.RemoteException;
 import android.graphics.PixelFormat;
 import android.hardware.camera2.CameraManager;
 import android.hardware.display.DisplayManager;
 import android.util.Log;
+import android.view.IDisplayWindowListener;
 import android.view.View;
 import android.view.Gravity;
 import android.view.WindowManager;
+import android.view.WindowManagerGlobal;
+import android.view.IWindowManager;
 import android.widget.ImageView;
 
 import com.arrow.cutoutringservice.sweet.R;
@@ -53,6 +58,10 @@ public class CutoutRingService extends BroadcastReceiver {
     private static final int Y_OFFSET_HORIZONTAL = 0;
     private static final int ANIMATION_MS = 1000;
 
+    private static final int HIDDEN = 0;
+    private static final int SHOWN_SMALL = 1;
+    private static final int SHOWN = 2;
+
     private static final float SCALE_CAMERA_INACTIVE = 0.8f;
 
     private final WindowManager.LayoutParams mRingParams = new WindowManager.LayoutParams(
@@ -66,13 +75,20 @@ public class CutoutRingService extends BroadcastReceiver {
     private DisplayManager mDisplayManager;
     private WindowManager mWindowManager;
 
+    private IWindowManager mWindowManagerService;
+
     private int mVisibility = VISIBLE;
+
+    private boolean mCameraActive = false;
+    private boolean mFixedRotationInProgress = false;
 
     @Override
     public void onReceive(final Context context, Intent intent) {
         mCameraManager = (CameraManager) context.getSystemService(Context.CAMERA_SERVICE);
         mDisplayManager = (DisplayManager) context.getSystemService(Context.DISPLAY_SERVICE);
         mWindowManager = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
+
+        mWindowManagerService = WindowManagerGlobal.getWindowManagerService();
 
         mRingParams.height = RING_SIZE;
         mRingParams.width = RING_SIZE;
@@ -92,9 +108,15 @@ public class CutoutRingService extends BroadcastReceiver {
 
         mWindowManager.addView(mRingView, mRingParams);
 
-        DisplayManager.DisplayListener displayListener = new DisplayManager.DisplayListener() {
+        IDisplayWindowListener mDisplayContainerListener =
+            new IDisplayWindowListener.Stub() {
             @Override
             public void onDisplayAdded(int displayId) {
+            }
+
+            @Override
+            public void onDisplayConfigurationChanged(int displayId, Configuration newConfig) {
+                onRotationChanged();
             }
 
             @Override
@@ -102,25 +124,43 @@ public class CutoutRingService extends BroadcastReceiver {
             }
 
             @Override
-            public void onDisplayChanged(int displayId) {
-                adjustParamsToRotation();
-                mWindowManager.updateViewLayout(mRingView, mRingParams);
+            public void onFixedRotationStarted(int displayId, int newRotation) {
+                mFixedRotationInProgress = true;
+                Handler.getMain().postAtFrontOfQueue(() -> setVisibility(HIDDEN));
+            }
+
+            @Override
+            public void onFixedRotationFinished(int displayId) {
+                onRotationChanged();
+                Handler.getMain().post(() -> setVisibility((mCameraActive) ? SHOWN : SHOWN_SMALL));
+                mFixedRotationInProgress = false;
             }
         };
-        mDisplayManager.registerDisplayListener(displayListener, Handler.getMain());
+
+        try {
+            mWindowManagerService.registerDisplayWindowListener(mDisplayContainerListener);
+        } catch (RemoteException e) {
+            throw new RuntimeException("Could not register the display listener");
+        }
 
         CameraManager.AvailabilityCallback camCallback = new CameraManager.AvailabilityCallback() {
             @Override
             public void onCameraAvailable(String cameraId) {
                 if (cameraId.equals(FRONT_CAMERA_ID)) {
-                    setVisibility(false);
+                    mCameraActive = false;
+                    if (!mFixedRotationInProgress) {
+                        setVisibility(SHOWN_SMALL);
+                    }
                 }
             }
 
             @Override
             public void onCameraUnavailable(String cameraId) {
                 if (cameraId.equals(FRONT_CAMERA_ID)) {
-                    setVisibility(true);
+                    mCameraActive = true;
+                    if (!mFixedRotationInProgress) {
+                        setVisibility(SHOWN);
+                    }
                 }
             }
         };
@@ -163,10 +203,23 @@ public class CutoutRingService extends BroadcastReceiver {
         mRingParams.gravity = gravity;
     }
 
-    private void setVisibility(boolean shown) {
+    private void setVisibility(int visibility) {
         mRingView.setVisibility(mVisibility);
 
-        float scale = shown ? 1.0f : SCALE_CAMERA_INACTIVE;
+        float scale = 0.0f;
+        switch (visibility) {
+            case HIDDEN:
+                scale = 0.0f;
+                mRingView.setVisibility(INVISIBLE);
+                break;
+            case SHOWN_SMALL:
+                scale = SCALE_CAMERA_INACTIVE;
+                break;
+            case SHOWN:
+                scale = 1.0f;
+                break;
+        }
+
         AnimatorSet sizeAnimation = new AnimatorSet();
         ObjectAnimator scaleX = ObjectAnimator.ofFloat(mRingView, "scaleX", scale);
         ObjectAnimator scaleY = ObjectAnimator.ofFloat(mRingView, "scaleY", scale);
@@ -180,5 +233,12 @@ public class CutoutRingService extends BroadcastReceiver {
 
     private int getRotation() {
         return mWindowManager.getDefaultDisplay().getRotation();
+    }
+
+    private void onRotationChanged() {
+        adjustParamsToRotation();
+        Handler.getMain().postAtFrontOfQueue(() -> {
+            mWindowManager.updateViewLayout(mRingView, mRingParams);
+        });
     }
 }
