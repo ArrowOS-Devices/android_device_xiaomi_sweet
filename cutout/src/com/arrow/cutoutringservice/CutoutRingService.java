@@ -95,7 +95,8 @@ public class CutoutRingService extends BroadcastReceiver {
 
         mRingParams.setTitle("CutoutRing");
         mRingParams.privateFlags |=
-                WindowManager.LayoutParams.PRIVATE_FLAG_IS_ROUNDED_CORNERS_OVERLAY;
+                WindowManager.LayoutParams.PRIVATE_FLAG_IS_ROUNDED_CORNERS_OVERLAY
+                        | WindowManager.LayoutParams.PRIVATE_FLAG_NO_MOVE_ANIMATION;
         mRingParams.layoutInDisplayCutoutMode =
                 WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_ALWAYS;
         mRingParams.setFitInsetsTypes(0);
