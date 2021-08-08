@@ -1,4 +1,4 @@
-# All unpinned blobs are from MIUI V12.5.4.0
+# All unpinned blobs are from MIUI V12.5.6.0
 # ADSP
 vendor/bin/adsprpcd
 vendor/lib/libadsprpc.so
