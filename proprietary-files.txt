@@ -321,7 +321,6 @@ vendor/etc/audio_configs.xml
 vendor/etc/audio_effects.conf
 vendor/etc/audio_effects.xml
 vendor/etc/audio_io_policy.conf
-vendor/etc/audio_platform_info_intcodec.xml
 vendor/etc/audio_platform_info_qrd.xml
 vendor/etc/audio_platform_info.xml
 vendor/etc/audio_policy_engine_configuration_mi.xml
