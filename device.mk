@@ -250,10 +250,6 @@ PRODUCT_PACKAGES += \
     libclearkeycasplugin \
     libdrmclearkeyplugin
 
-# TouchFeature
-PRODUCT_PACKAGES += \
-    vendor.xiaomi.hardware.touchfeature@1.0.vendor
-
 # Perf
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.2.vendor

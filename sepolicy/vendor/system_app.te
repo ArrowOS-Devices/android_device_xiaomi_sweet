@@ -1,6 +1,4 @@
 allow system_app sysfs_kgsl:file r_file_perms;
-allow system_app hal_touchfeature_hwservice_xiaomi:hwservice_manager find;
-allow system_app hal_touchfeature_default:binder call;
 allow system_app sysfs_zram:dir r_dir_perms;
 allow system_app sysfs_zram:file r_file_perms;
 allow system_app sysfs_dm:file rw_file_perms;
