@@ -19,7 +19,7 @@ cc_binary {
     init_rc: ["android.hardware.power-service.sweet-libperfmgr.rc"],
     vintf_fragments: ["android.hardware.power-service.sweet-libperfmgr.xml"],
     shared_libs: [
-        "android.hardware.power-ndk_platform",
+        "android.hardware.power-V1-ndk_platform",
         "libbase",
         "libcutils",
         "liblog",
