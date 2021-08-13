@@ -3,7 +3,6 @@ ro.product.first_api_level=30
 ro.vendor.product.cpu.abilist=arm64-v8a,armeabi-v7a,armeabi
 ro.vendor.product.cpu.abilist32=armeabi-v7a,armeabi
 ro.vendor.product.cpu.abilist64=arm64-v8a
-ro.product.board=sweet
 ro.board.platform=sm6150
 ro.hwui.use_vulkan=
 ro.vendor.colorpick_adjust=true
@@ -77,13 +76,10 @@ persist.vendor.radio.force_on_dc=true
 
 persist.sys.strictmode.disable=true
 
-persist.vendor.radio.dynamic_sar=false
-
 persist.radio.VT_CAM_INTERFACE=1
 
 persist.rcs.supported=0
 
-dalvik.vm.heapsize=36m
 dev.pm.dyn_samplingrate=1
 
 qcom.hw.aac.encoder=true
@@ -118,9 +114,6 @@ persist.fuse_sdcard=true
 vendor.bluetooth.soc=cherokee
 persist.vendor.btstack.enable.splita2dp=true
 persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptive-aac-ldac
-persist.vendor.btstack.enable.twsplus=true
-persist.vendor.btstack.connect.peer_earbud=true
-persist.vendor.btstack.enable.twsplussho=true
 persist.vendor.bt.a2dp.mac_whitelist=false
 persist.vendor.btsatck.absvolfeature=true
 
@@ -253,7 +246,6 @@ camera.disable_zsl_mode=1
 wifi.aware.interface=wifi-aware0
 ro.crypto.volume.filenames_mode=aes-256-cts
 vendor.hw.fm.init=0
-vendor.mm.enable.qcom_parser=16777215
 ro.vendor.extension_library=libqti-perfd-client.so
 ro.hardware.vulkan=adreno
 ro.hardware.egl=adreno
