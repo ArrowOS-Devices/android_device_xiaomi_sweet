@@ -10,4 +10,4 @@ allow hal_power sysfs_devices_system_cpu:file { write };
 allow hal_power vendor_latency_device:chr_file { write open };
 allow hal_power property_socket:sock_file { write };
 allow hal_power touchfeature_device:chr_file rw_file_perms;
-set_prop(hal_power, power_prop)
+set_prop(hal_power, vendor_power_prop)

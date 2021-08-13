@@ -1,4 +1,2 @@
-type sensors_prop, property_type;
-
 # Power
-type power_prop, property_type;
+type vendor_power_prop, property_type;
