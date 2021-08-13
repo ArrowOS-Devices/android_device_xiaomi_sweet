@@ -1,2 +1,2 @@
 allow vendor_init persist_file:lnk_file read;
-set_prop(vendor_init, power_prop)
+set_prop(vendor_init, vendor_power_prop)
