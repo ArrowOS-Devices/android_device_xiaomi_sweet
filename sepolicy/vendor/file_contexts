@@ -30,3 +30,9 @@
 /sys/devices/platform/kcal_ctrl.0/kcal_sat                           u:object_r:sysfs_dm:s0
 /sys/devices/platform/kcal_ctrl.0/kcal_val                           u:object_r:sysfs_dm:s0
 /sys/devices/platform/kcal_ctrl.0/kcal_cont                          u:object_r:sysfs_dm:s0
+
+# Battery secret
+/vendor/bin/batterysecret                                         u:object_r:batterysecret_exec:s0
+
+# Persist subsystem
+/mnt/vendor/persist/subsys(/.*)?                                  u:object_r:persist_subsys_file:s0
