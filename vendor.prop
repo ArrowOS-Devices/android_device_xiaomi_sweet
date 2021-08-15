@@ -254,6 +254,7 @@ wifi.aware.interface=wifi-aware0
 ro.crypto.volume.filenames_mode=aes-256-cts
 vendor.hw.fm.init=0
 vendor.mm.enable.qcom_parser=16777215
+ro.vendor.extension_library=libqti-perfd-client.so
 ro.hardware.vulkan=adreno
 ro.hardware.egl=adreno
 ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.sm6150.api30
