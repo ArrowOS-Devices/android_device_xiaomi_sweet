@@ -5,3 +5,6 @@ ro.vendor.audio.soundfx.usb=true
 ro.vendor.audio.us.type=mius
 vendor.audio.feature.compr_voip.enable=false
 vendor.voice.path.for.pcm.voip=false
+
+# Perf
+ro.vendor.extension_library=libqti-perfd-client.so
