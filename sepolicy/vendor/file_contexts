@@ -23,3 +23,9 @@
 
 # Dc Dimming
 /sys/devices/platform/soc/ae00000\.qcom,mdss_mdp/drm/card0/card0-DSI-1/disp_param u:object_r:sysfs_dm:s0
+
+# Battery secret
+/vendor/bin/batterysecret                                         u:object_r:batterysecret_exec:s0
+
+# Persist subsystem
+/mnt/vendor/persist/subsys(/.*)?                                  u:object_r:persist_subsys_file:s0
