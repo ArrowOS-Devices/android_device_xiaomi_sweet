@@ -195,7 +195,6 @@ vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
-vendor/bin/hw/android.hardware.gnss@2.1-service-qti
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
 vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
@@ -413,7 +412,6 @@ vendor/etc/device_sar_config.xml
 vendor/etc/dsi_k6_38_0c_0a_fhd_dsc_video_display_mi.xml
 vendor/etc/elliptic_sensor.xml
 vendor/etc/excluded-input-devices.xml
-vendor/etc/flp.conf
 vendor/etc/fs_config_dirs
 vendor/etc/fs_config_files
 vendor/etc/fstab.default
@@ -422,9 +420,7 @@ vendor/etc/ftm_test_config
 vendor/etc/ftm_test_config_qrd
 vendor/etc/ftm_test_config_sm6150-tavil-snd-card
 vendor/etc/ftm_test_config_sm6150-wcd9375qrd-snd-card
-vendor/etc/gnss_antenna_info.conf
 vendor/etc/gpfspath_oem_config.xml
-vendor/etc/gps.conf
 vendor/etc/graphite_ipc_platform_info.xml
 vendor/etc/group
 vendor/etc/hbtp/loader.cfg
@@ -436,7 +432,6 @@ vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc
 vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
 vendor/etc/init/android.hardware.lights-qti.rc
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
@@ -667,7 +662,6 @@ vendor/etc/ultrasound.wav
 vendor/etc/usb_audio_policy_configuration.xml
 -vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
--vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
 -vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml
 -vendor/etc/vintf/manifest/manifest.xml
 -vendor/etc/vintf/manifest/power.xml
@@ -845,7 +839,6 @@ vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so
 vendor/lib64/hw/android.hardware.broadcastradio@1.0-impl.so
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
-vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so
 vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
 vendor/lib64/hw/audio.bluetooth.default.so
 vendor/lib64/hw/audio.bluetooth_qti.default.so
@@ -918,7 +911,6 @@ vendor/lib64/libaudioparsers.so
 vendor/lib64/libaudioroute_ext.so
 vendor/lib64/libavservices_minijail.so
 vendor/lib64/libbase64.so
-vendor/lib64/libbatching.so
 vendor/lib64/libbatterylistener.so
 vendor/lib64/libbeauty_face_interface.so
 vendor/lib64/libbluetooth_audio_session_qti.so
@@ -998,13 +990,10 @@ vendor/lib64/libgcs-ipc.so
 vendor/lib64/libgcs-osal.so
 vendor/lib64/libgcs.so
 vendor/lib64/libgdtap.so
-vendor/lib64/libgeofencing.so
 vendor/lib64/libgnsspps.so
-vendor/lib64/libgnss.so
 vendor/lib64/libGPQTEEC_vendor.so
 vendor/lib64/libGPreqcancel.so
 vendor/lib64/libGPreqcancel_svc.so
-vendor/lib64/libgps.utils.so
 vendor/lib64/libGPTEE_vendor.so
 vendor/lib64/libgpudataproducer.so
 vendor/lib64/libgsl.so
@@ -1046,10 +1035,8 @@ vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
 vendor/lib64/libloadalgo_stub.so
 vendor/lib64/libloc_api_v02.so
-vendor/lib64/liblocation_api.so
 vendor/lib64/liblocationservice_glue.so
 vendor/lib64/liblocationservice.so
-vendor/lib64/libloc_core.so
 vendor/lib64/libloc_socket.so
 vendor/lib64/liblogwrap_vendor.so
 vendor/lib64/liblowi_client.so
@@ -1147,7 +1134,6 @@ vendor/lib64/libqti-iopd.so
 vendor/lib64/libqtikeymaster4.so
 vendor/lib64/libqti-utils.so
 vendor/lib64/libqtivibratoreffect.so
-vendor/lib64/libqti_vndfwk_detect.so
 vendor/lib64/librcc.so
 vendor/lib64/lib-rcsconfig.so
 vendor/lib64/librecovery_updater_msm.so
@@ -1473,7 +1459,6 @@ vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so
 vendor/lib/hw/android.hardware.broadcastradio@1.0-impl.so
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
-vendor/lib/hw/android.hardware.gnss@2.1-impl-qti.so
 vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
 vendor/lib/hw/audio.bluetooth.default.so
 vendor/lib/hw/audio.bluetooth_qti.default.so
@@ -1531,7 +1516,6 @@ vendor/lib/libaudioparsers.so
 vendor/lib/libaudioroute_ext.so
 vendor/lib/libavservices_minijail.so
 vendor/lib/libbase64.so
-vendor/lib/libbatching.so
 vendor/lib/libbatterylistener.so
 vendor/lib/libbluetooth_audio_session_qti.so
 vendor/lib/libbluetooth_audio_session.so
@@ -1603,13 +1587,10 @@ vendor/lib/libgcs-ipc.so
 vendor/lib/libgcs-osal.so
 vendor/lib/libgcs.so
 vendor/lib/libgdtap.so
-vendor/lib/libgeofencing.so
 vendor/lib/libgnsspps.so
-vendor/lib/libgnss.so
 vendor/lib/libGPQTEEC_vendor.so
 vendor/lib/libGPreqcancel.so
 vendor/lib/libGPreqcancel_svc.so
-vendor/lib/libgps.utils.so
 vendor/lib/libGPTEE_vendor.so
 vendor/lib/libgpudataproducer.so
 vendor/lib/libgsl.so
@@ -1647,10 +1628,8 @@ vendor/lib/liblistensoundmodel2.so
 vendor/lib/libllvm-glnext.so
 vendor/lib/libllvm-qcom.so
 vendor/lib/libloc_api_v02.so
-vendor/lib/liblocation_api.so
 vendor/lib/liblocationservice_glue.so
 vendor/lib/liblocationservice.so
-vendor/lib/libloc_core.so
 vendor/lib/libloc_socket.so
 vendor/lib/liblogwrap_vendor.so
 vendor/lib/liblowi_client.so
@@ -1739,7 +1718,6 @@ vendor/lib/libqti-iopd-client.so
 vendor/lib/libqti-iopd.so
 vendor/lib/libqtikeymaster4.so
 vendor/lib/libqti-utils.so
-vendor/lib/libqti_vndfwk_detect.so
 vendor/lib/librcc.so
 vendor/lib/lib-rcsconfig.so
 vendor/lib/librecovery_updater_msm.so
