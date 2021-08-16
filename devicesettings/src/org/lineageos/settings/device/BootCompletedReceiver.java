@@ -37,13 +37,8 @@ public class BootCompletedReceiver extends BroadcastReceiver {
     public void onReceive(final Context context, Intent intent) {
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
 
-        // We need to reset this setting to trigger an update in display service
-        final float refreshRate = Settings.System.getFloat(context.getContentResolver(),
-            Settings.System.MIN_REFRESH_RATE, 120.0f);
-        Settings.System.putFloat(context.getContentResolver(),
-            Settings.System.MIN_REFRESH_RATE, refreshRate);
-
         DisplayUtils.setDcDimmingStatus(sharedPreferences.getBoolean(Constants.KEY_DC_DIMMING, false));
+        DisplayUtils.updateRefreshRateSettings(context);
         DiracUtils.initialize(context);
     }
 }

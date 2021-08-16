@@ -1,7 +1,7 @@
 package org.lineageos.settings.device;
 
 public class Constants {
-    public static final String KEY_MIN_REFRESH_RATE = "pref_min_refresh_rate";
+    public static final String KEY_REFRESH_RATE_CONFIG = "pref_refresh_rate_config";
     public static final String KEY_REFRESH_RATE_INFO = "pref_refresh_rate_info";
     public static final String KEY_DC_DIMMING = "pref_dc_dimming";
     public static final String REFRESH_RATE_SWITCH_SUMMARY = "enable_high_refresh_rate_summary";
@@ -13,4 +13,6 @@ public class Constants {
 
     public static final String DISPPARAM_DC_ON = "0x40000";
     public static final String DISPPARAM_DC_OFF = "0x50000";
+
+    public static final String DEFAULT_REFRESH_RATE_CONFIG = "120-120";
 }
