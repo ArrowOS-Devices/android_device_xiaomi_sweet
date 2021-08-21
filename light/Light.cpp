@@ -23,8 +23,6 @@
 #define BRIGHTNESS      "brightness"
 #define MAX_BRIGHTNESS  "max_brightness"
 
-#define LCD_OFFSET      72
-
 namespace {
 /*
  * Write value to path and close file.
@@ -69,17 +67,11 @@ static uint32_t getBrightness(const HwLightState& state) {
 }
 
 static inline uint32_t scaleBrightness(uint32_t brightness, uint32_t maxBrightness) {
-    uint32_t scaledBrightness;
     if (brightness == 0) {
         return 0;
     }
 
-    scaledBrightness = (brightness - 1) * (maxBrightness - 1) / (0xFF - 1) + 1;
-    if (scaledBrightness >= LCD_OFFSET) {
-        scaledBrightness = scaledBrightness - ((LCD_OFFSET * LCD_OFFSET) / scaledBrightness);
-    }
-
-    return scaledBrightness;
+    return (brightness - 1) * (maxBrightness - 1) / (0xFF - 1) + 1;
 }
 
 static inline uint32_t getScaledBrightness(const HwLightState& state, uint32_t maxBrightness) {
