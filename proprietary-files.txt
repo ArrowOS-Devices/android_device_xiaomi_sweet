@@ -564,7 +564,6 @@ vendor/etc/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.xml
 vendor/etc/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.xml
 vendor/etc/qdcm_calib_data_Sharp_fhd_cmd_mode_qsync_dsi_panel.xml
 vendor/etc/qdcm_calib_data_Sharp_fhd_video_mode_qsync_dsi_panel.xml
-vendor/etc/qdcm_calib_data_xiaomi_k6_38_0c_0a_fhd_dsc_video_dsi_panel.xml
 vendor/etc/rcv.wav
 vendor/etc/r_submix_audio_policy_configuration.xml
 vendor/etc/sap.conf
