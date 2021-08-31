@@ -1,6 +1,7 @@
 # HALs
 /vendor/bin/hw/android\.hardware\.lights-service\.sweet        u:object_r:hal_light_default_exec:s0
 /vendor/bin/hw/android\.hardware\.power-service\.sweet-libperfmgr u:object_r:hal_power_default_exec:s0
+/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.sweet  u:object_r:hal_fingerprint_default_exec:s0
 
 # Data files
 /data/display(/.*)?      u:object_r:display_data_file:s0
