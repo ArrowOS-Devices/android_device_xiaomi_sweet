@@ -842,8 +842,8 @@ vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so
 vendor/lib64/hw/consumerir.default.so
-vendor/lib64/hw/fingerprint.fortsense.so
-vendor/lib64/hw/fingerprint.fpc.so
+vendor/lib64/hw/fingerprint.fortsense.so:vendor/lib64/hw/fingerprint.fortsense.sweet.so
+vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.sweet.so
 vendor/lib64/hw/lights.sm6150.so
 vendor/lib64/hw/sound_trigger.primary.sm6150.so
 vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
