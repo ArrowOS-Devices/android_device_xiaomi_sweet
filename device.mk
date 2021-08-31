@@ -345,4 +345,8 @@ PRODUCT_PACKAGES += \
      libloc_core \
      libgnss
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service.sweet
+
 include vendor/xiaomi/sweet/sweet-vendor.mk
