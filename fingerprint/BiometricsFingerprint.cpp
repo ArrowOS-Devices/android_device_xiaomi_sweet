@@ -16,6 +16,8 @@
 #define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service.sweet"
 #define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.1-service.sweet"
 
+#define USB_DEV_PATH "/sys/devices/platform/soc/a600000.ssusb/a600000.dwc3/xhci-hcd.0.auto"
+
 #include <hardware/hw_auth_token.h>
 
 #include <hardware/hardware.h>
@@ -28,6 +30,8 @@
 #include <android-base/strings.h>
 #include <android-base/properties.h>
 
+#include <sys/stat.h>
+
 namespace android {
 namespace hardware {
 namespace biometrics {
@@ -37,6 +41,11 @@ namespace implementation {
 
 // Supported fingerprint HAL version
 static const uint16_t kVersion = HARDWARE_MODULE_API_VERSION(2, 1);
+
+static bool isUsbActive() {
+    struct stat buf;
+    return (stat(USB_DEV_PATH, &buf) != -1);
+}
 
 using RequestStatus =
         android::hardware::biometrics::fingerprint::V2_1::RequestStatus;
@@ -276,6 +285,12 @@ void BiometricsFingerprint::notify(const fingerprint_msg_t *msg) {
         return;
     }
     const uint64_t devId = reinterpret_cast<uint64_t>(thisPtr->mDevice);
+
+    if (isUsbActive()) {
+        thisPtr->mClientCallback->onError(devId, FingerprintError::ERROR_HW_UNAVAILABLE, 0);
+        return;
+    }
+
     switch (msg->type) {
         case FINGERPRINT_ERROR: {
                 int32_t vendorCode = 0;
