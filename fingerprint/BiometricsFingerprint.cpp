@@ -16,6 +16,8 @@
 #define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service.sweet"
 #define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.1-service.sweet"
 
+#define USB_BUSY_PATH "/sys/devices/platform/soc/a600000.ssusb/a600000.dwc3/xhci-hcd.0.auto/usb1/1-1/1-1:1.0/host1/target1:0:0/1:0:0:0/device_busy"
+
 #include <hardware/hw_auth_token.h>
 
 #include <hardware/hardware.h>
@@ -28,6 +30,9 @@
 #include <android-base/strings.h>
 #include <android-base/properties.h>
 
+#include <sys/stat.h>
+#include <fstream>
+
 namespace android {
 namespace hardware {
 namespace biometrics {
@@ -37,6 +42,21 @@ namespace implementation {
 
 // Supported fingerprint HAL version
 static const uint16_t kVersion = HARDWARE_MODULE_API_VERSION(2, 1);
+
+static std::mutex mUsbActiveMutex;
+
+static bool isUsbActive() {
+    mUsbActiveMutex.lock();
+
+    std::string active = "0";
+    std::ifstream device_busy_file(USB_BUSY_PATH);
+
+    getline(device_busy_file, active);
+    device_busy_file.close();
+    mUsbActiveMutex.unlock();
+
+    return (active != "0");
+}
 
 using RequestStatus =
         android::hardware::biometrics::fingerprint::V2_1::RequestStatus;
@@ -166,6 +186,10 @@ Return<uint64_t> BiometricsFingerprint::preEnroll()  {
 
 Return<RequestStatus> BiometricsFingerprint::enroll(const hidl_array<uint8_t, 69>& hat,
         uint32_t gid, uint32_t timeoutSec) {
+    if (isUsbActive()) {
+        return RequestStatus::SYS_UNKNOWN;
+    }
+
     const hw_auth_token_t* authToken =
         reinterpret_cast<const hw_auth_token_t*>(hat.data());
     return ErrorFilter(mDevice->enroll(mDevice, authToken, gid, timeoutSec));
@@ -207,6 +231,10 @@ Return<RequestStatus> BiometricsFingerprint::setActiveGroup(uint32_t gid,
 
 Return<RequestStatus> BiometricsFingerprint::authenticate(uint64_t operationId,
         uint32_t gid) {
+    if (isUsbActive()) {
+        return RequestStatus::SYS_UNKNOWN;
+    }
+
     return ErrorFilter(mDevice->authenticate(mDevice, operationId, gid));
 }
 
