@@ -1,3 +1,4 @@
 # Elliptic ultrasound proximity
+elliptic.ultrasound.multiple_mics. u:object_r:elliptic_ultrasound_prop:s0
 elliptic.ultrasound.               u:object_r:vendor_sensors_prop:s0
 invn.hal                           u:object_r:vendor_sensors_prop:s0
