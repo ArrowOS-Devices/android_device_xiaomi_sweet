@@ -1,1 +1,2 @@
 allow init sysfs_dm:file setattr;
+allow init tmpfs:blk_file r_file_perms;
