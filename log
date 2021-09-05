@@ -1,0 +1,35 @@
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=11
+ARROW_VERSION=Arrow-v11.0-sweet-UNOFFICIAL-20210905-VANILLA
+TARGET_PRODUCT=arrow_sweet
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=generic
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv7-a-neon
+TARGET_2ND_CPU_VARIANT=generic
+HOST_OS=linux
+BUILD_ID=RQ3A.210805.001.A1
+OUT_DIR=/home/daniel/android/arrow/out
+PRODUCT_SOONG_NAMESPACES=device/xiaomi/sweet vendor/xiaomi/sweet hardware/qcom-caf/sm8150 vendor/qcom/opensource/commonsys-intf/display vendor/qcom/opensource/data-ipa-cfg-mgr packages/apps/Bluetooth
+============================================
+ninja: no work to do.
+[ 33% 1/3] glob device/xiaomi/sweet/NOTICE
+[ 66% 2/3] glob device/xiaomi/sweet/display/NOTICE
+No need to regenerate ninja file
+No need to regenerate ninja file
+No need to regenerate ninja file
+Starting ninja...
+[ 37% 3/8] rm -rf /home/daniel/android/arrow/out/soong/.intermediates/device/xiaomi/sweet/display/libsdmcore-patch2/gen; echo hi i\'m the second patch
+hi i'm the second patch
+[ 50% 4/8] Fake: /home/daniel/android/arrow/out/target/product/sweet/obj/FAKE/libsdmcore-patch2_intermediates/libsdmcore-patch2-timestamp
+[ 62% 5/8] Install: /home/daniel/android/arrow/out/target/product/sweet/fake_packages/libsdmcore-patch2-timestamp
+[ 75% 6/8] rm -rf /home/daniel/android/arrow/out/soong/.intermediates/device/xiaomi/sweet/display/libsdmcore-patch/gen; mkdir -p /home/daniel/android/arrow/out/target/product/sweet/vendor/lib64/hw && cp /home/daniel/android/arrow/out/target/product/sweet/symbols/vendor/lib64/libsdmcore.so /home/daniel/android/arrow/out/target/product/sweet/vendor/lib64/libsdmcore.so && cp /home/daniel/android/arrow/out/target/product/sweet/symbols/vendor/lib64/hw/hwcomposer.sm6150.so /home/daniel/android/arrow/out/target/product/sweet/vendor/lib64/hw/hwcomposer.sm6150.so && sed -i s/_ZN3sdm14DisplayBuiltIn14SetRefreshRateEjb/_ZN3sdm14DisplayBuiltIn14SetRefreshCustEjb/g /home/daniel/android/arrow/out/target/product/sweet/vendor/lib64/libsdmcore.so && sed -i s/libdisplaydebug/libsdmcore-shim/g /home/daniel/android/arrow/out/target/product/sweet/vendor/lib64/hw/hwcomposer.sm6150.so
+[ 87% 7/8] Fake: /home/daniel/android/arrow/out/target/product/sweet/obj/FAKE/libsdmcore-patch_intermediates/libsdmcore-patch-timestamp
+[100% 8/8] Install: /home/daniel/android/arrow/out/target/product/sweet/fake_packages/libsdmcore-patch-timestamp
+
+[0;32m#### build completed successfully (3 seconds) ####[00m
+
