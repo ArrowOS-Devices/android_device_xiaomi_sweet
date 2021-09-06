@@ -1,3 +1,15 @@
+// board_platform must match TARGET_BOARD_PLATFORM
+board_platform = "sm6150"
+cmd_and = " && "
+
+hwc = "hwcomposer." + board_platform
+libsdmcore = "$(productOut)/vendor/lib64/libsdmcore.so"
+hwcomposer = "$(productOut)/vendor/lib64/hw/" + hwc + ".so"
+
+original_symbol = "_ZN3sdm14DisplayBuiltIn14SetRefreshRateEjb"
+custom_symbol = "_ZN3sdm14DisplayBuiltIn14SetRefreshCustEjb"
+
+
 cc_library_shared {
     name: "libsdmcore-shim",
     srcs: [
@@ -5,4 +17,14 @@ cc_library_shared {
     ],
     required: ["libsdmcore-patch"],
     vendor: true,
+}
+
+sweet_build_command {
+    name: "libsdmcore-patch",
+    cmd: "mkdir -p $(productOut)/vendor/lib64/hw" + cmd_and +
+         "cp $(productOut)/symbols/vendor/lib64/libsdmcore.so " + libsdmcore + cmd_and +
+         "cp $(productOut)/symbols/vendor/lib64/hw/" + hwc + ".so " + hwcomposer + cmd_and +
+         "sed -i s/" + original_symbol + "/" + custom_symbol + "/g " + libsdmcore + cmd_and +
+         "sed -i s/libdisplaydebug/libsdmcore-shim/g " + hwcomposer,
+    required: [hwc, "libsdmcore"],
 }
