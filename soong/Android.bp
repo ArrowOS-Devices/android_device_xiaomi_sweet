@@ -1,0 +1,15 @@
+bootstrap_go_package {
+    name: "soong-sweet_build_command",
+    pkgPath: "android/soong/sweet_build_command",
+    deps: [
+        "blueprint",
+        "blueprint-pathtools",
+        "soong",
+        "soong-android",
+        "soong-shared",
+    ],
+    srcs: [
+        "build_command.go",
+    ],
+    pluginFor: ["soong_build"],
+}
