@@ -47,35 +47,12 @@ on boot
     setprop persist.vendor.qg_coff_gain 1
     setprop persist.vendor.qg_cld_coff_gain 1.5
 
-service vendor.motor /vendor/bin/hw/vendor.xiaomi.hardware.motor@1.0-service
-    class hal
-    user system
-    group system
-
-on boot
-    chown system system /sys/class/leds/green/step_ms
-    chown system system /sys/class/leds/green/pause_lo_count
-    chown system system /sys/class/leds/green/lut_pattern
-    chown system system /sys/class/leds/green/lo_idx
-    chown system system /sys/class/leds/blue/step_ms
-    chown system system /sys/class/leds/blue/pause_lo_count
-    chown system system /sys/class/leds/blue/lut_pattern
-    chown system system /sys/class/leds/blue/lo_idx
-
 # service for fwcheck
 service fwcheck /system/vendor/bin/sh /vendor/bin/fwcheck.sh
     class main
     user root
     group root
     oneshot
-
-service vendor.light-qti /vendor/bin/hw/android.hardware.lights-service.qti
-    class hal
-    user system
-    group system
-    shutdown critical
-    disabled
-    override
 
 on late-fs
     start surfaceflinger
