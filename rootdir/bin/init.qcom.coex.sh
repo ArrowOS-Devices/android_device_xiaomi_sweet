@@ -96,20 +96,13 @@ done
 # init does SIGTERM on ctl.stop for service
 trap "kill_coex" TERM INT
 
-#Selectively start coex module
-target=`getprop ro.board.platform`
-
-if [ "$target" == "msm8960" ] && [ "$ath_wlan_supported" != "2" ]; then
-     logi "btwlancoex/abtfilt is not needed"
+# Build settings may not produce the coex executable
+if ls /system/bin/btwlancoex || ls /system/bin/abtfilt
+then
+    start_coex
+    wait $coex_pid
+    logi "Coex stopped"
 else
-     # Build settings may not produce the coex executable
-     if ls /system/bin/btwlancoex || ls /system/bin/abtfilt
-     then
-         start_coex
-         wait $coex_pid
-         logi "Coex stopped"
-     else
-         logi "btwlancoex/abtfilt not available"
-     fi
+    logi "btwlancoex/abtfilt not available"
 fi
 exit 0
