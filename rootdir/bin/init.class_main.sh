@@ -139,15 +139,3 @@ case "$baseband" in
             ;;
     esac
 esac
-
-#
-# Allow persistent faking of bms
-# User needs to set fake bms charge in persist.vendor.bms.fake_batt_capacity
-#
-fake_batt_capacity=`getprop persist.vendor.bms.fake_batt_capacity`
-case "$fake_batt_capacity" in
-    "") ;; #Do nothing here
-    * )
-    echo "$fake_batt_capacity" > /sys/class/power_supply/battery/capacity
-    ;;
-esac

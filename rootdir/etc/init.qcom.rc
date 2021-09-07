@@ -58,8 +58,6 @@ on early-init
 
     chown root system /dev/kmsg
     chmod 0620 /dev/kmsg
-    # Load WIGIG platform driver
-    #exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules msm_11ad_proxy
 
 on init
 
@@ -800,11 +798,6 @@ service qcom-sh /vendor/bin/init.qcom.sh
     user root
     group root system radio
     oneshot
-# Remove since is deprecated but throws AVC denial.
-# service crashdata-sh /vendor/bin/init.qcom.crashdata.sh
-#    class late_start
-#    user root
-#    oneshot
 
 service qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
     class late_start
@@ -818,12 +811,6 @@ service wifi-sdio-on /vendor/bin/init.qcom.sdio.sh
     group wifi inet
     disabled
     oneshot
-
-service wifi-crda /vendor/bin/init.crda.sh
-   class late_start
-   user root
-   disabled
-   oneshot
 
 on property:sys.boot_completed=1
     start qcom-post-boot
@@ -1045,13 +1032,6 @@ service vendor.hbtp /vendor/bin/hbtp_daemon
      group system
      capabilities SYS_NICE
      disabled
-
-#service chre /vendor/bin/chre
-#    class late_start
-#    user system
-#    group system
-#    socket chre seqpacket 0660 root system
-#    shutdown critical
 
 on property:vendor.chre.enabled=0
    stop chre
