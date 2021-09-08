@@ -1,0 +1,27 @@
+prebuilt_etc {
+    name: "init.qcom.rc",
+    src: "init.qcom.rc",
+    sub_dir: "init/hw",
+    soc_specific: true
+}
+
+prebuilt_etc {
+    name: "init.qcom.usb.rc",
+    src: "init.qcom.usb.rc",
+    sub_dir: "init/hw",
+    soc_specific: true
+}
+
+prebuilt_etc {
+    name: "init.sweet.rc",
+    src: "init.sweet.rc",
+    sub_dir: "init",
+    soc_specific: true
+}
+
+prebuilt_etc {
+    name: "init.target.rc",
+    src: "init.target.rc",
+    sub_dir: "init/hw",
+    soc_specific: true
+}
