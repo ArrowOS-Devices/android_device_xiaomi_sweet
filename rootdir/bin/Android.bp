@@ -1,0 +1,71 @@
+sh_binary {
+    name: "init.class_main.sh",
+    src: "init.class_main.sh",
+    soc_specific: true
+}
+
+sh_binary {
+    name: "init.qcom.class_core.sh",
+    src: "init.qcom.class_core.sh",
+    soc_specific: true
+}
+
+sh_binary {
+    name: "init.qcom.coex.sh",
+    src: "init.qcom.coex.sh",
+    soc_specific: true
+}
+
+sh_binary {
+    name: "init.qcom.early_boot.sh",
+    src: "init.qcom.early_boot.sh",
+    soc_specific: true
+}
+
+sh_binary {
+    name: "init.qcom.efs.sync.sh",
+    src: "init.qcom.efs.sync.sh",
+    soc_specific: true
+}
+
+sh_binary {
+    name: "init.qcom.post_boot.sh",
+    src: "init.qcom.post_boot.sh",
+    soc_specific: true
+}
+
+sh_binary {
+    name: "init.qcom.sensors.sh",
+    src: "init.qcom.sensors.sh",
+    soc_specific: true
+}
+
+sh_binary {
+    name: "init.qcom.sh",
+    src: "init.qcom.sh",
+    soc_specific: true
+}
+
+sh_binary {
+    name: "init.qcom.usb.sh",
+    src: "init.qcom.usb.sh",
+    soc_specific: true
+}
+
+sh_binary {
+    name: "init.qti.chg_policy.sh",
+    src: "init.qti.chg_policy.sh",
+    soc_specific: true
+}
+
+sh_binary {
+    name: "init.qti.dcvs.sh",
+    src: "init.qti.dcvs.sh",
+    soc_specific: true
+}
+
+sh_binary {
+    name: "init.qti.qcv.sh",
+    src: "init.qti.qcv.sh",
+    soc_specific: true
+}
