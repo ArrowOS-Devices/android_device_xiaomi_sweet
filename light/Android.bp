@@ -15,6 +15,7 @@
 cc_binary {
     name: "android.hardware.lights-service.sweet",
     init_rc: ["android.hardware.lights-service.sweet.rc"],
+    vintf_fragments: ["android.hardware.lights-service.sweet.xml"],
     relative_install_path: "hw",
     shared_libs: [
         "libbase",
