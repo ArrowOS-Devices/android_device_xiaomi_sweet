@@ -65,8 +65,8 @@ void full_property_override(const std::string &prop, const char value[], const b
 }
 
 void vendor_load_properties() {
-    const char *fingerprint = "Xiaomi/dipper/dipper:8.1.0/OPM1.171019.011/V9.5.5.0.OEAMIFA:user/release-keys";
-    const char *description = "dipper-user 8.1.0 OPM1.171019.011 V9.5.5.0.OEAMIFA release-keys";
+    const char *fingerprint = "Redmi/sweet_global/sweet:11/RKQ1.200826.002/V12.5.6.0.RKFMIXM:user/release-keys";
+    const char *description = "sweet_global-user 11 RKQ1.200826.002 V12.5.6.0.RKFMIXM release-keys";
     const bool is_global = (GetProperty("ro.boot.hwc", "UNKNOWN") == "GLOBAL");
     const bool is_pro = (GetProperty("ro.boot.product.hardware.sku", "UNKNOWN") != "std");
 
