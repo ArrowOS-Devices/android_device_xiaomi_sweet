@@ -70,6 +70,14 @@ on post-fs-data
 on init && property:ro.boot.hwc=GLOBAL
     start nqnfc_2_0_hal_service
 
+on property:ro.boot.hwc=INDIA
+    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.hcef.xml bind
+    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.hce.xml bind
+    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.uicc.xml bind
+    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.xml bind
+    mount none /dev/null /vendor/etc/permissions/com.android.nfc_extras.xml bind
+    mount none /dev/null /vendor/etc/permissions/com.nxp.mifare.xml bind
+
 service nqnfc_2_0_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
     class hal
     user nfc
