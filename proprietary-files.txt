@@ -284,6 +284,9 @@ vendor/firmware/a615_zap.mdt
 vendor/firmware/a618_gmu.bin
 vendor/firmware/a630_sqe.fw
 
+# NFC
+vendor/lib/libpn553_fw.so
+
 # Sensors
 vendor/bin/sensors.qti
 vendor/etc/init/init.vendor.sensors.rc
