@@ -207,12 +207,66 @@
         <item>1500</item>
         <item>1700</item>
         <item>1900</item>
-        <item>2200</item>
+        <item>2000</item>
         <item>2500</item>
         <item>3000</item>
         <item>3500</item>
         <item>4000</item>
         <item>4500</item>
+    </integer-array>
+
+    <!-- Array of hysteresis constraint values for brightening, represented as tenths of a
+         percent. The length of this array is assumed to be one greater than
+         config_ambientThresholdLevels. The brightening threshold is calculated as
+         lux * (1.0f + CONSTRAINT_VALUE). When the current lux is higher than this threshold,
+         the screen brightness is recalculated. See the config_ambientThresholdLevels
+         description for how the constraint value is chosen. -->
+    <integer-array name="config_ambientBrighteningThresholds">
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>100</item>
+        <item>400</item>
+        <item>600</item>
+        <item>1000</item>
+    </integer-array>
+
+    <!-- Array of hysteresis constraint values for darkening, represented as tenths of a
+         percent. The length of this array is assumed to be one greater than
+         config_ambientThresholdLevels. The darkening threshold is calculated as
+         lux * (1.0f - CONSTRAINT_VALUE). When the current lux is lower than this threshold,
+         the screen brightness is recalculated. See the config_ambientThresholdLevels
+         description for how the constraint value is chosen. -->
+    <integer-array name="config_ambientDarkeningThresholds">
+        <item>800</item>
+        <item>800</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+    </integer-array>
+
+    <!-- Array of ambient lux threshold values. This is used for determining hysteresis constraint
+         values by calculating the index to use for lookup and then setting the constraint value
+         to the corresponding value of the array. The new brightening hysteresis constraint value
+         is the n-th element of config_ambientBrighteningThresholds, and the new darkening
+         hysteresis constraint value is the n-th element of config_ambientDarkeningThresholds.
+         The (zero-based) index is calculated as follows: (MAX is the largest index of the array)
+         condition                       calculated index
+         value < level[0]                0
+         level[n] <= value < level[n+1]  n+1
+         level[MAX] <= value             MAX+1 -->
+    <integer-array name="config_ambientThresholdLevels">
+        <item>2</item>
+        <item>10</item>
+        <item>30</item>
+        <item>100</item>
+        <item>800</item>
+        <item>2000</item>
+        <item>4000</item>
     </integer-array>
 
     <!-- Array of desired screen brightness in nits corresponding to the lux values
@@ -228,63 +282,63 @@
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
         <item>5</item>
-        <item>9</item>
-        <item>16</item>
+        <item>5</item>
+        <item>5</item>
+        <item>17</item>
         <item>24</item>
         <item>31</item>
-        <item>35</item>
-        <item>48</item>
-        <item>61</item>
+        <item>34</item>
+        <item>46</item>
+        <item>59</item>
+        <item>76</item>
+        <item>81</item>
+        <item>82</item>
+        <item>82</item>
+        <item>82</item>
         <item>83</item>
+        <item>83</item>
+        <item>83</item>
+        <item>84</item>
+        <item>84</item>
+        <item>85</item>
+        <item>85</item>
+        <item>85</item>
+        <item>85</item>
+        <item>86</item>
+        <item>86</item>
         <item>87</item>
-        <item>87</item>
-        <item>87</item>
-        <item>88</item>
-        <item>88</item>
-        <item>88</item>
-        <item>89</item>
-        <item>89</item>
         <item>89</item>
         <item>90</item>
-        <item>90</item>
         <item>91</item>
-        <item>91</item>
-        <item>91</item>
-        <item>92</item>
-        <item>92</item>
         <item>93</item>
-        <item>95</item>
+        <item>94</item>
         <item>96</item>
-        <item>98</item>
-        <item>98</item>
+        <item>97</item>
+        <item>99</item>
         <item>100</item>
         <item>101</item>
-        <item>102</item>
         <item>104</item>
         <item>105</item>
-        <item>107</item>
+        <item>106</item>
         <item>108</item>
-        <item>110</item>
+        <item>109</item>
         <item>111</item>
-        <item>113</item>
+        <item>112</item>
         <item>114</item>
         <item>116</item>
-        <item>117</item>
-        <item>119</item>
-        <item>120</item>
-        <item>142</item>
-        <item>164</item>
-        <item>190</item>
-        <item>216</item>
-        <item>243</item>
-        <item>272</item>
-        <item>302</item>
-        <item>313</item>
-        <item>386</item>
-        <item>430</item>
+        <item>137</item>
+        <item>157</item>
+        <item>180</item>
+        <item>205</item>
+        <item>226</item>
+        <item>257</item>
+        <item>280</item>
+        <item>295</item>
+        <item>369</item>
         <item>434</item>
-        <item>445</item>
-        <item>445</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
     </array>
 
     <!-- An array describing the screen's backlight values corresponding to the brightness
