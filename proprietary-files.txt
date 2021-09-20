@@ -517,7 +517,6 @@ vendor/etc/media_codecs_vendor_v1.xml
 vendor/etc/media_codecs_vendor_v2.xml
 vendor/etc/media_codecs_vendor.xml
 vendor/etc/media_codecs.xml
-vendor/etc/media_profiles_vendor.xml
 vendor/etc/media_profiles.xml
 vendor/etc/mi_us_sweep.wav
 vendor/etc/mi_us_whitenoise.wav
