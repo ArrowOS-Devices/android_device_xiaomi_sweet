@@ -384,4 +384,15 @@ PRODUCT_PACKAGES += \
     manifest_nfc \
     manifest_empty
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1.vendor
+
+# RIL
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.6.vendor \
+    android.hardware.radio.config@1.3.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.2.vendor
+
 include vendor/xiaomi/sweet/sweet-vendor.mk
