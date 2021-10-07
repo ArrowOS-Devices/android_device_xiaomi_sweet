@@ -737,5 +737,14 @@
         </interface>
         <fqname>@1.0::INxpNfcLegacy/default</fqname>
     </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.wifi.supplicant</name>
+        <transport>hwbinder</transport>
+        <version>2.2</version>
+        <interface>
+            <name>ISupplicantVendor</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <kernel target-level="5"/>
 </manifest>
