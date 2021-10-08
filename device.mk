@@ -205,9 +205,6 @@ PRODUCT_PACKAGES += \
     libwfdaac_vendor \
     vendor.display.config@2.0
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
-
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
