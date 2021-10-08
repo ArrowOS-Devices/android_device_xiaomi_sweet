@@ -11,7 +11,7 @@
         android:label="CutoutRingServiceSweet"
         android:persistent="true">
 
-        <receiver android:name="com.arrow.cutoutringservice.sweet.CutoutRingService">
+        <receiver android:name="com.arrow.cutoutringservice.sweet.CutoutRingService" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
