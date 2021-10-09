@@ -27,6 +27,7 @@
 
     <string name="sound_title">Sound</string>
 
+    <string name="dirac_enable">Enable sound enhancement</string>
     <string name="dirac_title">Dirac sound enhancer</string>
     <string name="dirac_summary">Configure sound presets, headset types and more</string>
     <string name="dirac_headset_title">Headset type</string>
