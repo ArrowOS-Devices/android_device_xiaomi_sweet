@@ -284,6 +284,7 @@ PRODUCT_COPY_FILES += \
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey \
+    android.hardware.drm@1.3.vendor \
     libclearkeycasplugin \
     libdrmclearkeyplugin
 
@@ -399,5 +400,13 @@ PRODUCT_PACKAGES += \
 # Network
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor
+
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0.vendor
+
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor
 
 include vendor/xiaomi/sweet/sweet-vendor.mk
