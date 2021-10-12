@@ -36,6 +36,9 @@
             <meta-data
                 android:name="com.android.settings.summary"
                 android:resource="@string/device_settings_summary" />
+            <meta-data
+                android:name="com.android.settings.icon"
+                android:resource="@drawable/ic_main_settings" />
         </activity>
 
         <activity
