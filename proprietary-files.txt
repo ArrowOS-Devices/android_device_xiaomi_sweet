@@ -43,6 +43,10 @@ vendor/firmware/awinic/aw882xx_spk_reg_r.bin
 -vendor/lib/libsndmonitor.so
 -vendor/lib/libspkrprot.so
 
+# Batterysecret
+-vendor/bin/batterysecret
+vendor/etc/init/init.batterysecret.rc
+
 # Camera
 -vendor/lib64/hw/camera.qcom.so
 -vendor/lib64/hw/com.qti.chi.override.so
