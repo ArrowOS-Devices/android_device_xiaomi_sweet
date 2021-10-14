@@ -10,7 +10,6 @@ framework/tcmclient.jar
 -framework/WfdCommon.jar
 
 # system_ext
--system_ext/app/datastatusnotification/datastatusnotification.apk
 -system_ext/app/DeviceInfo/DeviceInfo.apk
 -system_ext/app/embms/embms.apk
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
