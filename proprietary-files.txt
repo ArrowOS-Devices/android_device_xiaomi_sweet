@@ -282,7 +282,6 @@ vendor/bin/wfdvndservice
 vendor/bin/wifidisplayhalservice
 vendor/bin/wpa_cli
 vendor/bin/xtra-daemon
-vendor/etc/a2dp_audio_policy_configuration.xml
 vendor/etc/apdr.conf
 vendor/etc/audio_configs_stock.xml
 vendor/etc/audio_configs.xml
@@ -302,7 +301,6 @@ vendor/etc/audio_policy_engine_stream_volumes_mi.xml
 vendor/etc/audio_policy_engine_stream_volumes.xml
 vendor/etc/audio_policy_volumes.xml
 vendor/etc/audio_tuning_mixer_tavil.txt
-vendor/etc/bluetooth_qti_audio_policy_configuration.xml
 vendor/etc/cacert_location.pem
 vendor/etc/camera/almalence_sr_params_tele.config
 vendor/etc/camera/almalence_sr_params_wide.config
@@ -544,7 +542,6 @@ vendor/etc/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.xml
 vendor/etc/qdcm_calib_data_Sharp_fhd_cmd_mode_qsync_dsi_panel.xml
 vendor/etc/qdcm_calib_data_Sharp_fhd_video_mode_qsync_dsi_panel.xml
 vendor/etc/rcv.wav
-vendor/etc/r_submix_audio_policy_configuration.xml
 vendor/etc/sap.conf
 vendor/etc/screen_light.xml
 vendor/etc/sdr_config.cfg
@@ -633,7 +630,6 @@ vendor/etc/thermal-video.conf
 vendor/etc/thermal-youtube.conf
 vendor/etc/tzlog.dict
 vendor/etc/ultrasound.wav
-vendor/etc/usb_audio_policy_configuration.xml
 -vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 -vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
