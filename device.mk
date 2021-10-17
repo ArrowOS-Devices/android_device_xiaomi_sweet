@@ -376,4 +376,9 @@ PRODUCT_PACKAGES += \
 # VNDK
 $(foreach target, $(shell cat $(LOCAL_PATH)/vndk.txt), $(eval PRODUCT_PACKAGES += $(target).vendor))
 
+# VINTF
+PRODUCT_PACKAGES += \
+    manifest_nfc \
+    manifest_empty
+
 include vendor/xiaomi/sweet/sweet-vendor.mk

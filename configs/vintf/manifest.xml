@@ -153,16 +153,6 @@
         <fqname>@1.1::IRadioConfig/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.secure_element</name>
-        <transport>hwbinder</transport>
-        <version>1.2</version>
-        <interface>
-            <name>ISecureElement</name>
-            <instance>SIM1</instance>
-        </interface>
-        <fqname>@1.2::ISecureElement/SIM1</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.sensors</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -706,36 +696,6 @@
         <fqname>@1.0::IWifiDisplaySessionAudioTrack/wifidisplaysessionaudiotrack</fqname>
         <fqname>@1.0::IWifiDisplaySessionImageTrack/wifidisplaysessionimagetrack</fqname>
         <fqname>@1.0::IWifiDisplaySessionVideoTrack/wifidisplaysessionvideotrack</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.nfc</name>
-        <transport>hwbinder</transport>
-        <version>1.2</version>
-        <interface>
-            <name>INfc</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.2::INfc/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.nxp.hardware.nfc</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>INqNfc</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@2.0::INqNfc/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.nxp.nxpnfclegacy</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>INxpNfcLegacy</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::INxpNfcLegacy/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.wifi.supplicant</name>
