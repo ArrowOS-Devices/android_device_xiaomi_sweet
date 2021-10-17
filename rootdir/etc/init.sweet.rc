@@ -83,6 +83,8 @@ on property:ro.boot.hwc=INDIA
     mount none /dev/null /vendor/etc/permissions/com.android.nfc_extras.xml bind
     mount none /dev/null /vendor/etc/permissions/com.nxp.mifare.xml bind
 
+    mount none /vendor/etc/vintf/manifest/manifest_empty.xml /vendor/etc/vintf/manifest/manifest_nfc.xml bind
+
 service nqnfc_2_0_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
     class hal
     user nfc
