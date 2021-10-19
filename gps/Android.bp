@@ -16,6 +16,18 @@ GNSS_CFLAGS = [
     "-Wno-error=date-time",
 ]
 
+/* Activate the following for regression testing */
+GNSS_SANITIZE = {
+/*  address: true,*/
+    cfi: true,
+    misc_undefined: [
+        "bounds",
+        "null",
+        "unreachable",
+        "integer",
+    ],
+}
+
 /* Activate the following for debug purposes only,
    comment out for production */
 GNSS_SANITIZE_DIAG = {
@@ -31,3 +43,6 @@ GNSS_SANITIZE_DIAG = {
     },
 */
 }
+
+GNSS_HIDL_VERSION = ["2.1"]
+LOC_HIDL_VERSION = "4.0"
