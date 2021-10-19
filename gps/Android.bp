@@ -43,3 +43,6 @@ GNSS_SANITIZE_DIAG = {
     },
 */
 }
+
+GNSS_HIDL_VERSION = ["2.1"]
+LOC_HIDL_VERSION = "4.0"
