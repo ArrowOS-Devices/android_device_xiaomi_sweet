@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018 The LineageOS Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="device_settings_title">Ajustes específicos del dispositivo</string>
+    <string name="device_settings_summary">Personaliza los aspectos específicos del dispositivo</string>
+
+    <string name="refresh_rate_title">Tasa de refresco</string>
+    <string name="refresh_rate_summary">Cambia la tasa de refresco de tu dispositivo para una mejor experiencia</string>
+    <string name="enable_high_refresh_rate_title">Alta tasa de refresco</string>
+    <string name="enable_high_refresh_rate_summary">Habilita una tasa de refresco alta para una experiencia más fluida</string>
+    <string name="current_refresh_rate_info">Tasa de refresco máxima/mínima: <xliff:g id="version">%1$s</xliff:g>Hz - <xliff:g id="version">%2$s</xliff:g>Hz</string>
+
+    <string name="display_title">Pantalla</string>
+    <string name="dc_dimming_title">Atenuación de CC</string>
+    <string name="dc_dimming_summary">Habilita la atenuación de CC para evitar parpadeo en condiciones de brillo bajo</string>
+
+    <string name="sound_title">Sonido</string>
+
+    <string name="dirac_enable">Habilitar el potenciador de sonido</string>
+    <string name="dirac_title">Potenciador de sonido Dirac</string>
+    <string name="dirac_summary">Configura plantillas, tipo de auriculares y más</string>
+    <string name="dirac_headset_title">Tipo de auriculares</string>
+    <string name="dirac_preset_title">Plantillas de sonido</string>
+
+    <string name="dirac_headset_default">Por defecto</string>
+    <string name="dirac_headset_earbuds">Mi Earbuds</string>
+    <string name="dirac_headset_in_ear_2013">Mi In-Ear (2013)</string>
+    <string name="dirac_headset_piston_1">Mi Piston 1</string>
+    <string name="dirac_headset_general">General Earbuds</string>
+    <string name="dirac_headset_general_inear">General In-Ear</string>
+    <string name="dirac_headset_piston_basic">Basic Edition</string>
+    <string name="dirac_headset_piston_2">Mi Piston 2</string>
+    <string name="dirac_headset_piston_standard">Mi Piston 3</string>
+    <string name="dirac_headset_headphone">Mi Headphone</string>
+    <string name="dirac_headset_piston_youth">Youth Edition</string>
+    <string name="dirac_headset_piston_color">Color Edition</string>
+    <string name="dirac_headset_in_ear">Mi In-Ear</string>
+    <string name="dirac_headset_capsule">Mi Capsule</string>
+    <string name="dirac_headset_in_ear_pro">Mi In-Ear Pro</string>
+    <string name="dirac_headset_comfort">Mi Comfort</string>
+    <string name="dirac_headset_reduction_noise">Mi Noise Cancelling (Type-C)</string>
+    <string name="dirac_headset_cancelling">Mi Noise Cancelling (3.5mm)</string>
+    <string name="dirac_headset_half_in_ear">Mi Half In-Ear</string>
+    <string name="dirac_headset_in_ear2">Mi In-Ear 2</string>
+    <string name="dirac_headset_earphone_basic">Mi Earphones Basic</string>
+    <string name="dirac_headset_earphone">Mi Earphones</string>
+
+    <string name="dirac_preset_default">Por defecto</string>
+    <string name="dirac_preset_rock">Rock</string>
+    <string name="dirac_preset_jazz">Jazz</string>
+    <string name="dirac_preset_pop">Pop</string>
+    <string name="dirac_preset_classical">Clásica</string>
+    <string name="dirac_preset_hiphop">Hiphop</string>
+    <string name="dirac_preset_blues">Blues</string>
+    <string name="dirac_preset_electronic">Electrónica</string>
+    <string name="dirac_preset_country">Country</string>
+    <string name="dirac_preset_dance">Dance</string>
+    <string name="dirac_preset_metal">Metal</string>
+
+    <string name="dirac_hifi_enable_title">Habilitar Hi-fi</string>
+    <string name="dirac_hifi_title">Hi-Fi</string>
+    <string name="dirac_hifi_summary">Reduce el ruido y la distorsión y aumenta la calidad del audio</string>
+</resources>
