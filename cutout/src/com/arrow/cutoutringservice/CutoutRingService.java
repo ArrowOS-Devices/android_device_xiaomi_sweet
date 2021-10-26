@@ -106,6 +106,7 @@ public class CutoutRingService extends BroadcastReceiver {
 
         mRingView = new ImageView(context);
         mRingView.setImageResource(R.drawable.ring);
+        mRingView.setForceDarkAllowed(false);
 
         mWindowManager.addView(mRingView, mRingParams);
 
