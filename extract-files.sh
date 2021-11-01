@@ -89,6 +89,8 @@ function blob_fixup() {
         $PATCHELF_TOOL --remove-needed "libmegface.so" "${2}"
         $PATCHELF_TOOL --add-needed "libshim_megvii.so" "${2}"
         ;;
+    system_ext/lib64/libimsmedia_jni.so)
+        $PATCHELF_TOOL --add-needed "libgui-shim.so" "${2}"
     esac
 }
 
