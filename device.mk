@@ -23,19 +23,7 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     android.hardware.audio.service \
     android.hardware.audio.common-util \
-    android.hardware.audio.common@2.0-util \
-    android.hardware.audio.common@4.0-util \
-    android.hardware.audio.common@5.0-util \
-    android.hardware.audio.common@6.0-util \
-    android.hardware.audio.effect@2.0-impl \
-    android.hardware.audio.effect@4.0-impl \
-    android.hardware.audio.effect@5.0-impl \
-    android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.effect@7.0-impl \
-    android.hardware.audio@2.0-impl \
-    android.hardware.audio@4.0-impl \
-    android.hardware.audio@5.0-impl \
-    android.hardware.audio@6.0-impl \
     android.hardware.audio@7.0-impl
 
 PRODUCT_PACKAGES += \
@@ -218,8 +206,7 @@ PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
-    camera.device@3.6-external-impl \
-    camera.device@3.5-impl
+    android.hardware.camera.provider@2.4-external
 
 PRODUCT_PACKAGES += \
     libshim_megvii
@@ -229,25 +216,16 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.4-impl \
     android.hardware.graphics.composer@2.4-service \
-    android.hardware.graphics.composer@2.2-resources.vendor \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     vendor.qti.hardware.display.allocator-service \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     gralloc.sm6150 \
-    gralloc.default \
     hwcomposer.sm6150 \
     memtrack.sm6150 \
-    vendor.qti.hardware.display.mapper@1.0.vendor \
-    vendor.qti.hardware.display.mapper@1.1.vendor \
-    vendor.qti.hardware.display.mapper@2.0.vendor \
-    vendor.qti.hardware.display.composer@1.0.vendor \
-    vendor.qti.hardware.display.composer@2.0.vendor \
-    vendor.qti.hardware.display.allocator@1.0.vendor \
-    vendor.qti.hardware.display.mapperextensions@1.1.vendor
+    vendor.qti.hardware.display.mapper@2.0.vendor
 
 PRODUCT_PACKAGES += \
     libsdmcore-shim
@@ -285,9 +263,7 @@ PRODUCT_COPY_FILES += \
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey \
-    android.hardware.drm@1.3.vendor \
-    libclearkeycasplugin \
-    libdrmclearkeyplugin
+    android.hardware.drm@1.3.vendor
 
 # Perf
 PRODUCT_PACKAGES += \
@@ -303,11 +279,7 @@ PRODUCT_PACKAGES += \
     wpa_supplicant.conf
 
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.wifi.hostapd@1.0.vendor \
-    vendor.qti.hardware.wifi.hostapd@1.1.vendor \
     vendor.qti.hardware.wifi.hostapd@1.2.vendor \
-    vendor.qti.hardware.wifi.supplicant@2.0.vendor \
-    vendor.qti.hardware.wifi.supplicant@2.1.vendor \
     vendor.qti.hardware.wifi.supplicant@2.2.vendor
 
 # Thermal
