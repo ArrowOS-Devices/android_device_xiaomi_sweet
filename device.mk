@@ -386,4 +386,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor
 
+# Shims
+PRODUCT_PACKAGES += \
+    libgui-shim
+
 include vendor/xiaomi/sweet/sweet-vendor.mk
