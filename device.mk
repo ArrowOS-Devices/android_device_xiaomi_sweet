@@ -379,9 +379,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-V1-ndk_platform.vendor
 
-# VNDK
-$(foreach target, $(shell cat $(LOCAL_PATH)/vndk.txt), $(eval PRODUCT_PACKAGES += $(target).vendor))
-
 # VINTF
 PRODUCT_PACKAGES += \
     manifest_nfc \
