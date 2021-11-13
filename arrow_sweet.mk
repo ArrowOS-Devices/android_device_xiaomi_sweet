@@ -8,6 +8,9 @@ $(call inherit-product, device/xiaomi/sweet/device.mk)
 # Inherit common ArrowOS configurations
 $(call inherit-product, vendor/arrow/config/common.mk)
 
+# Inherit ANX camera
+$(call inherit-product-if-exists, vendor/ANXCamera/config.mk)
+
 PRODUCT_NAME := arrow_sweet
 PRODUCT_DEVICE := sweet
 PRODUCT_BRAND := Redmi
