@@ -53,6 +53,9 @@ on init
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
 
+    write /sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/governor "bw_hwmon"
+    write /sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/governor "bw_hwmon"
+
 on early-fs
     start vold
 
