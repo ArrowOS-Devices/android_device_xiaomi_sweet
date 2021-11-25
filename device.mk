@@ -29,7 +29,7 @@ PRODUCT_COPY_FILES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sm6150
+    android.hardware.biometrics.fingerprint@2.3-service.xiaomi_sm6150
 
 # Camera
 PRODUCT_PACKAGES += \
