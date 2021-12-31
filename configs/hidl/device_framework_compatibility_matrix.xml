@@ -91,6 +91,14 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     </interface>
 </hal>
 <hal format="hidl">
+    <name>vendor.xiaomi.hardware.fingerprintextension</name>
+    <version>1.0</version>
+    <interface>
+        <name>IXiaomiFingerprint</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl">
     <name>vendor.qti.data.factory</name>
     <version>2.0-1</version>
     <interface>
