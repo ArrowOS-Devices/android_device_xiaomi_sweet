@@ -1,4 +1,4 @@
-# Unpinned section - from MIUI v12.5.8.0 RKFMIXM
+# Unpinned section - from MIUI v13.0.2.0 SKFMIXM
 # odm
 odm/etc/media_profiles_V1_0.xml
 
@@ -23,7 +23,6 @@ system_ext/etc/permissions/com.qualcomm.qti.imscmservice.xml
 system_ext/etc/permissions/dpmapi.xml
 system_ext/etc/permissions/embms.xml
 system_ext/etc/permissions/qcrilhook.xml
-system_ext/etc/permissions/telephonyservice.xml
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 system_ext/framework/com.qti.dpmframework.jar
 system_ext/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar
@@ -105,11 +104,9 @@ vendor/app/CneApp/oat/arm64/CneApp.vdex
 vendor/app/com.qualcomm.qti.improvetouch.service/oat/arm64/com.qualcomm.qti.improvetouch.service.odex
 vendor/app/com.qualcomm.qti.improvetouch.service/oat/arm64/com.qualcomm.qti.improvetouch.service.vdex
 -vendor/app/FS_FpFactory/FS_FpFactory.apk
--vendor/app/IconShapeOverlay/IconShapeOverlay.apk
 -vendor/app/IWlanService/IWlanService.apk
 vendor/app/IWlanService/oat/arm64/IWlanService.odex
 vendor/app/IWlanService/oat/arm64/IWlanService.vdex
--vendor/app/NotchOverlay/NotchOverlay.apk
 -vendor/app/SensorTestTool/SensorTestTool.apk
 vendor/app/TimeService/oat/arm64/TimeService.odex
 vendor/app/TimeService/oat/arm64/TimeService.vdex
@@ -168,7 +165,6 @@ vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
 vendor/bin/hw/vendor.qti.hardware.servicetracker@1.2-service
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
-vendor/bin/hw/vendor.qti.hardware.trustedui@1.0-service-qti
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/bin/hw/vendor.qti.hardware.vibrator.service
 vendor/bin/hw/vendor.qti.media.c2@1.0-service
@@ -189,7 +185,7 @@ vendor/bin/mishow.sh
 vendor/bin/mi_thermald
 vendor/bin/mlid
 vendor/bin/msm_irqbalance
-vendor/bin/mtd@1.2
+vendor/bin/mtd@1.3
 vendor/bin/netmgrd
 vendor/bin/nqnfcinfo
 vendor/bin/nv_mac
@@ -231,7 +227,6 @@ vendor/bin/time_daemon
 vendor/bin/toolbox
 vendor/bin/tp_data_collect.sh
 vendor/bin/tp_selftest.sh
-vendor/bin/TrustedUISampleTest
 vendor/bin/us_cal.sh
 vendor/bin/vendor.qti.hardware.soter@1.0-provision
 vendor/bin/vppservice
@@ -304,8 +299,8 @@ vendor/etc/camera/vidhance_calibration_64m
 vendor/etc/camera/watermark_font_2300_3199.dat
 vendor/etc/charger_fstab.qti
 vendor/etc/cit_param_config.json
-vendor/etc/cne/profileSlm.xml
-vendor/etc/cne/slm.conf
+vendor/etc/cne/mwqem.conf
+vendor/etc/cne/profileMwqem.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml
@@ -339,7 +334,6 @@ vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml
 vendor/etc/default_volume_tables.xml
-vendor/etc/device_features/sweet.xml
 vendor/etc/device_sar_config.xml
 vendor/etc/dsi_k6_38_0c_0a_fhd_dsc_video_display_mi.xml
 vendor/etc/elliptic_sensor.xml
@@ -363,7 +357,7 @@ vendor/etc/hostapd/hostapd.deny
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
+vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc
 vendor/etc/init/android.hardware.lights-qti.rc
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
 vendor/etc/init/android.hardware.power-service.rc
@@ -381,7 +375,6 @@ vendor/etc/init/ims_rtp_daemon.rc
 vendor/etc/init/init.batteryd.rc
 vendor/etc/init/init.batterysecret.rc
 vendor/etc/init/init.charge_logger.rc
-vendor/etc/init/init.embmssl_server.rc
 vendor/etc/init/init.fpc1540_ko.rc
 vendor/etc/init/init.mishow.ctl.rc
 vendor/etc/init/init.mi_thermald.rc
@@ -423,7 +416,6 @@ vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
-vendor/etc/init/vendor.qti.hardware.trustedui@1.0-service-qti.rc
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/etc/init/vendor.qti.hardware.vibrator.service.rc
 vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc
@@ -448,7 +440,6 @@ vendor/etc/lm/AdaptLaunchFeature.xml
 vendor/etc/lm/AppClassifierFeature.xml
 vendor/etc/lm/GameOptimizationFeature.xml
 vendor/etc/lowi.conf
-vendor/etc/media_codecs_c2.xml
 vendor/etc/media_codecs_google_audio.xml
 vendor/etc/media_codecs_google_c2_audio.xml
 vendor/etc/media_codecs_google_c2_video.xml
@@ -773,6 +764,7 @@ vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
@@ -829,6 +821,7 @@ vendor/lib64/libbase64.so
 vendor/lib64/libbatterylistener.so
 vendor/lib64/libbeauty_face_interface.so
 vendor/lib64/libbluetooth_audio_session_qti.so
+vendor/lib64/libbluetooth_audio_session_qti_2_1.so
 vendor/lib64/libbluetooth_audio_session.so
 vendor/lib64/libbt-hidlclient.so
 vendor/lib64/libbtnv.so
@@ -978,7 +971,7 @@ vendor/lib64/libmm-hdcpmgr.so
 vendor/lib64/libmmosal.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libMpeg4SwEncoder.so
-vendor/lib64/libmt@1.2.so
+vendor/lib64/libmt@1.3.so
 vendor/lib64/libmt.so
 vendor/lib64/libmulawdec.so
 vendor/lib64/libmulticam_image_optical_zoom.so
@@ -1131,13 +1124,8 @@ vendor/lib64/libtime_genoff.so
 vendor/lib64/libtinycompress.so
 vendor/lib64/libtinyxml2_1.so
 vendor/lib64/libtinyxml.so
-vendor/lib64/libTouchInputVM.so
 vendor/lib64/libtriplecam_video_optical_zoom.so
 vendor/lib64/libtrustedapploader.so
-vendor/lib64/libTrustedInput.so
-vendor/lib64/libTrustedInputTZ.so
-vendor/lib64/libTrustedUI.so
-vendor/lib64/libTrustedUITZ.so
 vendor/lib64/libtzdrmgenprov.so
 vendor/lib64/lib-uceservice.so
 vendor/lib64/libultrasound.so
@@ -1200,6 +1188,9 @@ vendor/lib64/vendor.nxp.hardware.nfc@2.0.so
 vendor/lib64/vendor.nxp.nxpnfclegacy@1.0.so
 vendor/lib64/vendor.qti.data.factory@2.0.so
 vendor/lib64/vendor.qti.data.factory@2.1.so
+vendor/lib64/vendor.qti.data.factory@2.2.so
+vendor/lib64/vendor.qti.data.factory@2.3.so
+vendor/lib64/vendor.qti.data.mwqem@1.0.so
 vendor/lib64/vendor.qti.data.slm@1.0.so
 vendor/lib64/vendor.qti.esepowermanager@1.0.so
 vendor/lib64/vendor.qti.esepowermanager@1.1.so
@@ -1214,6 +1205,7 @@ vendor/lib64/vendor.qti.gnss@4.0.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 vendor/lib64/vendor.qti.hardware.automotive.vehicle@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so
+vendor/lib64/vendor.qti.hardware.bluetooth_audio@2.1.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so
@@ -1231,6 +1223,7 @@ vendor/lib64/vendor.qti.hardware.data.connection@1.1.so
 vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so
 vendor/lib64/vendor.qti.hardware.data.iwlan@1.0.so
 vendor/lib64/vendor.qti.hardware.data.latency@1.0.so
+vendor/lib64/vendor.qti.hardware.data.lce@1.0.so
 vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/vendor.qti.hardware.embmssl@1.0-adapter-helper.so
@@ -1240,6 +1233,7 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so
 vendor/lib64/vendor.qti.hardware.fstman@1.0.so
 vendor/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so
 vendor/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so
+vendor/lib64/vendor.qti.hardware.mwqemadapter@1.0.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so
@@ -1255,8 +1249,10 @@ vendor/lib64/vendor.qti.hardware.radio.ims@1.3.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.4.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.5.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.6.so
+vendor/lib64/vendor.qti.hardware.radio.ims@1.7.so
 vendor/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.lpa@1.0.so
+vendor/lib64/vendor.qti.hardware.radio.lpa@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so
@@ -1277,8 +1273,6 @@ vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so
 vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
-vendor/lib64/vendor.qti.hardware.systemhelper@1.0.so
-vendor/lib64/vendor.qti.hardware.trustedui@1.0.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib64/vendor.qti.hardware.vibrator.impl.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
@@ -1297,6 +1291,7 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 vendor/lib64/vendor.qti.latency@2.0.so
+vendor/lib64/vendor.qti.latency@2.1.so
 vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so
 vendor/lib64/vendor.qti.power.pasrmanager@1.0.so
 vendor/lib64/vendor.qti.voiceprint@1.0.so
@@ -1386,6 +1381,7 @@ vendor/lib/hw/vendor.qti.esepowermanager@1.1-impl.so
 vendor/lib/hw/vendor.qti.gnss@4.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
@@ -1426,6 +1422,7 @@ vendor/lib/libavservices_minijail.so
 vendor/lib/libbase64.so
 vendor/lib/libbatterylistener.so
 vendor/lib/libbluetooth_audio_session_qti.so
+vendor/lib/libbluetooth_audio_session_qti_2_1.so
 vendor/lib/libbluetooth_audio_session.so
 vendor/lib/libbt-hidlclient.so
 vendor/lib/libbtnv.so
@@ -1619,6 +1616,7 @@ vendor/lib/libqsap_sdk.so
 vendor/lib/libQSEEComAPI.so
 vendor/lib/libqseed3.so
 vendor/lib/libqsocket.so
+vendor/lib/libQTEEConnector_listener.so
 vendor/lib/libQTEEConnector_vendor.so
 vendor/lib/libqtigef.so
 vendor/lib/libqti-iopd.so
@@ -1701,12 +1699,7 @@ vendor/lib/libtime_genoff.so
 vendor/lib/libtinycompress.so
 vendor/lib/libtinyxml2_1.so
 vendor/lib/libtinyxml.so
-vendor/lib/libTouchInputVM.so
 vendor/lib/libtrustedapploader.so
-vendor/lib/libTrustedInput.so
-vendor/lib/libTrustedInputTZ.so
-vendor/lib/libTrustedUI.so
-vendor/lib/libTrustedUITZ.so
 vendor/lib/libtzdrmgenprov.so
 vendor/lib/lib-uceservice.so
 vendor/lib/libultrasound.so
@@ -1792,6 +1785,9 @@ vendor/lib/vendor.nxp.hardware.nfc@2.0.so
 vendor/lib/vendor.nxp.nxpnfclegacy@1.0.so
 vendor/lib/vendor.qti.data.factory@2.0.so
 vendor/lib/vendor.qti.data.factory@2.1.so
+vendor/lib/vendor.qti.data.factory@2.2.so
+vendor/lib/vendor.qti.data.factory@2.3.so
+vendor/lib/vendor.qti.data.mwqem@1.0.so
 vendor/lib/vendor.qti.data.slm@1.0.so
 vendor/lib/vendor.qti.esepowermanager@1.0.so
 vendor/lib/vendor.qti.esepowermanager@1.1.so
@@ -1806,6 +1802,7 @@ vendor/lib/vendor.qti.gnss@4.0.so
 vendor/lib/vendor.qti.hardware.alarm@1.0.so
 vendor/lib/vendor.qti.hardware.automotive.vehicle@1.0.so
 vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so
+vendor/lib/vendor.qti.hardware.bluetooth_audio@2.1.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so
@@ -1822,12 +1819,14 @@ vendor/lib/vendor.qti.hardware.data.connection@1.0.so
 vendor/lib/vendor.qti.hardware.data.connection@1.1.so
 vendor/lib/vendor.qti.hardware.data.dynamicdds@1.0.so
 vendor/lib/vendor.qti.hardware.data.latency@1.0.so
+vendor/lib/vendor.qti.hardware.data.lce@1.0.so
 vendor/lib/vendor.qti.hardware.data.qmi@1.0.so
 vendor/lib/vendor.qti.hardware.dsp@1.0.so
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib/vendor.qti.hardware.fm@1.0.so
 vendor/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so
 vendor/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so
+vendor/lib/vendor.qti.hardware.mwqemadapter@1.0.so
 vendor/lib/vendor.qti.hardware.qccsyshal@1.0.so
 vendor/lib/vendor.qti.hardware.qccvndhal@1.0-halimpl.so
 vendor/lib/vendor.qti.hardware.qccvndhal@1.0.so
@@ -1843,8 +1842,10 @@ vendor/lib/vendor.qti.hardware.radio.ims@1.3.so
 vendor/lib/vendor.qti.hardware.radio.ims@1.4.so
 vendor/lib/vendor.qti.hardware.radio.ims@1.5.so
 vendor/lib/vendor.qti.hardware.radio.ims@1.6.so
+vendor/lib/vendor.qti.hardware.radio.ims@1.7.so
 vendor/lib/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so
 vendor/lib/vendor.qti.hardware.radio.lpa@1.0.so
+vendor/lib/vendor.qti.hardware.radio.lpa@1.1.so
 vendor/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so
 vendor/lib/vendor.qti.hardware.radio.qtiradio@1.0.so
 vendor/lib/vendor.qti.hardware.radio.qtiradio@2.0.so
@@ -1852,6 +1853,8 @@ vendor/lib/vendor.qti.hardware.radio.qtiradio@2.1.so
 vendor/lib/vendor.qti.hardware.radio.qtiradio@2.2.so
 vendor/lib/vendor.qti.hardware.radio.qtiradio@2.3.so
 vendor/lib/vendor.qti.hardware.radio.qtiradio@2.4.so
+vendor/lib/vendor.qti.hardware.radio.qtiradio@2.5.so
+vendor/lib/vendor.qti.hardware.radio.qtiradio@2.6.so
 vendor/lib/vendor.qti.hardware.radio.uim@1.0.so
 vendor/lib/vendor.qti.hardware.radio.uim@1.1.so
 vendor/lib/vendor.qti.hardware.radio.uim@1.2.so
@@ -1865,8 +1868,6 @@ vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so
 vendor/lib/vendor.qti.hardware.sigma_miracast@1.0.so
 vendor/lib/vendor.qti.hardware.slmadapter@1.0.so
 vendor/lib/vendor.qti.hardware.soter@1.0.so
-vendor/lib/vendor.qti.hardware.systemhelper@1.0.so
-vendor/lib/vendor.qti.hardware.trustedui@1.0.so
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib/vendor.qti.hardware.vpp@1.1.so
 vendor/lib/vendor.qti.hardware.vpp@1.2.so
@@ -1876,6 +1877,7 @@ vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
 vendor/lib/vendor.qti.ims.callcapability@1.0.so
 vendor/lib/vendor.qti.ims.callinfo@1.0.so
 vendor/lib/vendor.qti.ims.factory@1.0.so
+vendor/lib/vendor.qti.ims.factory@1.1.so
 vendor/lib/vendor.qti.ims.rcsconfig@1.0.so
 vendor/lib/vendor.qti.ims.rcsconfig@1.1.so
 vendor/lib/vendor.qti.ims.rcsconfig@2.0.so
@@ -1883,7 +1885,9 @@ vendor/lib/vendor.qti.ims.rcsconfig@2.1.so
 vendor/lib/vendor.qti.imsrtpservice@3.0-service-Impl.so
 vendor/lib/vendor.qti.imsrtpservice@3.0.so
 vendor/lib/vendor.qti.latency@2.0.so
+vendor/lib/vendor.qti.latency@2.1.so
 vendor/lib/vendor.qti.memory.pasrmanager@1.0.so
+vendor/lib/vendor.qti.memory.pasrmanager@1.1.so
 vendor/lib/vendor.qti.power.pasrmanager@1.0.so
 vendor/lib/vendor.qti.voiceprint@1.0.so
 vendor/lib/vendor.sw.swfingerprint@2.0.so
