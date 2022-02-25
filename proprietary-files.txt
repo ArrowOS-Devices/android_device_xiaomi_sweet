@@ -756,7 +756,6 @@ vendor/lib64/hw/consumerir.default.so
 vendor/lib64/hw/fingerprint.fortsense.so:vendor/lib64/hw/fingerprint.fortsense.sm6150.so
 vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.sm6150.so
 vendor/lib64/hw/lights.sm6150.so
-vendor/lib64/hw/sound_trigger.primary.sm6150.so
 vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
@@ -1371,7 +1370,6 @@ vendor/lib/hw/consumerir.default.so
 vendor/lib/hw/fingerprint.fortsense.so
 vendor/lib/hw/fingerprint.fpc.so
 vendor/lib/hw/lights.sm6150.so
-vendor/lib/hw/sound_trigger.primary.sm6150.so
 vendor/lib/hw/vendor.qti.esepowermanager@1.1-impl.so
 vendor/lib/hw/vendor.qti.gnss@4.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so
