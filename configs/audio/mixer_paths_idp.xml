@@ -3464,7 +3464,7 @@
 
     <path name="voice-tty-full-headset-mic">
         <path name="amic2" />
-        <ctl name="ADC2 Volume" value="0" />
+        <ctl name="ADC2 Volume" value="6" />
     </path>
 
     <path name="voice-tty-hco-headset-mic">
