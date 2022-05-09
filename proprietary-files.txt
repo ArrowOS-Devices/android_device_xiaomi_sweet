@@ -82,8 +82,6 @@ vendor/etc/init/init.batterysecret.rc
 -vendor/lib64/libhta.so
 -vendor/lib64/libhta_hexagon_runtime.so
 -vendor/lib64/libhvx_interface.so
--vendor/lib64/libmegface.so
--vendor/lib64/libMegviiFacepp-0.5.2.so
 -vendor/lib64/libmiai_portraitsupernight.so
 -vendor/lib64/libmialgo_fs.so
 -vendor/lib64/libmialgo_ie_capture.so
@@ -220,7 +218,6 @@ vendor/etc/camera/eyelineblush.cng
 vendor/etc/camera/golden_rear_dc_cal_wu.bin
 vendor/etc/camera/hdr_ui9_params.config
 vendor/etc/camera/lf_facerank_model.bin
-vendor/etc/camera/megviifacepp_0_5_2_model
 vendor/etc/camera/mibokeh_712_opencl.bin
 vendor/etc/camera/mibokeh_712_parameter.bin
 vendor/etc/camera/sceneDetection.xml
