@@ -68,8 +68,6 @@ persist.vendor.dpm.nsrm.bkg.evt=3955
 
 persist.radio.NO_STAPA=1
 
-persist.vendor.radio.redir_party_num=1
-
 persist.vendor.radio.rat_on=combine
 
 persist.vendor.radio.force_on_dc=true
