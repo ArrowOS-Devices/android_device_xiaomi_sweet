@@ -17,9 +17,6 @@ vendor/etc/acdbdata/Forte/Forte_Speaker_cal.acdb|e98d5e4bbd2afe7fb18a206dd4f157a
 vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp|e48a5798ea09afc1ad47c02939846a6a51221811
 
 # Awinic firmware
-vendor/firmware/aw8624_haptic.bin
-vendor/firmware/aw8624_rtp.bin
-vendor/firmware/osc_rtp_24K_5s.bin
 vendor/firmware/awinic/aw882xx_pid_1852_acf.bin
 vendor/firmware/awinic/aw882xx_pid_1852_monitor.bin
 vendor/firmware/awinic/aw882xx_pid_2032_acf.bin
@@ -28,6 +25,9 @@ vendor/firmware/awinic/aw882xx_rcv_reg_l.bin
 vendor/firmware/awinic/aw882xx_rcv_reg_r.bin
 vendor/firmware/awinic/aw882xx_spk_reg_l.bin
 vendor/firmware/awinic/aw882xx_spk_reg_r.bin
+vendor/firmware/aw8624_haptic.bin
+vendor/firmware/aw8624_rtp.bin
+vendor/firmware/osc_rtp_24K_5s.bin
 
 # Audio HAL
 -vendor/lib/hw/audio.primary.sm6150.so
@@ -50,10 +50,15 @@ vendor/etc/init/init.batterysecret.rc
 # Camera
 -vendor/lib64/hw/camera.qcom.so
 -vendor/lib64/hw/com.qti.chi.override.so
+-vendor/lib64/libFaceGrade.so
+-vendor/lib64/libPSNPE.so
+-vendor/lib64/libSNPE.so
+-vendor/lib64/libVDClearShot.so
+-vendor/lib64/libXMFD_AgeGender.so
 -vendor/lib64/lib_sr_models.so
 -vendor/lib64/libalCFR.so
--vendor/lib64/libalhLDC.so
 -vendor/lib64/libalLDC.so
+-vendor/lib64/libalhLDC.so
 -vendor/lib64/libbeauty_face_interface.so
 -vendor/lib64/libc++_shared.so
 -vendor/lib64/libcamera_dirty.so
@@ -70,7 +75,6 @@ vendor/etc/init/init.batterysecret.rc
 -vendor/lib64/libcom.qti.chinodeutils.so
 -vendor/lib64/libdualcam_optical_zoom_control.so
 -vendor/lib64/libdualcam_video_optical_zoom.so
--vendor/lib64/libFaceGrade.so
 -vendor/lib64/libft2vendor.so
 -vendor/lib64/libhta.so
 -vendor/lib64/libhta_hexagon_runtime.so
@@ -88,12 +92,10 @@ vendor/etc/init/init.batterysecret.rc
 -vendor/lib64/libmpbase.so
 -vendor/lib64/libmulticam_image_optical_zoom.so
 -vendor/lib64/libmulticam_video_optical_zoom.so
--vendor/lib64/libPSNPE.so
 -vendor/lib64/librelight_only.so
 -vendor/lib64/libremosaic_wrapper.so
 -vendor/lib64/libremosaiclib.so
 -vendor/lib64/libsdk_sr.so
--vendor/lib64/libSNPE.so
 -vendor/lib64/libsnpe_adsp.so
 -vendor/lib64/libsnpe_dsp_domains.so
 -vendor/lib64/libsnpe_dsp_domains_system.so
@@ -108,10 +110,8 @@ vendor/etc/init/init.batterysecret.rc
 -vendor/lib64/libswvdec.so
 -vendor/lib64/libsymphony-cpu.so
 -vendor/lib64/libtriplecam_video_optical_zoom.so
--vendor/lib64/libVDClearShot.so
 -vendor/lib64/libvideofilter_only.so
 -vendor/lib64/libvidhance.so
--vendor/lib64/libXMFD_AgeGender.so
 -vendor/lib64/libxmi_hdr_checker.so
 -vendor/lib64/libxmi_high_dynamic_range.so
 -vendor/lib64/libxml2_vendor.so
@@ -131,6 +131,11 @@ vendor/lib64/mibokeh_712_opencl.bin
 -vendor/lib64/libarcsoft_super_night_raw.so
 
 # Camera-components
+vendor/lib64/camera/components/etc/morpho_lowlight4.0.xml
+vendor/lib64/camera/components/etc/morpho_lowlight4.0_3hdr.xml
+vendor/lib64/camera/components/etc/morpho_lowlight4.0_adrc_high.xml
+vendor/lib64/camera/components/etc/morpho_lowlight4.0_adrc_high_1.xml
+vendor/lib64/camera/components/etc/visidon_clearshot_params.xml
 -vendor/lib64/camera/components/com.altek.node.depurple.so
 -vendor/lib64/camera/components/com.altek.node.distortioncorrection.so
 -vendor/lib64/camera/components/com.arcsoft.node.capturebokeh.so
@@ -185,24 +190,23 @@ vendor/lib64/mibokeh_712_opencl.bin
 -vendor/lib64/camera/components/com.xiaomi.node.mifragment.so
 -vendor/lib64/camera/components/com.xiaomi.node.mimovie.so
 -vendor/lib64/camera/components/com.xiaomi.node.misegment.so
-vendor/lib64/camera/components/etc/morpho_lowlight4.0.xml
-vendor/lib64/camera/components/etc/morpho_lowlight4.0_3hdr.xml
-vendor/lib64/camera/components/etc/morpho_lowlight4.0_adrc_high.xml
-vendor/lib64/camera/components/etc/morpho_lowlight4.0_adrc_high_1.xml
-vendor/lib64/camera/components/etc/visidon_clearshot_params.xml
 -vendor/lib64/camera/components/libdepthmapwrapper.so
 -vendor/lib64/camera/components/libmmcamera_cac3.so
 
 # Camera-configs
+vendor/etc/camera/CFR_para_MARCO_V01.bin
+vendor/etc/camera/CFR_para_UW_V01.bin
+vendor/etc/camera/CFR_para_W_V01.bin
+vendor/etc/camera/CFR_para_config.xml
+vendor/etc/camera/LDC_FPC_TUNING_DATA.bin
+vendor/etc/camera/LDC_PACKDATA_VENDORID_0x01.bin
+vendor/etc/camera/LDC_PACKDATA_VENDORID_0x07.bin
+vendor/etc/camera/Miui-Light.ttf
 vendor/etc/camera/almalence_sr_params_tele.config
 vendor/etc/camera/almalence_sr_params_wide.config
 vendor/etc/camera/back_dual_camera_caldata_wt.bin
 vendor/etc/camera/beauty_ui9_intelligent_params.config
 vendor/etc/camera/camxoverridesettings.txt
-vendor/etc/camera/CFR_para_config.xml
-vendor/etc/camera/CFR_para_MARCO_V01.bin
-vendor/etc/camera/CFR_para_UW_V01.bin
-vendor/etc/camera/CFR_para_W_V01.bin
 vendor/etc/camera/com.xiaomi.dcal.wd.golden.108m
 vendor/etc/camera/com.xiaomi.dcal.wd.golden.64m
 vendor/etc/camera/com.xiaomi.dcal.wu.fake
@@ -212,14 +216,10 @@ vendor/etc/camera/eisoverridesettings.txt
 vendor/etc/camera/eyelineblush.cng
 vendor/etc/camera/golden_rear_dc_cal_wu.bin
 vendor/etc/camera/hdr_ui9_params.config
-vendor/etc/camera/LDC_FPC_TUNING_DATA.bin
-vendor/etc/camera/LDC_PACKDATA_VENDORID_0x01.bin
-vendor/etc/camera/LDC_PACKDATA_VENDORID_0x07.bin
 vendor/etc/camera/lf_facerank_model.bin
 vendor/etc/camera/megviifacepp_0_5_2_model
 vendor/etc/camera/mibokeh_712_opencl.bin
 vendor/etc/camera/mibokeh_712_parameter.bin
-vendor/etc/camera/Miui-Light.ttf
 vendor/etc/camera/sceneDetection.xml
 vendor/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin
 vendor/etc/camera/sr_params.xml
@@ -303,14 +303,14 @@ vendor/firmware/a630_sqe.fw
 vendor/etc/init/init.vendor.sensors.rc
 vendor/etc/init/vendor.sensors.qti.rc
 -vendor/lib64/libsensorslog.so
--vendor/lib64/libsnsapi.so
--vendor/lib64/libsnsdiaglog.so
 -vendor/lib64/libsns_fastRPC_util.so
 -vendor/lib64/libsns_low_lat_stream_stub.so
+-vendor/lib64/libsnsapi.so
+-vendor/lib64/libsnsdiaglog.so
 -vendor/lib64/libssc.so
+-vendor/lib64/libssccalapi.so
 -vendor/lib64/sensors.ssc.so
 -vendor/lib64/sensors.touch.so
--vendor/lib64/libssccalapi.so
 
 # Sensors config
 vendor/etc/sensors/config/adux1050_0.json
@@ -354,14 +354,14 @@ vendor/etc/sensors/config/sns_tilt.json
 vendor/etc/sensors/config/sns_tilt_sw_enabled.json
 vendor/etc/sensors/config/sns_tilt_to_wake.json
 vendor/etc/sensors/config/tsl2540.json
-vendor/etc/sensors/judge_calibrated.json
 vendor/etc/sensors/hals.conf
+vendor/etc/sensors/judge_calibrated.json
 vendor/etc/sensors/sns_reg_config
 
 # Sensors Ultrasound
 vendor/etc/elliptic_sensor.xml
--vendor/lib64/libultrasound.so
 -vendor/lib64/libnotifyaudiohal.so
+-vendor/lib64/libultrasound.so
 -vendor/lib64/sensors.elliptic.so
 -vendor/lib64/sensors.mius.proximity.so
 
