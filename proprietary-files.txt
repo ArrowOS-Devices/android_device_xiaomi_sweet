@@ -1,3 +1,5 @@
+# These proprietary files are extracted from Redmi Note 10 Pro (codenamed `sweet`) MIUI V13.0.8.0.SKFMIXM, unless pinned
+
 # Audio ACDB
 -vendor/lib/libacdb-fts.so
 -vendor/lib/libacdbloader.so
