@@ -88,5 +88,8 @@ TARGET_SCREEN_DENSITY := 440
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
+# Vendor security patch level
+VENDOR_SECURITY_PATCH := 2022-05-01
+
 # Inherit from proprietary files
 include vendor/xiaomi/sweet/BoardConfigVendor.mk
