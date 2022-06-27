@@ -88,29 +88,29 @@ void vendor_load_properties() {
     if (region == "GLOBAL") {
         model = "M2101K6G";
         device = "sweet";
-        fingerprint = "Redmi/sweet_eea/sweet:11/RKQ1.200826.002/V12.0.10.0.RKFEUXM:user/release-keys";
-        description = "sweet_eea-user 11 RKQ1.200826.002 V12.0.10.0.RKFEUXM release-keys";
+        fingerprint = "Redmi/sweet_eea/sweet:12/SKQ1.210908.001/V13.0.10.0.SKFEUXM:user/release-keys";
+        description = "sweet_eea-user 12 SKQ1.210908.001 V13.0.10.0.SKFEUXM release-keys";
         mod_device = "sweet_eea_global";
         property_override("ro.boot.product.hardware.sku", "sweet");
     } else if (region == "JAPAN") {
         model = "M2101K6R";
         device = "sweet";
-        fingerprint = "Redmi/sweet_global/sweet:11/RKQ1.200826.002/V12.5.4.0.RKFMIXM:user/release-keys";
-        description = "sweet_global-user 11 RKQ1.200826.002 V12.5.4.0.RKFMIXM release-keys";
+        fingerprint = "Redmi/sweet_global/sweet:12/SKQ1.210908.001/V13.0.8.0.SKFMIXM:user/release-keys";
+        description = "sweet_global-user 12 SKQ1.210908.001 V13.0.8.0.SKFMIXM release-keys";
         mod_device = "sweet_global";
         property_override("ro.boot.product.hardware.sku", "sweet");
     } else if (region == "INDIA") {
         if (sku == "std") {
             model = "M2101K6P";
             device = "sweetin";
-            fingerprint = "Redmi/sweetin/sweetin:11/RKQ1.200826.002/V12.0.6.0.RKFINXM:user/release-keys";
-            description = "sweetin-user 11 RKQ1.200826.002 V12.0.6.0.RKFINXM release-keys";
+            fingerprint = "Redmi/sweetin/sweetin:12/SKQ1.210908.001/V13.0.4.0.SKFINXM:user/release-keys";
+            description = "sweetin-user 12 SKQ1.210908.001 V13.0.4.0.SKFINXM release-keys";
             mod_device = "sweetin_in_global";
         } else {
             model = "M2101K6I";
             device = "sweetin";
-            fingerprint = "Redmi/sweetinpro/sweetin:11/RKQ1.200826.002/V12.0.6.0.RKFINXM:user/release-keys";
-            description = "sweetinpro-user 11 RKQ1.200826.002 V12.0.6.0.RKFINXM release-keys";
+            fingerprint = "Redmi/sweetinpro/sweetin:12/SKQ1.210908.001/V13.0.4.0.SKFINXM:user/release-keys";
+            description = "sweetinpro-user 12 SKQ1.210908.001 V13.0.4.0.SKFINXM release-keys";
             mod_device = "sweetin_in_global";
             }
     }
