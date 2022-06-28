@@ -7,10 +7,6 @@ persist.vendor.audio.voicecall.speaker.stereo=true
 vendor.audio.feature.compr_voip.enable=false
 vendor.voice.path.for.pcm.voip=false
 
-# Chipset
-ro.soc.manufacturer=Qualcomm
-ro.soc.model=SDM7150
-
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
