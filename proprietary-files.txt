@@ -17,6 +17,7 @@ vendor/etc/acdbdata/Forte/Forte_Hdmi_cal.acdb|288299cf2dbdc2b4891a08eb1c74f5e5b2
 vendor/etc/acdbdata/Forte/Forte_Headset_cal.acdb|3affad5382970a6d932268322965bfae4a7b7a41
 vendor/etc/acdbdata/Forte/Forte_Speaker_cal.acdb|e98d5e4bbd2afe7fb18a206dd4f157a1a2fa2a8d
 vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp|e48a5798ea09afc1ad47c02939846a6a51221811
+vendor/etc/acdbdata/adsp_avs_config.acdb|d1138e8fb3ebbee65bd09891352eebb8bbc3d6fe
 
 # Awinic firmware
 vendor/firmware/awinic/aw882xx_pid_1852_acf.bin
