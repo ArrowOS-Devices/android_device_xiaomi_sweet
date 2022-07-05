@@ -345,7 +345,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.sweet
+    android.hardware.biometrics.fingerprint@2.1-service
 
 # Vibrator
 PRODUCT_PACKAGES += \
