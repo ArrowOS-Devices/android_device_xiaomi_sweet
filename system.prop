@@ -1,5 +1,6 @@
 # Volume steps
 ro.config.media_vol_steps=15
+ro.config.vc_call_vol_steps=11
 
 # VoLTE
 persist.dbg.volte_avail_ovr=1
@@ -13,9 +14,6 @@ ro.sf.lcd_density=440
 
 # WiFi Display
 persist.debug.wfd.enable=1
-
-# Media profiles
-media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
 # Camera
 persist.vendor.camera.facepp.fdenable=0
