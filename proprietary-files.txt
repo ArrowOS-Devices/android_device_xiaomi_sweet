@@ -1916,9 +1916,9 @@ system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 # From MIUI V12.0.15.0 RKFMIXM
 vendor/etc/acdbdata/Forte/Forte_Global_cal.acdb|b34ec442b87c1acb88dafd55fd86e77acbb003a3
 
-# From MIUI v12.5.8.0 RKFINXM
-vendor/lib64/camera/com.qti.tuned.sweet_ofilm_s5kgw3_wide.bin|ca2ed16c7a93bc452becf8ff8f29db1c52bf411d
-vendor/lib64/camera/com.qti.tuned.sweet_sunny_s5kgw3_wide.bin|db7480734847ad2c1e34dda2cb1c0d718001d314
+# From MIUI v13.0.4.0 SKFINXM
+vendor/lib64/camera/com.qti.tuned.sweet_ofilm_s5kgw3_wide.bin|84d4d8875faf1dc44a68df5406b76969bd6d29b2
+vendor/lib64/camera/com.qti.tuned.sweet_sunny_s5kgw3_wide.bin|69755c55507ad9cde3c0a05a0c7f48be3d54b344
 
 # From NX627J 20201029.204053
 vendor/lib64/libsdedrm.so|582910d21139781ad9e414c35207584f51e035e2
