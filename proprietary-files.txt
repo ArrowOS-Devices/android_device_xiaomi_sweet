@@ -256,7 +256,6 @@ vendor/etc/audio_policy_engine_default_stream_volumes.xml
 vendor/etc/audio_policy_engine_product_strategies_mi.xml
 vendor/etc/audio_policy_engine_product_strategies.xml
 vendor/etc/audio_policy_engine_stream_volumes_mi.xml
-vendor/etc/audio_policy_engine_stream_volumes.xml
 vendor/etc/audio_policy_volumes.xml
 vendor/etc/audio_tuning_mixer_tavil.txt
 vendor/etc/cacert_location.pem
