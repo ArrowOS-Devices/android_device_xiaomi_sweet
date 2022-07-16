@@ -270,9 +270,9 @@ vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigvideo.bin
 vendor/lib64/camera/fdconfigvideolite.bin
 
-# Camera-sensors - V13.0.4.0.SKFINXM-release-keys
-vendor/lib64/camera/com.qti.tuned.sweet_ofilm_s5kgw3_wide.bin|84d4d8875faf1dc44a68df5406b76969bd6d29b2
-vendor/lib64/camera/com.qti.tuned.sweet_sunny_s5kgw3_wide.bin|69755c55507ad9cde3c0a05a0c7f48be3d54b344
+# Camera-sensors - V13.0.5.0.SKFINXM-release-keys
+vendor/lib64/camera/com.qti.tuned.sweet_ofilm_s5kgw3_wide.bin|e199e2efe02578979c129e969bde3d2739b30517
+vendor/lib64/camera/com.qti.tuned.sweet_sunny_s5kgw3_wide.bin|bbb06ffce56cff50b61601b2e6f3ed9c2960663d
 
 # Fingerprint
 -vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.sm6150.so
