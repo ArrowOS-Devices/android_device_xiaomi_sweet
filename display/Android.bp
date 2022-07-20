@@ -1,0 +1,20 @@
+cc_library_shared {
+    name: "libsdmcore-shim",
+    srcs: [
+        "display.cpp"
+    ],
+    include_dirs: [
+        "hardware/qcom-caf/sm8150/display/include",
+        "hardware/qcom-caf/sm8150/display/sdm/include",
+        "hardware/qcom-caf/sm8150/display/sdm/libs/core",
+        "hardware/qcom-caf/sm8150/display/sdm/libs/core/drm",
+        "hardware/qcom-caf/sm8150/display/libdebug",
+        "hardware/qcom-caf/sm8150/display/libdrmutils",
+        "vendor/qcom/opensource/commonsys-intf/display/include",
+    ],
+    shared_libs: [
+        "liblog",
+    ],
+    header_libs: ["generated_kernel_headers", "libdrm_headers"],
+    vendor: true,
+}

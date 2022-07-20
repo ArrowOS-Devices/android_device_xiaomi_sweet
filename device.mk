@@ -225,6 +225,9 @@ PRODUCT_PACKAGES += \
     memtrack.sm6150 \
     vendor.qti.hardware.display.mapper@2.0.vendor
 
+PRODUCT_PACKAGES += \
+    libsdmcore-shim
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display/qdcm_calib_data_xiaomi_k6_38_0c_0a_fhd_dsc_video_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_xiaomi_k6_38_0c_0a_fhd_dsc_video_dsi_panel.xml
 
