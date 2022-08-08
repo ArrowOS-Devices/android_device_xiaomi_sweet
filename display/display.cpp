@@ -3,7 +3,7 @@
 #define __CLASS__ "HWDeviceDRM"
 
 #define LIBSDMCORE "/vendor/lib64/libsdmcore.so"
-#define INIT_CONFIGS_SYMBOL "_ZN3sdm11HWDeviceDRM17InitializeConfigsEv"
+#define POPULATE_ATTRS_SYMBOL "_ZN3sdm11HWDeviceDRM25PopulateDisplayAttributesEj"
 
 #include "hw_device_drm.h"
 
@@ -12,37 +12,39 @@
 #include <log/log.h>
 
 namespace sdm {
-    void HWDeviceDRM::InitializeConfigs() {
-        ALOGI("Running custom InitializeConfigs");
+    DisplayError HWDeviceDRM::PopulateDisplayAttributes(uint32_t index) {
+        ALOGI("Running custom PopulateDisplayAttributes");
 
         // Open libsdmcore
         void *handle = dlopen(LIBSDMCORE, RTLD_LOCAL | RTLD_LAZY);
 
         if (!handle) {
             ALOGE("Failed to open the library %s", LIBSDMCORE);
-            return;
+            return kErrorNotSupported;
         }
 
-        // Load the default InitializeConfigs function
-        typedef void (*initConfigsOrig_t)(HWDeviceDRM*);
-        initConfigsOrig_t initConfigsOrig = (initConfigsOrig_t) dlsym(handle, INIT_CONFIGS_SYMBOL);
+        // Load the default PopulateDisplayAttributes function
+        typedef void (*populateAttrsOrig_t)(HWDeviceDRM*, uint32_t index);
+        populateAttrsOrig_t populateAttrsOrig = (populateAttrsOrig_t) dlsym(handle, POPULATE_ATTRS_SYMBOL);
 
         if (dlerror()) {
-            ALOGE("Failed to load the symbol %s", INIT_CONFIGS_SYMBOL);
-            return;
+            ALOGE("Failed to load the symbol %s", POPULATE_ATTRS_SYMBOL);
+            return kErrorNotSupported;
         }
 
-        // Call the original InitializeConfigs function
-        initConfigsOrig(this);
+        // Call the original PopulateDisplayAttributes function
+        populateAttrsOrig(this, index);
 
         // Set the correct x/y dpi
-        display_attributes_[current_mode_index_].x_dpi /= 10;
-        display_attributes_[current_mode_index_].y_dpi /= 10;
+        display_attributes_[index].x_dpi /= 10;
+        display_attributes_[index].y_dpi /= 10;
 
         ALOGI("Successfully set the panel DPI");
 
         // Close libsdmcore
         dlclose(handle);
+
+        return kErrorNone;
     }
 }
 
