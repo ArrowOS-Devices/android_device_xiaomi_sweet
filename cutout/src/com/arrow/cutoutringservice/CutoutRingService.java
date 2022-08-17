@@ -22,6 +22,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.graphics.Rect;
 import android.os.Handler;
 import android.os.RemoteException;
 import android.graphics.PixelFormat;
@@ -37,6 +38,8 @@ import android.view.IWindowManager;
 import android.widget.ImageView;
 
 import com.arrow.cutoutringservice.sweet.R;
+
+import java.util.List;
 
 import static android.view.Surface.ROTATION_0;
 import static android.view.Surface.ROTATION_90;
@@ -136,6 +139,10 @@ public class CutoutRingService extends BroadcastReceiver {
                 onRotationChanged();
                 Handler.getMain().post(() -> setVisibility((mCameraActive) ? SHOWN : SHOWN_SMALL));
                 mFixedRotationInProgress = false;
+            }
+
+            @Override
+            public void onKeepClearAreasChanged(int displayId, List<Rect> restricted, List<Rect> unrestricted) {
             }
         };
 
