@@ -207,9 +207,6 @@ PRODUCT_PACKAGES += \
     libshim_megvii \
     libpiex_shim
 
-PRODUCT_PACKAGES += \
-    CutoutRingServiceSweet
-
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.4-service \
