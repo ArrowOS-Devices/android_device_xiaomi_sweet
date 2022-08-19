@@ -36,4 +36,20 @@
 
     <!-- Whether usage of the proximity sensor during doze is supported -->
     <bool name="doze_proximity_sensor_supported">false</bool>
+
+    <!-- A path similar to frameworks/base/core/res/res/values/config.xml
+      config_mainBuiltInDisplayCutout that describes a path larger than the exact path of a display
+      cutout. If present as well as config_enableDisplayCutoutProtection is set to true, then
+      SystemUI will draw this "protection path" instead of the display cutout path that is normally
+      used for anti-aliasing.
+      This path will only be drawn when the front-facing camera turns on, otherwise the main
+      DisplayCutout path will be rendered
+       -->
+    <string translatable="false" name="config_frontBuiltInDisplayCutoutProtection">M 500 52 a 37 37 0 1 0 82 0 a 37 37 0 1 0 -82 0 Z</string>
+
+    <!--  ID for the camera that needs extra protection -->
+    <string translatable="false" name="config_protectedCameraId">1</string>
+
+    <!--  Flag to turn on the rendering of the above path or not  -->
+    <bool name="config_enableDisplayCutoutProtection">true</bool>
 </resources>
