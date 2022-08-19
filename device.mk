@@ -204,7 +204,8 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-external
 
 PRODUCT_PACKAGES += \
-    libshim_megvii
+    libshim_megvii \
+    libpiex_shim
 
 PRODUCT_PACKAGES += \
     CutoutRingServiceSweet
