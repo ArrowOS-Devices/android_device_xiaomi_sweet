@@ -25,3 +25,10 @@ prebuilt_etc {
     sub_dir: "init/hw",
     soc_specific: true
 }
+
+prebuilt_etc {
+    name: "hostapd.android.rc",
+    src: "hostapd.android.rc",
+    sub_dir: "init",
+    soc_specific: true
+}
