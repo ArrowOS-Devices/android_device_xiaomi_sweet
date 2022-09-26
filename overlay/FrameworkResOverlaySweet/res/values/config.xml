@@ -461,4 +461,6 @@
 
     <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
     <bool name="config_zramWriteback">true</bool>
+
+    <bool name="config_is_powerbutton_fps">true</bool>
 </resources>
