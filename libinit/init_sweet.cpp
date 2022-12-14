@@ -58,7 +58,8 @@ const std::vector<model_data> MODEL_LIST {
     // region model codename sku mod_device marketname
     {"INDIA", "M2101K6P", "sweetin", "std", "sweetin_in_global", MARKETNAME},
     {"INDIA", "M2101K6I", "sweetin", "pro", "sweetin_in_global", MARKETNAME_MAX},
-    {"GLOBAL", "M2101K6G", "sweet", "", "sweet_eea_global", MARKETNAME}
+    {"GLOBAL", "M2101K6G", "sweet", "", "sweet_eea_global", MARKETNAME},
+    {"JAPAN", "M2101K6R", "sweet", "", "sweet_global", MARKETNAME}
 };
 
 void property_override(char const prop[], char const value[], bool add = true) {
