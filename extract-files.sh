@@ -95,8 +95,6 @@ function blob_fixup() {
     vendor/lib64/camera/components/com.qti.node.watermark.so)
         $PATCHELF_TOOL --add-needed "libpiex_shim.so" "${2}"
         ;;
-    system_ext/lib64/lib-imsvideocodec.so)
-        $PATCHELF_TOOL --add-needed "libgui-shim.so" "${2}"
     esac
 }
 
