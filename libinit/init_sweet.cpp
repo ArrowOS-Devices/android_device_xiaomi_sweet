@@ -42,6 +42,25 @@
 
 using android::base::GetProperty;
 
+struct model_data {
+    std::string region;
+    std::string model;
+    std::string codename;
+    std::string sku;
+    std::string mod_device;
+    std::string marketname;
+};
+
+const std::string MARKETNAME = "Redmi Note 10 Pro";
+const std::string MARKETNAME_MAX = "Redmi Note 10 Pro Max";
+
+const std::vector<model_data> MODEL_LIST {
+    // region model codename sku mod_device marketname
+    {"INDIA", "M2101K6P", "sweetin", "std", "sweetin_in_global", MARKETNAME},
+    {"INDIA", "M2101K6I", "sweetin", "pro", "sweetin_in_global", MARKETNAME_MAX},
+    {"GLOBAL", "M2101K6G", "sweet", "", "sweet_eea_global", MARKETNAME}
+};
+
 void property_override(char const prop[], char const value[], bool add = true) {
     prop_info *pi;
 
@@ -65,24 +84,27 @@ void full_property_override(const std::string &prop, const char value[], const b
 }
 
 void vendor_load_properties() {
-    const bool is_global = (GetProperty("ro.boot.hwc", "UNKNOWN") == "GLOBAL");
-    const bool is_pro = (GetProperty("ro.boot.product.hardware.sku", "UNKNOWN") != "std");
-
-    std::string marketname =
-       !(!is_global && is_pro) ? "Redmi Note 10 Pro" : "Redmi Note 10 Pro Max";
-    const std::string mod_device = is_global ? "sweet_eea_global" : "sweetin_in_global";
+    const std::string region = GetProperty("ro.boot.hwc", "UNKNOWN");
+    const std::string sku = GetProperty("ro.boot.product.hardware.sku", "UNKNOWN");
 
     property_override("ro.boot.verifiedbootstate", "green");
 
-    for (int i = 0; i <= 1; i++) {
-        full_property_override("model", is_global ? "M2101K6G" :
-            (is_pro ? "M2101K6I" : "M2101K6P"), i);
-        full_property_override("device", is_global ? "sweet" : "sweetin", i);
-        full_property_override("name", is_global ? "sweet" : "sweetin", i);
-    }
+    for (model_data data : MODEL_LIST) {
+        if ((data.sku != "" && data.sku != sku) || data.region != region) {
+            continue;
+        }
 
-    property_override("ro.product.marketname", marketname.c_str());
-    property_override("ro.product.mod_device", mod_device.c_str());
+        for (int product = 0; product <= 1; product++) {
+            full_property_override("model", data.model.c_str(), product);
+            full_property_override("device", data.codename.c_str(), product);
+            full_property_override("name", data.codename.c_str(), product);
+        }
+
+        property_override("ro.product.marketname", data.marketname.c_str());
+        property_override("ro.product.mod_device", data.mod_device.c_str());
+
+        break;
+    }
 
 #ifdef __ANDROID_RECOVERY__
     std::string buildtype = GetProperty("ro.build.type", "userdebug");
