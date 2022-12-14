@@ -60,7 +60,7 @@ done
 
 # Get the host OS
 HOST="$(uname | tr '[:upper:]' '[:lower:]')"
-PATCHELF_TOOL="${ARROW_ROOT}/prebuilts/tools-extras/${HOST}-x86/bin/patchelf"
+PATCHELF_TOOL="${ARROW_ROOT}/prebuilts/tools-extras/${HOST}-x86/bin/patchelf-0_9"
 
 # Check if prebuilt patchelf exists
 if [ -f $PATCHELF_TOOL ]; then
