@@ -21,10 +21,6 @@
     <string name="enable_high_refresh_rate_summary">Habilita una tasa de refresco alta para una experiencia más fluida</string>
     <string name="current_refresh_rate_info">Tasa de refresco máxima/mínima: <xliff:g id="version">%1$s</xliff:g>Hz - <xliff:g id="version">%2$s</xliff:g>Hz</string>
 
-    <string name="display_title">Pantalla</string>
-    <string name="dc_dimming_title">Atenuación de CC</string>
-    <string name="dc_dimming_summary">Habilita la atenuación de CC para evitar parpadeo en condiciones de brillo bajo</string>
-
     <string name="sound_title">Sonido</string>
 
     <string name="dirac_enable">Habilitar el potenciador de sonido</string>

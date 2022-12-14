@@ -91,10 +91,6 @@ service nqnfc_2_0_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
     group nfc
     disabled
 
-on boot
-    chown system system /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/disp_param
-    chmod 0660 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/disp_param
-
 on property:vendor.usb.mimode=*
     setprop persist.vendor.usb.config ${vendor.usb.mimode}
 

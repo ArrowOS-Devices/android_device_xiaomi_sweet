@@ -37,7 +37,6 @@ public class BootCompletedReceiver extends BroadcastReceiver {
     public void onReceive(final Context context, Intent intent) {
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
 
-        DisplayUtils.setDcDimmingStatus(sharedPreferences.getBoolean(Constants.KEY_DC_DIMMING, false));
         DisplayUtils.updateRefreshRateSettings(context);
         DiracUtils.initialize(context);
     }

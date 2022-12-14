@@ -19,9 +19,6 @@
     <string name="enable_high_refresh_rate_title">Rată de reîmprospătare ridicată</string>
     <string name="enable_high_refresh_rate_summary">Activați o rată de reîmprospătare ridicată pentru o experiență mai fluidă</string>
     <string name="current_refresh_rate_info">Rata maximă / minimă de reîmprospătare <xliff:g id="version">%1$s</xliff:g>Hz - <xliff:g id="version">%2$s</xliff:g>Hz</string>
-    <string name="display_title">Afișaj</string>
-    <string name="dc_dimming_title">DC Dimming</string>
-    <string name="dc_dimming_summary">Activați DC Dimming pentru a evita pâlpâirea ecranului la niveluri scăzute de luminozitate</string>
     <string name="sound_title">Sunet</string>
     <string name="dirac_enable">Activare amplificare sunet</string>
     <string name="dirac_title">Amplificatorul de sunet Dirac</string>
