@@ -162,4 +162,7 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 # Media
 TARGET_DISABLED_UBWC := true
 
+# Power
+TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
+
 include vendor/xiaomi/sweet/BoardConfigVendor.mk
