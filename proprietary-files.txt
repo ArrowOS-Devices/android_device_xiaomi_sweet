@@ -286,7 +286,7 @@ vendor/etc/camera/LDC_PACKDATA_VENDORID_0x07.bin
 vendor/etc/camera/lf_facerank_model.bin
 vendor/etc/camera/male_bg.png
 vendor/etc/camera/male_icon.png
-vendor/etc/camera/megviifacepp_0_5_2_model
+vendor/etc/camera/megviifacepp_0_5_2_model:vendor/etc/camera/facedetectpp_0_5_2_model
 vendor/etc/camera/mibokeh_712_opencl.bin
 vendor/etc/camera/mibokeh_712_parameter.bin
 vendor/etc/camera/Miui-Light.ttf
@@ -954,8 +954,8 @@ vendor/lib64/liblowi_wifihal.so
 vendor/lib64/liblqe.so
 vendor/lib64/libmdmdetect.so
 vendor/lib64/libmdsprpc.so
-vendor/lib64/libmegface.so
-vendor/lib64/libMegviiFacepp-0.5.2.so
+vendor/lib64/libmegface.so:vendor/lib64/libfacedet.so
+vendor/lib64/libMegviiFacepp-0.5.2.so:vendor/lib64/libFaceDetectpp-0.5.2.so
 vendor/lib64/libmeters-ns.so
 vendor/lib64/libmfido.so
 vendor/lib64/libmiai_portraitsupernight.so
@@ -1552,8 +1552,8 @@ vendor/lib/liblowi_wifihal.so
 vendor/lib/liblqe.so
 vendor/lib/libmdmdetect.so
 vendor/lib/libmdsprpc.so
-vendor/lib/libmegface.so
-vendor/lib/libMegviiFacepp-0.5.2.so
+vendor/lib/libmegface.so:vendor/lib/libfacedet.so
+vendor/lib/libMegviiFacepp-0.5.2.so:vendor/lib/libFaceDetectpp-0.5.2.so
 vendor/lib/libmfido.so
 vendor/lib/libmialgo_fs.so
 vendor/lib/libmialgo_rfs.so
