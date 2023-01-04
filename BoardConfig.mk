@@ -84,7 +84,6 @@ TARGET_USES_MKE2FS := true
 
 # VNDK
 BOARD_VNDK_VERSION := current
-NEED_AIDL_NDK_PLATFORM_BACKEND := true
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
