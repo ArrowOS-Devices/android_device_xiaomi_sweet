@@ -9,15 +9,3 @@ vendor.voice.path.for.pcm.voip=false
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
-
-# Fluence
-ro.qc.sdk.audio.fluencetype=none
-persist.audio.fluence.voicecall=true
-persist.audio.fluence.voicerec=false
-persist.audio.fluence.speaker=true
-ro.vendor.audio.sdk.fluencetype=fluence
-persist.vendor.audio.fluence.voicecall=true
-persist.vendor.audio.fluence.voicerec=false
-persist.vendor.audio.fluence.speaker=true
-persist.vendor.audio.fluence.voicecomm=true
-vendor.audio.feature.fluence.enable=true

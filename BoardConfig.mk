@@ -74,6 +74,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 BOARD_USES_METADATA_PARTITION := true
 
 # Properties
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Recovery
