@@ -87,7 +87,6 @@ system_ext/lib/vendor.qti.hardware.radio.ims@1.5.so
 system_ext/lib/vendor.qti.hardware.radio.ims@1.6.so
 system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
 -system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
--system_ext/priv-app/ims/ims.apk
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 
 # vendor
@@ -1918,6 +1917,9 @@ vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 vendor/ueventd.rc
 
 # Pinned section
+#system_ext
+-system_ext/priv-app/ims/ims.apk|6a383ab360468c2b040c4ce618ac5188ab4fc655
+
 # vendor
 # From MIUI V12.0.15.0 RKFMIXM
 vendor/etc/acdbdata/Forte/Forte_Global_cal.acdb|b34ec442b87c1acb88dafd55fd86e77acbb003a3
