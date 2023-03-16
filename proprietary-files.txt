@@ -20,6 +20,8 @@ vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp|e48a5798ea09afc1ad47c02939846
 vendor/etc/acdbdata/adsp_avs_config.acdb|d1138e8fb3ebbee65bd09891352eebb8bbc3d6fe
 
 # Awinic firmware
+vendor/firmware/aw8624_haptic.bin
+vendor/firmware/aw8624_rtp.bin
 vendor/firmware/awinic/aw882xx_pid_1852_acf.bin
 vendor/firmware/awinic/aw882xx_pid_1852_monitor.bin
 vendor/firmware/awinic/aw882xx_pid_2032_acf.bin
@@ -28,8 +30,6 @@ vendor/firmware/awinic/aw882xx_rcv_reg_l.bin
 vendor/firmware/awinic/aw882xx_rcv_reg_r.bin
 vendor/firmware/awinic/aw882xx_spk_reg_l.bin
 vendor/firmware/awinic/aw882xx_spk_reg_r.bin
-vendor/firmware/aw8624_haptic.bin
-vendor/firmware/aw8624_rtp.bin
 vendor/firmware/osc_rtp_24K_5s.bin
 
 # Audio HAL
@@ -134,11 +134,6 @@ vendor/lib64/mibokeh_712_opencl.bin
 -vendor/lib64/libarcsoft_super_night_raw.so
 
 # Camera-components
-vendor/lib64/camera/components/etc/morpho_lowlight4.0.xml
-vendor/lib64/camera/components/etc/morpho_lowlight4.0_3hdr.xml
-vendor/lib64/camera/components/etc/morpho_lowlight4.0_adrc_high.xml
-vendor/lib64/camera/components/etc/morpho_lowlight4.0_adrc_high_1.xml
-vendor/lib64/camera/components/etc/visidon_clearshot_params.xml
 -vendor/lib64/camera/components/com.altek.node.depurple.so
 -vendor/lib64/camera/components/com.altek.node.distortioncorrection.so
 -vendor/lib64/camera/components/com.arcsoft.node.capturebokeh.so
@@ -193,6 +188,11 @@ vendor/lib64/camera/components/etc/visidon_clearshot_params.xml
 -vendor/lib64/camera/components/com.xiaomi.node.mifragment.so
 -vendor/lib64/camera/components/com.xiaomi.node.mimovie.so
 -vendor/lib64/camera/components/com.xiaomi.node.misegment.so
+vendor/lib64/camera/components/etc/morpho_lowlight4.0.xml
+vendor/lib64/camera/components/etc/morpho_lowlight4.0_3hdr.xml
+vendor/lib64/camera/components/etc/morpho_lowlight4.0_adrc_high.xml
+vendor/lib64/camera/components/etc/morpho_lowlight4.0_adrc_high_1.xml
+vendor/lib64/camera/components/etc/visidon_clearshot_params.xml
 -vendor/lib64/camera/components/libdepthmapwrapper.so
 -vendor/lib64/camera/components/libmmcamera_cac3.so
 
