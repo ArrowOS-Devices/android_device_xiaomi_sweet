@@ -1,4 +1,4 @@
-# Unpinned section - from MIUI v13.0.15.0 SKFMIXM
+# Unpinned section - from MIUI v14.0.1.0 TKFMIXM
 # odm
 odm/etc/media_profiles_V1_0.xml
 
@@ -19,7 +19,6 @@ system_ext/etc/permissions/com.qti.dpmframework.xml
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml
-system_ext/etc/permissions/com.qualcomm.qti.imscmservice.xml
 system_ext/etc/permissions/dpmapi.xml
 system_ext/etc/permissions/embms.xml
 system_ext/etc/permissions/qcrilhook.xml
@@ -39,7 +38,6 @@ system_ext/framework/vendor.qti.ims.callcapability-V1.0-java.jar
 system_ext/framework/vendor.qti.ims.callinfo-V1.0-java.jar
 system_ext/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar
 system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so
-system_ext/lib64/com.qualcomm.qti.imscmservice@1.0.so
 system_ext/lib64/com.qualcomm.qti.imscmservice@2.0.so
 system_ext/lib64/com.qualcomm.qti.imscmservice@2.1.so
 system_ext/lib64/com.qualcomm.qti.imscmservice@2.2.so
@@ -474,7 +472,6 @@ vendor/etc/msm_irqbalance.conf
 vendor/etc/noise_table_64_64.rgb
 vendor/etc/permissions/android.software.vulkan.deqp.level.xml
 vendor/etc/permissions/com.fingerprints.extension.xml
-vendor/etc/permissions/com.google.android.feature.PREMIER_TIER.xml
 vendor/etc/permissions/handheld_core_hardware.xml
 vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml
 vendor/etc/public.libraries.txt
@@ -1168,7 +1165,6 @@ vendor/lib64/sensors.mius.proximity.so
 vendor/lib64/sensors.ssc.so
 vendor/lib64/sensors.touch.so
 vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libdirac.so
 vendor/lib64/soundfx/libqcbassboost.so
 vendor/lib64/soundfx/libqcompostprocbundle.so
 vendor/lib64/soundfx/libqcomvisualizer.so
@@ -1775,7 +1771,6 @@ vendor/lib/sensors.mius.proximity.so
 vendor/lib/sensors.ssc.so
 vendor/lib/sensors.touch.so
 vendor/lib/soundfx/libasphere.so
-vendor/lib/soundfx/libdirac.so
 vendor/lib/soundfx/libmisoundfx.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcompostprocbundle.so
