@@ -274,6 +274,9 @@ vendor/lib64/camera/fdconfigvideolite.bin
 vendor/lib64/camera/com.qti.tuned.sweet_ofilm_s5kgw3_wide.bin|727410454921cbf6d56837ebf5c930fb948d7f15
 vendor/lib64/camera/com.qti.tuned.sweet_sunny_s5kgw3_wide.bin|34718fcf0dd5d3d30e383e02824145204772676d
 
+# DRM
+-vendor/lib64/liboemcrypto.so
+
 # Fingerprint
 -vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.sm6150.so
 
