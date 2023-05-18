@@ -27,7 +27,7 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_sweet
 TARGET_RECOVERY_DEVICE_MODULES := libinit_sweet
 
 # Kernel
-TARGET_KERNEL_CONFIG := sweet_defconfig
+TARGET_KERNEL_CONFIG += vendor/sweet.config
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
